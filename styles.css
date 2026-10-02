@@ -959,3 +959,17 @@ body:not(.page-index):not(.page-who-we-are) .dlc-cta .cta-talk:hover{background:
 .dlc-menu-cta .cta-work,.dlc-menu-cta .cta-work:hover{background:#8FD9A0;color:#06381A}
 .dlc-menu-cta .cta-talk:hover{background:#eafff0}
 .dlc-menu-cta .cta-work:hover{background:#7fcf90}
+
+/* ====================================================================
+   Sticky shrink-on-scroll header: fixed bar, transparent at top; on
+   scroll it gains a white background and the logo shrinks to 50px.
+   ==================================================================== */
+.dlc-header{position:fixed !important;top:0;left:0;right:0;width:100%;transition:background .3s ease,box-shadow .3s ease,padding .3s ease}
+.dlc-header [class*="hdr-2"] img{transition:width .3s ease}
+body.scrolled .dlc-header{background:#fff;box-shadow:0 2px 14px rgba(0,0,0,.09);padding-top:8px;padding-bottom:8px}
+body.scrolled .dlc-header [class*="hdr-2"] img{width:50px !important}
+/* On scroll the bar is white, so force dark controls everywhere */
+body.scrolled .dlc-burger span{background:#1F1F1F}
+body.scrolled .dlc-cta .cta-talk{background:transparent;color:#095316;border-color:#095316}
+body.scrolled .dlc-cta .cta-talk:hover{background:#095316;color:#fff}
+body.scrolled .dlc-cta .cta-work{background:#095316;color:#fff;border-color:#095316}

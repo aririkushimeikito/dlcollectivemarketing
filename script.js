@@ -18,3 +18,10 @@
     try { a.classList.toggle('current', norm(new URL(a.href).pathname) === here); } catch (e) {}
   });
 })();
+
+// Shrink header + white background on scroll
+(function () {
+  function onScroll() { document.body.classList.toggle('scrolled', window.scrollY > 40); }
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+})();
