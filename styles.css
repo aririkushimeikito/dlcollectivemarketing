@@ -955,6 +955,7 @@ body:not(.page-index):not(.page-who-we-are) .dlc-cta .cta-talk:hover{background:
 /* CTAs inside the slide-in menu (always available, incl. mobile) */
 .dlc-menu-cta{margin-top:30px;display:flex;flex-direction:column;gap:12px}
 .dlc-menu-cta a{display:block;text-align:center;text-decoration:none;font-size:14px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:13px 20px;border-radius:6px;font-style:normal}
-.dlc-menu-cta .cta-talk{background:#fff;color:#095316}
-.dlc-menu-cta .cta-work{background:#8FD9A0;color:#06381A}
-.dlc-menu-cta a:hover{opacity:.9}
+.dlc-menu-cta .cta-talk,.dlc-menu-cta .cta-talk:hover{background:#fff;color:#095316}
+.dlc-menu-cta .cta-work,.dlc-menu-cta .cta-work:hover{background:#8FD9A0;color:#06381A}
+.dlc-menu-cta .cta-talk:hover{background:#eafff0}
+.dlc-menu-cta .cta-work:hover{background:#7fcf90}
