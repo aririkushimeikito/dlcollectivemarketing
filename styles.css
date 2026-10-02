@@ -112,7 +112,7 @@ body{font-family:'Montserrat',sans-serif;margin:0;color:#1F1F1F;}
 .index-s5{background:url(media/images/client-orlando-magic-event.jpg) center center/cover no-repeat;padding:100px 34px 100px 34px;min-height:70vh;position:relative;display:flex;flex-direction:column;align-items:center}
 .index-s5-1{font-size:13px;line-height:1.15em;letter-spacing:2px;font-weight:700;text-transform:uppercase;color:#8FD9A0;text-align:center}
 .index-s5-2{font-size:40px;line-height:1.15em;font-weight:600;color:#FFFFFF;text-align:center}
-.index-s5-3>.inner{max-width:980px;width:100%;min-height:inherit;position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:30px 30px}
+.index-s5-3>.inner{max-width:1180px;width:100%;min-height:inherit;position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:22px 22px}
 .index-s5-3{width:100%;flex:0 0 auto;display:flex;flex-direction:column;align-items:center}
 .index-s5-3-1{background-color:rgba(255,255,255,0.94);padding:16px 20px 16px 20px;min-height:96px;border-radius:10px 10px 10px 10px;display:flex;flex-direction:column;justify-content:center;align-items:center}
 .index-s5-3-1-1{font-size:20px;line-height:1.15em;font-weight:600;color:#095316;text-align:center}
@@ -123,7 +123,7 @@ body{font-family:'Montserrat',sans-serif;margin:0;color:#1F1F1F;}
 .index-s5-3-4{background-color:rgba(255,255,255,0.94);padding:16px 20px 16px 20px;min-height:96px;border-radius:10px 10px 10px 10px;display:flex;flex-direction:column;justify-content:center;align-items:center}
 .index-s5-3-4-1{font-size:20px;line-height:1.15em;font-weight:600;color:#095316;text-align:center}
 .index-s5-3-5{background-color:rgba(255,255,255,0.94);padding:16px 20px 16px 20px;min-height:96px;border-radius:10px 10px 10px 10px;display:flex;flex-direction:column;justify-content:center;align-items:center}
-.index-s5-3-5-1 img{width:100%;max-width:180px;border-radius:6px 6px 6px 6px;margin:0 auto}
+.index-s5-3-1-1 img,.index-s5-3-2-1 img,.index-s5-3-3-1 img,.index-s5-3-4-1 img,.index-s5-3-5-1 img{width:auto;height:auto;max-width:100%;max-height:60px;object-fit:contain;margin:0 auto;display:block}
 .index-s5-3-5-1{text-align:center}
 .index-ftr>.inner{max-width:1180px;width:100%;min-height:inherit;position:relative;display:flex;flex-direction:column}
 .index-ftr{background-color:#F2F2F2;padding:70px 34px 50px 34px;display:flex;flex-direction:column;align-items:center}
@@ -174,7 +174,7 @@ body{font-family:'Montserrat',sans-serif;margin:0;color:#1F1F1F;}
   .index-s4-2-3{width:100%}
   .index-s5{padding:60px 20px 60px 20px}
   .index-s5-2{font-size:28px}
-  .index-s5-3>.inner{grid-template-columns:repeat(2,1fr)}
+  .index-s5-3>.inner{grid-template-columns:repeat(5,1fr);gap:10px 8px}
   .index-ftr{padding:50px 20px 40px 20px}
   .index-ftr-1{flex-direction:column}
   .index-ftr-1-1{width:100%}
@@ -675,7 +675,7 @@ body{font-family:'Montserrat',sans-serif;margin:0;color:#1F1F1F;}
 .our-clients-s4-3-4{min-height:80px;display:flex;flex-direction:column;justify-content:center;align-items:center}
 .our-clients-s4-3-4-1{font-size:18px;line-height:1.15em;font-weight:600;color:#095316;text-align:center}
 .our-clients-s4-3-5{min-height:80px;display:flex;flex-direction:column;justify-content:center;align-items:center}
-.our-clients-s4-3-5-1 img{width:100%;max-width:180px;border-radius:8px 8px 8px 8px;margin:0 auto}
+.our-clients-s4-3-1-1 img,.our-clients-s4-3-2-1 img,.our-clients-s4-3-3-1 img,.our-clients-s4-3-4-1 img,.our-clients-s4-3-5-1 img{width:auto;height:auto;max-width:100%;max-height:60px;object-fit:contain;margin:0 auto;display:block}
 .our-clients-s4-3-5-1{text-align:center}
 .our-clients-ftr>.inner{max-width:1180px;width:100%;min-height:inherit;position:relative;display:flex;flex-direction:column}
 .our-clients-ftr{background-color:#F2F2F2;padding:70px 34px 50px 34px;display:flex;flex-direction:column;align-items:center}
