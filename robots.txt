@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aririkushimeikito.github.io/dlcollectivemarketing/sitemap.xml

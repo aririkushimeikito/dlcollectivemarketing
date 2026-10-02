@@ -11,7 +11,10 @@
   close.addEventListener('click', shut);
   backdrop.addEventListener('click', shut);
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') shut(); });
-  // highlight the current page in the menu
-  var here = location.pathname.split('/').pop() || 'index.html';
-  menu.querySelectorAll('a').forEach(function (a) { a.classList.toggle('current', a.getAttribute('href') === here); });
+  // highlight the current page in the menu (pretty URLs)
+  function norm(p) { p = p.replace(/index\.html$/, ''); if (p.charAt(p.length - 1) !== '/') p += '/'; return p; }
+  var here = norm(location.pathname);
+  menu.querySelectorAll('a').forEach(function (a) {
+    try { a.classList.toggle('current', norm(new URL(a.href).pathname) === here); } catch (e) {}
+  });
 })();
