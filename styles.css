@@ -56,7 +56,7 @@ body{font-family:'Montserrat',sans-serif;margin:0;color:#1F1F1F;}
 
 /* ==== Home ==== */
 .index-hdr{padding:22px 34px 0px 34px;position:absolute;left:0px;top:0px;z-index:20;display:flex;flex-direction:row;justify-content:flex-start;align-items:center}
-.index-hdr-2 img{width:200px}
+.index-hdr-2 img{width:160px}
 .index-hdr-2{background:#FFFFFF;padding:6px 8px 6px 8px;border-radius:12px 12px 12px 12px}
 .index-social{position:fixed;right:22px;top:300px;z-index:50;display:flex;flex-direction:column;gap:22px 22px;align-items:center}
 .index-social-1{color:#FFFFFF;font-size:22px}
@@ -183,7 +183,7 @@ body{font-family:'Montserrat',sans-serif;margin:0;color:#1F1F1F;}
 
 /* ==== Who We Are ==== */
 .who-we-are-hdr{padding:22px 34px 0px 34px;position:absolute;left:0px;top:0px;z-index:20;display:flex;flex-direction:row;justify-content:flex-start;align-items:center}
-.who-we-are-hdr-2 img{width:200px}
+.who-we-are-hdr-2 img{width:160px}
 .who-we-are-hdr-2{background:#FFFFFF;padding:6px 8px 6px 8px;border-radius:12px 12px 12px 12px}
 .who-we-are-social{position:fixed;right:22px;top:300px;z-index:50;display:flex;flex-direction:column;gap:22px 22px;align-items:center}
 .who-we-are-social-1{color:#FFFFFF;font-size:22px}
@@ -364,7 +364,7 @@ body{font-family:'Montserrat',sans-serif;margin:0;color:#1F1F1F;}
 
 /* ==== What We Do ==== */
 .what-we-do-hdr{padding:22px 34px 0px 34px;position:absolute;left:0px;top:0px;z-index:20;display:flex;flex-direction:row;justify-content:flex-start;align-items:center}
-.what-we-do-hdr-2 img{width:200px}
+.what-we-do-hdr-2 img{width:160px}
 .what-we-do-hdr-2{background:#FFFFFF;padding:6px 8px 6px 8px;border-radius:12px 12px 12px 12px}
 .what-we-do-social{position:fixed;right:22px;top:300px;z-index:50;display:flex;flex-direction:column;gap:22px 22px;align-items:center}
 .what-we-do-social-1{color:#095316;font-size:22px}
@@ -494,7 +494,7 @@ body{font-family:'Montserrat',sans-serif;margin:0;color:#1F1F1F;}
 
 /* ==== Our Work ==== */
 .our-work-hdr{padding:22px 34px 0px 34px;position:absolute;left:0px;top:0px;z-index:20;display:flex;flex-direction:row;justify-content:flex-start;align-items:center}
-.our-work-hdr-2 img{width:200px}
+.our-work-hdr-2 img{width:160px}
 .our-work-hdr-2{background:#FFFFFF;padding:6px 8px 6px 8px;border-radius:12px 12px 12px 12px}
 .our-work-social{position:fixed;right:22px;top:300px;z-index:50;display:flex;flex-direction:column;gap:22px 22px;align-items:center}
 .our-work-social-1{color:#095316;font-size:22px}
@@ -588,7 +588,7 @@ body{font-family:'Montserrat',sans-serif;margin:0;color:#1F1F1F;}
 
 /* ==== Our Clients ==== */
 .our-clients-hdr{padding:22px 34px 0px 34px;position:absolute;left:0px;top:0px;z-index:20;display:flex;flex-direction:row;justify-content:flex-start;align-items:center}
-.our-clients-hdr-2 img{width:200px}
+.our-clients-hdr-2 img{width:160px}
 .our-clients-hdr-2{background:#FFFFFF;padding:6px 8px 6px 8px;border-radius:12px 12px 12px 12px}
 .our-clients-social{position:fixed;right:22px;top:300px;z-index:50;display:flex;flex-direction:column;gap:22px 22px;align-items:center}
 .our-clients-social-1{color:#095316;font-size:22px}
@@ -726,7 +726,7 @@ body{font-family:'Montserrat',sans-serif;margin:0;color:#1F1F1F;}
 
 /* ==== Contact ==== */
 .contact-hdr{padding:22px 34px 0px 34px;position:absolute;left:0px;top:0px;z-index:20;display:flex;flex-direction:row;justify-content:flex-start;align-items:center}
-.contact-hdr-2 img{width:200px}
+.contact-hdr-2 img{width:160px}
 .contact-hdr-2{background:#FFFFFF;padding:6px 8px 6px 8px;border-radius:12px 12px 12px 12px}
 .contact-social{position:fixed;right:22px;top:300px;z-index:50;display:flex;flex-direction:column;gap:22px 22px;align-items:center}
 .contact-social-1{color:#095316;font-size:22px}
@@ -851,7 +851,7 @@ body{font-family:'Montserrat',sans-serif;margin:0;color:#1F1F1F;}
 
 /* ==== Careers ==== */
 .careers-hdr{padding:22px 34px 0px 34px;position:absolute;left:0px;top:0px;z-index:20;display:flex;flex-direction:row;justify-content:flex-start;align-items:center}
-.careers-hdr-2 img{width:200px}
+.careers-hdr-2 img{width:160px}
 .careers-hdr-2{background:#FFFFFF;padding:6px 8px 6px 8px;border-radius:12px 12px 12px 12px}
 .careers-social{position:fixed;right:22px;top:300px;z-index:50;display:flex;flex-direction:column;gap:22px 22px;align-items:center}
 .careers-social-1{color:#095316;font-size:22px}
