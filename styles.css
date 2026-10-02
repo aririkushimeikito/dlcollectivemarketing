@@ -974,7 +974,9 @@ body.scrolled .dlc-cta .cta-talk{background:transparent;color:#095316;border-col
 body.scrolled .dlc-cta .cta-talk:hover{background:#095316;color:#fff}
 body.scrolled .dlc-cta .cta-work{background:#095316;color:#fff;border-color:#095316}
 
-/* Home hero: show the full collage at 100% on desktop/laptop */
+/* Home hero: full image at 100% width on desktop/laptop without
+   stretching — match the hero's aspect ratio to the image so its
+   height grows to fit and `cover` shows the whole collage. */
 @media(min-width:1025px){
-  .index-s1{background-size:100% 100% !important}
+  .index-s1{background-size:cover !important;aspect-ratio:2500/1406;min-height:0 !important}
 }
