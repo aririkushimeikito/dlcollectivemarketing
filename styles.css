@@ -936,3 +936,25 @@ body:not(.page-index) main>section:first-child{padding-top:200px !important}
   .dlc-marquee-track{animation-duration:22s}
 }
 @media(prefers-reduced-motion:reduce){.dlc-marquee-track{animation:none}}
+
+/* ====================================================================
+   Header CTAs — Let's Talk + Work With Us (desktop), and inside the
+   off-canvas menu (mobile). External links open in a new tab.
+   ==================================================================== */
+.dlc-cta{position:fixed;top:20px;right:88px;z-index:100;display:flex;gap:10px;align-items:center}
+.dlc-cta a{display:inline-block;text-decoration:none;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:11px 20px;border-radius:5px;white-space:nowrap;transition:background .25s,color .25s,border-color .25s}
+.dlc-cta .cta-talk{background:#fff;color:#095316;border:1.5px solid #fff}
+.dlc-cta .cta-talk:hover{background:#095316;color:#fff;border-color:#095316}
+.dlc-cta .cta-work{background:#095316;color:#fff;border:1.5px solid #095316}
+.dlc-cta .cta-work:hover{background:#06381A;border-color:#06381A}
+/* light inner pages (not home / not meet-us hero): make Let's Talk visible on white */
+body:not(.page-index):not(.page-who-we-are) .dlc-cta .cta-talk{background:transparent;color:#095316;border-color:#095316}
+body:not(.page-index):not(.page-who-we-are) .dlc-cta .cta-talk:hover{background:#095316;color:#fff}
+@media(max-width:900px){.dlc-cta{display:none}}
+
+/* CTAs inside the slide-in menu (always available, incl. mobile) */
+.dlc-menu-cta{margin-top:30px;display:flex;flex-direction:column;gap:12px}
+.dlc-menu-cta a{display:block;text-align:center;text-decoration:none;font-size:14px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:13px 20px;border-radius:6px;font-style:normal}
+.dlc-menu-cta .cta-talk{background:#fff;color:#095316}
+.dlc-menu-cta .cta-work{background:#8FD9A0;color:#06381A}
+.dlc-menu-cta a:hover{opacity:.9}
