@@ -914,7 +914,7 @@ body{font-family:'Montserrat',sans-serif;margin:0;color:#1F1F1F;}
 /* Transparent overlay header on every page (like the home page). The
    logo floats over a transparent header; inner first-sections get enough
    top clearance so the logo never overlaps their content. */
-body:not(.page-index) .dlc-burger span{background:#1F1F1F}
+body:not(.page-index):not(.page-who-we-are) .dlc-burger span{background:#1F1F1F}
 body:not(.page-index) main>section:first-child{padding-top:200px !important}
 @media(max-width:767px){
   body:not(.page-index) main>section:first-child{padding-top:195px !important}
