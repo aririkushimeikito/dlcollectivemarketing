@@ -973,3 +973,8 @@ body.scrolled .dlc-burger span{background:#1F1F1F}
 body.scrolled .dlc-cta .cta-talk{background:transparent;color:#095316;border-color:#095316}
 body.scrolled .dlc-cta .cta-talk:hover{background:#095316;color:#fff}
 body.scrolled .dlc-cta .cta-work{background:#095316;color:#fff;border-color:#095316}
+
+/* Home hero: show the full collage at 100% on desktop/laptop */
+@media(min-width:1025px){
+  .index-s1{background-size:100% 100% !important}
+}
