@@ -59,10 +59,10 @@ body{font-family:'Montserrat',sans-serif;margin:0;color:#1F1F1F;}
 .index-hdr-2 img{width:200px}
 .index-hdr-2{background:#FFFFFF;padding:6px 8px 6px 8px;border-radius:12px 12px 12px 12px}
 .index-social{position:fixed;right:22px;top:300px;z-index:50;display:flex;flex-direction:column;gap:22px 22px;align-items:center}
-.index-social-1{color:#FFFFFF;font-size:16px}
-.index-social-2{color:#FFFFFF;font-size:16px}
-.index-social-3{color:#FFFFFF;font-size:16px}
-.index-social-4{color:#FFFFFF;font-size:16px}
+.index-social-1{color:#FFFFFF;font-size:22px}
+.index-social-2{color:#FFFFFF;font-size:22px}
+.index-social-3{color:#FFFFFF;font-size:22px}
+.index-social-4{color:#FFFFFF;font-size:22px}
 .index-s1::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.42);border-radius:inherit}
 .index-s1>*{position:relative}
 .index-s1{background:url(media/images/home-hero-collage.png) center center/cover no-repeat;padding:120px 24px 80px 24px;min-height:78vh;position:relative;display:flex;flex-direction:column;gap:22px 22px;justify-content:center;align-items:center}
@@ -186,10 +186,10 @@ body{font-family:'Montserrat',sans-serif;margin:0;color:#1F1F1F;}
 .who-we-are-hdr-2 img{width:200px}
 .who-we-are-hdr-2{background:#FFFFFF;padding:6px 8px 6px 8px;border-radius:12px 12px 12px 12px}
 .who-we-are-social{position:fixed;right:22px;top:300px;z-index:50;display:flex;flex-direction:column;gap:22px 22px;align-items:center}
-.who-we-are-social-1{color:#FFFFFF;font-size:16px}
-.who-we-are-social-2{color:#FFFFFF;font-size:16px}
-.who-we-are-social-3{color:#FFFFFF;font-size:16px}
-.who-we-are-social-4{color:#FFFFFF;font-size:16px}
+.who-we-are-social-1{color:#FFFFFF;font-size:22px}
+.who-we-are-social-2{color:#FFFFFF;font-size:22px}
+.who-we-are-social-3{color:#FFFFFF;font-size:22px}
+.who-we-are-social-4{color:#FFFFFF;font-size:22px}
 .who-we-are-s1::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.45);border-radius:inherit}
 .who-we-are-s1>*{position:relative}
 .who-we-are-s1{background:url(media/images/client-allycar-cadillac.png) center center/cover no-repeat;padding:140px 100px 70px 100px;min-height:66vh;position:relative;display:flex;flex-direction:column;gap:10px 10px;justify-content:flex-end}
@@ -367,10 +367,10 @@ body{font-family:'Montserrat',sans-serif;margin:0;color:#1F1F1F;}
 .what-we-do-hdr-2 img{width:200px}
 .what-we-do-hdr-2{background:#FFFFFF;padding:6px 8px 6px 8px;border-radius:12px 12px 12px 12px}
 .what-we-do-social{position:fixed;right:22px;top:300px;z-index:50;display:flex;flex-direction:column;gap:22px 22px;align-items:center}
-.what-we-do-social-1{color:#095316;font-size:16px}
-.what-we-do-social-2{color:#095316;font-size:16px}
-.what-we-do-social-3{color:#095316;font-size:16px}
-.what-we-do-social-4{color:#095316;font-size:16px}
+.what-we-do-social-1{color:#095316;font-size:22px}
+.what-we-do-social-2{color:#095316;font-size:22px}
+.what-we-do-social-3{color:#095316;font-size:22px}
+.what-we-do-social-4{color:#095316;font-size:22px}
 .what-we-do-s1>.inner{max-width:1180px;width:100%;min-height:inherit;position:relative;display:flex;flex-direction:row;gap:30px 0px;align-items:flex-end}
 .what-we-do-s1{background-color:#FFFFFF;padding:130px 34px 40px 34px;display:flex;flex-direction:column;align-items:center}
 .what-we-do-s1-1{padding:0px 50px 0px 0px;width:55%;flex:0 0 auto;display:flex;flex-direction:column;gap:18px 18px;justify-content:flex-end}
@@ -497,10 +497,10 @@ body{font-family:'Montserrat',sans-serif;margin:0;color:#1F1F1F;}
 .our-work-hdr-2 img{width:200px}
 .our-work-hdr-2{background:#FFFFFF;padding:6px 8px 6px 8px;border-radius:12px 12px 12px 12px}
 .our-work-social{position:fixed;right:22px;top:300px;z-index:50;display:flex;flex-direction:column;gap:22px 22px;align-items:center}
-.our-work-social-1{color:#095316;font-size:16px}
-.our-work-social-2{color:#095316;font-size:16px}
-.our-work-social-3{color:#095316;font-size:16px}
-.our-work-social-4{color:#095316;font-size:16px}
+.our-work-social-1{color:#095316;font-size:22px}
+.our-work-social-2{color:#095316;font-size:22px}
+.our-work-social-3{color:#095316;font-size:22px}
+.our-work-social-4{color:#095316;font-size:22px}
 .our-work-s1>.inner{max-width:1180px;width:100%;min-height:inherit;position:relative;display:flex;flex-direction:row;gap:30px 0px;align-items:flex-end}
 .our-work-s1{background-color:#FFFFFF;padding:130px 34px 50px 34px;display:flex;flex-direction:column;align-items:center}
 .our-work-s1-1{padding:0px 50px 0px 0px;width:55%;flex:0 0 auto;display:flex;flex-direction:column;gap:18px 18px;justify-content:flex-end}
@@ -591,10 +591,10 @@ body{font-family:'Montserrat',sans-serif;margin:0;color:#1F1F1F;}
 .our-clients-hdr-2 img{width:200px}
 .our-clients-hdr-2{background:#FFFFFF;padding:6px 8px 6px 8px;border-radius:12px 12px 12px 12px}
 .our-clients-social{position:fixed;right:22px;top:300px;z-index:50;display:flex;flex-direction:column;gap:22px 22px;align-items:center}
-.our-clients-social-1{color:#095316;font-size:16px}
-.our-clients-social-2{color:#095316;font-size:16px}
-.our-clients-social-3{color:#095316;font-size:16px}
-.our-clients-social-4{color:#095316;font-size:16px}
+.our-clients-social-1{color:#095316;font-size:22px}
+.our-clients-social-2{color:#095316;font-size:22px}
+.our-clients-social-3{color:#095316;font-size:22px}
+.our-clients-social-4{color:#095316;font-size:22px}
 .our-clients-s1>.inner{max-width:1180px;width:100%;min-height:inherit;position:relative;display:flex;flex-direction:row;gap:20px 0px;align-items:flex-end}
 .our-clients-s1{background-color:#FFFFFF;padding:130px 34px 40px 34px;display:flex;flex-direction:column;align-items:center}
 .our-clients-s1-1{width:50%;flex:0 0 auto;display:flex;flex-direction:column;justify-content:flex-end}
@@ -729,10 +729,10 @@ body{font-family:'Montserrat',sans-serif;margin:0;color:#1F1F1F;}
 .contact-hdr-2 img{width:200px}
 .contact-hdr-2{background:#FFFFFF;padding:6px 8px 6px 8px;border-radius:12px 12px 12px 12px}
 .contact-social{position:fixed;right:22px;top:300px;z-index:50;display:flex;flex-direction:column;gap:22px 22px;align-items:center}
-.contact-social-1{color:#095316;font-size:16px}
-.contact-social-2{color:#095316;font-size:16px}
-.contact-social-3{color:#095316;font-size:16px}
-.contact-social-4{color:#095316;font-size:16px}
+.contact-social-1{color:#095316;font-size:22px}
+.contact-social-2{color:#095316;font-size:22px}
+.contact-social-3{color:#095316;font-size:22px}
+.contact-social-4{color:#095316;font-size:22px}
 .contact-s1>.inner{max-width:1180px;width:100%;min-height:inherit;position:relative;display:flex;flex-direction:row;gap:24px 0px;align-items:center}
 .contact-s1{background-color:#FFFFFF;padding:120px 34px 40px 34px;display:flex;flex-direction:column;align-items:center}
 .contact-s1-1{width:45%;flex:0 0 auto;display:flex;flex-direction:column;justify-content:center;align-items:center}
@@ -854,10 +854,10 @@ body{font-family:'Montserrat',sans-serif;margin:0;color:#1F1F1F;}
 .careers-hdr-2 img{width:200px}
 .careers-hdr-2{background:#FFFFFF;padding:6px 8px 6px 8px;border-radius:12px 12px 12px 12px}
 .careers-social{position:fixed;right:22px;top:300px;z-index:50;display:flex;flex-direction:column;gap:22px 22px;align-items:center}
-.careers-social-1{color:#095316;font-size:16px}
-.careers-social-2{color:#095316;font-size:16px}
-.careers-social-3{color:#095316;font-size:16px}
-.careers-social-4{color:#095316;font-size:16px}
+.careers-social-1{color:#095316;font-size:22px}
+.careers-social-2{color:#095316;font-size:22px}
+.careers-social-3{color:#095316;font-size:22px}
+.careers-social-4{color:#095316;font-size:22px}
 .careers-s1>.inner{max-width:1180px;width:100%;min-height:inherit;position:relative;display:flex;flex-direction:row;gap:30px 0px;align-items:flex-start}
 .careers-s1{background-color:#FFFFFF;padding:130px 34px 110px 34px;display:flex;flex-direction:column;align-items:center}
 .careers-s1-1{padding:0px 60px 0px 0px;width:58%;flex:0 0 auto;display:flex;flex-direction:column;gap:22px 22px}
