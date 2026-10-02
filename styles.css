@@ -906,3 +906,15 @@ body{font-family:'Montserrat',sans-serif;margin:0;color:#1F1F1F;}
   .careers-ftr-1-1{width:100%}
   .careers-ftr-1-2{width:100%;grid-template-columns:repeat(2,1fr)}
 }
+
+/* ====================================================================
+   Inner-page header in normal flow — the large logo never overlaps
+   page content. The home page keeps its hero-overlay (absolute) header.
+   ==================================================================== */
+body:not(.page-index) .dlc-header{position:relative;left:auto;top:auto;background:#fff;border-bottom:1px solid #ededed;padding:16px 34px}
+body:not(.page-index) .dlc-burger span{background:#1F1F1F}
+body:not(.page-index) main>section:first-child{padding-top:40px !important}
+@media(max-width:767px){
+  body:not(.page-index) .dlc-header{padding:12px 18px}
+  body:not(.page-index) main>section:first-child{padding-top:28px !important}
+}
