@@ -1004,15 +1004,15 @@ body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-light{display:inline-b
    ==================================================================== */
 .index-s5.fi-sec{min-height:auto;padding:100px 24px;justify-content:center}
 .index-s5.fi-sec::before{background:rgba(7,26,15,.76)}
-.fi-wrap{position:static;width:100%;max-width:1180px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:56px}
+.fi-wrap{position:relative;z-index:2;width:100%;max-width:1180px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:56px}
 .fi-head{text-align:center;width:100%}
 .fi-eyebrow{color:#B6F11B;font-size:14px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;margin:0 0 14px}
 .fi-title{color:#fff;font-size:54px;font-weight:600;line-height:1.05;letter-spacing:-.01em;margin:0;text-shadow:0 2px 6px rgba(0,0,0,.7),0 4px 30px rgba(0,0,0,.55)}
 .fi-rows{display:flex;flex-direction:column;align-items:center;gap:40px;width:100%}
 .fi-row{display:flex;align-items:center;justify-content:center;gap:80px;flex-wrap:wrap}
 .fi-row-2{gap:140px}
-.fi-logo{height:auto;width:auto;max-height:200px;max-width:420px;object-fit:contain;opacity:.95}
-@media(max-width:1100px){.fi-title{font-size:42px}.fi-row{gap:56px}.fi-row-2{gap:90px}.fi-logo{max-height:140px;max-width:300px}}
+.fi-logo{height:auto;width:auto;max-height:150px;max-width:340px;object-fit:contain;opacity:.95}
+@media(max-width:1100px){.fi-title{font-size:42px}.fi-row{gap:56px}.fi-row-2{gap:90px}.fi-logo{max-height:110px;max-width:250px}}
 @media(max-width:700px){.fi-title{font-size:28px}.index-s5.fi-sec{padding:70px 18px}.fi-rows{gap:28px}.fi-row{gap:28px}.fi-row-2{gap:40px}.fi-logo{max-height:70px;max-width:44%}}
 
 .dlc-logo-trigger{cursor:pointer}
