@@ -133,7 +133,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .index-ftr{background-color:#F4F2EA;padding:70px 34px 50px 34px;display:flex;flex-direction:column;align-items:center}
 .index-ftr-1{display:flex;flex-direction:row;gap:40px 40px;align-items:flex-start}
 .index-ftr-1-1{width:30%;flex:0 0 auto;display:flex;flex-direction:column;gap:16px 16px}
-.index-ftr-1-1-1 img{width:72px;border-radius:10px 10px 10px 10px}
+.index-ftr-1-1-1 img{width:200px;border-radius:10px 10px 10px 10px}
 .index-ftr-1-1-2{font-size:12px;line-height:1.6em;font-weight:400;color:#4A4A4A}
 .index-ftr-1-2{width:64%;flex:0 0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:30px 24px}
 .index-ftr-1-2-1{display:flex;flex-direction:column;gap:18px 18px}
@@ -313,7 +313,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .who-we-are-ftr{background-color:#F4F2EA;padding:70px 34px 50px 34px;display:flex;flex-direction:column;align-items:center}
 .who-we-are-ftr-1{display:flex;flex-direction:row;gap:40px 40px;align-items:flex-start}
 .who-we-are-ftr-1-1{width:30%;flex:0 0 auto;display:flex;flex-direction:column;gap:16px 16px}
-.who-we-are-ftr-1-1-1 img{width:72px;border-radius:10px 10px 10px 10px}
+.who-we-are-ftr-1-1-1 img{width:200px;border-radius:10px 10px 10px 10px}
 .who-we-are-ftr-1-1-2{font-size:12px;line-height:1.6em;font-weight:400;color:#4A4A4A}
 .who-we-are-ftr-1-2{width:64%;flex:0 0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:30px 24px}
 .who-we-are-ftr-1-2-1{display:flex;flex-direction:column;gap:18px 18px}
@@ -453,7 +453,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .what-we-do-ftr{background-color:#F4F2EA;padding:70px 34px 50px 34px;display:flex;flex-direction:column;align-items:center}
 .what-we-do-ftr-1{display:flex;flex-direction:row;gap:40px 40px;align-items:flex-start}
 .what-we-do-ftr-1-1{width:30%;flex:0 0 auto;display:flex;flex-direction:column;gap:16px 16px}
-.what-we-do-ftr-1-1-1 img{width:72px;border-radius:10px 10px 10px 10px}
+.what-we-do-ftr-1-1-1 img{width:200px;border-radius:10px 10px 10px 10px}
 .what-we-do-ftr-1-1-2{font-size:12px;line-height:1.6em;font-weight:400;color:#4A4A4A}
 .what-we-do-ftr-1-2{width:64%;flex:0 0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:30px 24px}
 .what-we-do-ftr-1-2-1{display:flex;flex-direction:column;gap:18px 18px}
@@ -549,7 +549,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .our-work-ftr{background-color:#F4F2EA;padding:70px 34px 50px 34px;display:flex;flex-direction:column;align-items:center}
 .our-work-ftr-1{display:flex;flex-direction:row;gap:40px 40px;align-items:flex-start}
 .our-work-ftr-1-1{width:30%;flex:0 0 auto;display:flex;flex-direction:column;gap:16px 16px}
-.our-work-ftr-1-1-1 img{width:72px;border-radius:10px 10px 10px 10px}
+.our-work-ftr-1-1-1 img{width:200px;border-radius:10px 10px 10px 10px}
 .our-work-ftr-1-1-2{font-size:12px;line-height:1.6em;font-weight:400;color:#4A4A4A}
 .our-work-ftr-1-2{width:64%;flex:0 0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:30px 24px}
 .our-work-ftr-1-2-1{display:flex;flex-direction:column;gap:18px 18px}
@@ -685,7 +685,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .our-clients-ftr{background-color:#F4F2EA;padding:70px 34px 50px 34px;display:flex;flex-direction:column;align-items:center}
 .our-clients-ftr-1{display:flex;flex-direction:row;gap:40px 40px;align-items:flex-start}
 .our-clients-ftr-1-1{width:30%;flex:0 0 auto;display:flex;flex-direction:column;gap:16px 16px}
-.our-clients-ftr-1-1-1 img{width:72px;border-radius:10px 10px 10px 10px}
+.our-clients-ftr-1-1-1 img{width:200px;border-radius:10px 10px 10px 10px}
 .our-clients-ftr-1-1-2{font-size:12px;line-height:1.6em;font-weight:400;color:#4A4A4A}
 .our-clients-ftr-1-2{width:64%;flex:0 0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:30px 24px}
 .our-clients-ftr-1-2-1{display:flex;flex-direction:column;gap:18px 18px}
@@ -797,7 +797,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .contact-ftr{background-color:#F4F2EA;padding:70px 34px 50px 34px;display:flex;flex-direction:column;align-items:center}
 .contact-ftr-1{display:flex;flex-direction:row;gap:40px 40px;align-items:flex-start}
 .contact-ftr-1-1{width:30%;flex:0 0 auto;display:flex;flex-direction:column;gap:16px 16px}
-.contact-ftr-1-1-1 img{width:72px;border-radius:10px 10px 10px 10px}
+.contact-ftr-1-1-1 img{width:200px;border-radius:10px 10px 10px 10px}
 .contact-ftr-1-1-2{font-size:12px;line-height:1.6em;font-weight:400;color:#4A4A4A}
 .contact-ftr-1-2{width:64%;flex:0 0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:30px 24px}
 .contact-ftr-1-2-1{display:flex;flex-direction:column;gap:18px 18px}
@@ -877,7 +877,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .careers-ftr{background-color:#F4F2EA;padding:70px 34px 50px 34px;display:flex;flex-direction:column;align-items:center}
 .careers-ftr-1{display:flex;flex-direction:row;gap:40px 40px;align-items:flex-start}
 .careers-ftr-1-1{width:30%;flex:0 0 auto;display:flex;flex-direction:column;gap:16px 16px}
-.careers-ftr-1-1-1 img{width:72px;border-radius:10px 10px 10px 10px}
+.careers-ftr-1-1-1 img{width:200px;border-radius:10px 10px 10px 10px}
 .careers-ftr-1-1-2{font-size:12px;line-height:1.6em;font-weight:400;color:#4A4A4A}
 .careers-ftr-1-2{width:64%;flex:0 0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:30px 24px}
 .careers-ftr-1-2-1{display:flex;flex-direction:column;gap:18px 18px}
@@ -998,3 +998,32 @@ body.page-index:not(.scrolled) .dlc-header .dlc-logo-dark,
 body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-dark{display:none}
 body.page-index:not(.scrolled) .dlc-header .dlc-logo-light,
 body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-light{display:inline-block}
+
+/* ====================================================================
+   Featured In — white logos scattered over the photo (no cards),
+   reference-style layout. Centered heading with logos around it.
+   ==================================================================== */
+.index-s5.fi-sec{min-height:92vh;padding:40px 24px;justify-content:center}
+.index-s5.fi-sec::before{background:rgba(9,38,21,.62)}
+.fi-wrap{position:relative;width:100%;max-width:1280px;min-height:620px;margin:0 auto}
+.fi-head{position:absolute;left:50%;top:40%;transform:translate(-50%,-50%);text-align:center;width:92%;z-index:2}
+.fi-eyebrow{color:#B6F11B;font-size:14px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;margin:0 0 14px}
+.fi-title{color:#fff;font-size:54px;font-weight:600;line-height:1.05;letter-spacing:-.01em;margin:0}
+.fi-logo{position:absolute;height:auto;object-fit:contain;opacity:.95;z-index:1}
+.fi-a{width:200px;left:16%;top:15%}
+.fi-b{width:168px;right:16%;top:15%}
+.fi-c{width:170px;left:7%;top:60%}
+.fi-d{width:140px;right:9%;top:60%}
+.fi-e{width:240px;left:50%;top:86%;transform:translateX(-50%)}
+@media(max-width:1100px){
+  .fi-a{width:160px;left:10%;top:13%}.fi-b{width:140px;right:10%;top:13%}
+  .fi-c{width:140px;left:5%;top:62%}.fi-d{width:120px;right:6%;top:62%}
+  .fi-e{width:190px;top:87%}.fi-title{font-size:40px}
+}
+@media(max-width:860px){
+  .index-s5.fi-sec{min-height:auto;padding:64px 20px}
+  .fi-wrap{min-height:auto;display:flex;flex-direction:column;align-items:center;gap:34px}
+  .fi-head{position:static;transform:none;width:auto}
+  .fi-title{font-size:28px}
+  .fi-logo{position:static;transform:none !important;width:160px !important;opacity:.95}
+}
