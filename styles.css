@@ -98,21 +98,20 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .index-s3-2-3 li{margin-bottom:5px}
 .index-s3-2-4 a{font-size:13px;line-height:1.4em;letter-spacing:1.5px;font-weight:700;text-transform:uppercase;background:rgba(0,0,0,0);color:#0E3B24;padding:0px 0px 0px 0px;border-radius:0px 0px 0px 0px}
 .index-s3-2-4 a:hover{background:rgba(0,0,0,0);color:#0E3B24}
-.index-s4>.inner{max-width:1180px;width:100%;min-height:inherit;position:relative;display:flex;flex-direction:row;gap:40px 0px;align-items:flex-start}
 .index-s4{background-color:#0E3B24;padding:100px 34px 110px 34px;display:flex;flex-direction:column;align-items:center}
-.index-s4-1{width:38%;flex:0 0 auto;display:flex;flex-direction:column;gap:14px 14px;justify-content:flex-start}
-.index-s4-1-1{font-size:13px;line-height:1.15em;letter-spacing:2px;font-weight:700;text-transform:uppercase;color:#B6F11B}
-.index-s4-1-2{font-size:44px;line-height:1.15em;font-weight:600;color:#FFFFFF}
-.index-s4-1-3{height:10px}
-.index-s4-1-4 a{font-size:13px;line-height:1.4em;letter-spacing:1.5px;font-weight:700;text-transform:uppercase;background:rgba(0,0,0,0);color:#FFFFFF;padding:0px 0px 0px 0px;border-radius:0px 0px 0px 0px}
-.index-s4-1-4 a:hover{background:rgba(0,0,0,0);color:#FFFFFF}
-.index-s4-2{width:62%;flex:0 0 auto;display:flex;flex-direction:row;gap:18px 18px;align-items:flex-start}
-.index-s4-2-1{padding:10px 0px 0px 0px;width:37%;flex:0 0 auto;display:flex;flex-direction:column}
-.index-s4-2-1-1 img{width:100%;height:190px;object-fit:cover;border-radius:10px 10px 10px 10px}
-.index-s4-2-2{padding:60px 0px 0px 0px;width:34%;flex:0 0 auto;display:flex;flex-direction:column}
-.index-s4-2-2-1 img{width:100%;height:420px;object-fit:cover;border-radius:10px 10px 10px 10px}
-.index-s4-2-3{width:23%;flex:0 0 auto;display:flex;flex-direction:column}
-.index-s4-2-3-1 img{width:100%;height:240px;object-fit:cover;border-radius:10px 10px 10px 10px}
+/* staggered overlapping collage (reference "our work" layout) */
+.index-s4>.inner{max-width:1180px;width:100%;position:relative;display:block;min-height:800px}
+.sw-head{position:absolute;top:0;left:0;max-width:46%;z-index:3}
+.index-s4-1-1{font-size:13px;line-height:1.15em;letter-spacing:2px;font-weight:700;text-transform:uppercase;color:#B6F11B;margin:0 0 14px}
+.index-s4-1-2{font-size:54px;line-height:1.06em;font-weight:800;color:#FFFFFF;margin:0;letter-spacing:-.01em}
+.sw-more{position:absolute;top:452px;left:0;z-index:3}
+.sw-more a{font-size:13px;line-height:1.4em;letter-spacing:1.5px;font-weight:700;text-transform:uppercase;color:#B6F11B;text-decoration:none}
+.sw-more a:hover{color:#fff}
+.sw-img{margin:0;position:absolute;border-radius:12px;overflow:hidden;box-shadow:0 26px 60px rgba(0,0,0,.4)}
+.sw-img img{display:block;width:100%;height:100%;object-fit:cover}
+.sw-a{top:180px;left:0;width:33%;height:250px}
+.sw-b{top:208px;left:28%;width:37%;height:572px;z-index:2}
+.sw-c{top:78px;left:69.5%;width:25.5%;height:430px}
 .index-s5::before{content:'';position:absolute;inset:0;background:rgba(6,56,26,0.72);border-radius:inherit}
 .index-s5>.inner{max-width:1180px;width:100%;min-height:inherit;position:relative;display:flex;flex-direction:column;gap:24px 24px;justify-content:center;align-items:center}
 .index-s5{background:url(media/images/client-orlando-magic-event.jpg) center center/cover no-repeat;padding:100px 34px 100px 34px;min-height:70vh;position:relative;display:flex;flex-direction:column;align-items:center}
@@ -170,14 +169,15 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
   .index-s3-1{width:100%;order:2}
   .index-s3-2{padding:0px 0px 0px 0px;width:100%}
   .index-s3-2-1{font-size:32px}
-  .index-s4>.inner{flex-direction:column}
   .index-s4{padding:60px 20px 60px 20px}
-  .index-s4-1{width:100%}
+  .index-s4>.inner{display:flex;flex-direction:column;gap:20px;min-height:0}
+  .sw-head{position:static;max-width:none;order:0}
   .index-s4-1-2{font-size:32px}
-  .index-s4-2{width:100%;flex-direction:column}
-  .index-s4-2-1{width:100%}
-  .index-s4-2-2{padding:0px 0px 0px 0px;width:100%}
-  .index-s4-2-3{width:100%}
+  .sw-img{position:static;width:100% !important;height:auto;left:auto;top:auto}
+  .sw-a{aspect-ratio:4/3;order:1}
+  .sw-more{position:static;order:2}
+  .sw-b{aspect-ratio:3/4;order:3}
+  .sw-c{aspect-ratio:3/4;order:4}
   .index-s5{padding:60px 20px 60px 20px}
   .index-s5-2{font-size:28px}
   .index-s5-3>.inner{grid-template-columns:repeat(5,1fr);gap:10px 8px}
