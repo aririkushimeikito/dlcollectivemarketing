@@ -134,7 +134,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .index-ftr{background-color:#F4F2EA;padding:70px 34px 50px 34px;display:flex;flex-direction:column;align-items:center}
 .index-ftr-1{display:flex;flex-direction:row;gap:40px 40px;align-items:flex-start}
 .index-ftr-1-1{width:30%;flex:0 0 auto;display:flex;flex-direction:column;gap:16px 16px}
-.index-ftr-1-1-1 img{width:200px;border-radius:10px 10px 10px 10px}
+.index-ftr-1-1-1 img{width:200px;border-radius:0}
 .index-ftr-1-1-2{font-size:12px;line-height:1.6em;font-weight:400;color:#4A4A4A}
 .index-ftr-1-2{width:64%;flex:0 0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:30px 24px}
 .index-ftr-1-2-1{display:flex;flex-direction:column;gap:18px 18px}
@@ -315,7 +315,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .who-we-are-ftr{background-color:#F4F2EA;padding:70px 34px 50px 34px;display:flex;flex-direction:column;align-items:center}
 .who-we-are-ftr-1{display:flex;flex-direction:row;gap:40px 40px;align-items:flex-start}
 .who-we-are-ftr-1-1{width:30%;flex:0 0 auto;display:flex;flex-direction:column;gap:16px 16px}
-.who-we-are-ftr-1-1-1 img{width:200px;border-radius:10px 10px 10px 10px}
+.who-we-are-ftr-1-1-1 img{width:200px;border-radius:0}
 .who-we-are-ftr-1-1-2{font-size:12px;line-height:1.6em;font-weight:400;color:#4A4A4A}
 .who-we-are-ftr-1-2{width:64%;flex:0 0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:30px 24px}
 .who-we-are-ftr-1-2-1{display:flex;flex-direction:column;gap:18px 18px}
@@ -455,7 +455,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .what-we-do-ftr{background-color:#F4F2EA;padding:70px 34px 50px 34px;display:flex;flex-direction:column;align-items:center}
 .what-we-do-ftr-1{display:flex;flex-direction:row;gap:40px 40px;align-items:flex-start}
 .what-we-do-ftr-1-1{width:30%;flex:0 0 auto;display:flex;flex-direction:column;gap:16px 16px}
-.what-we-do-ftr-1-1-1 img{width:200px;border-radius:10px 10px 10px 10px}
+.what-we-do-ftr-1-1-1 img{width:200px;border-radius:0}
 .what-we-do-ftr-1-1-2{font-size:12px;line-height:1.6em;font-weight:400;color:#4A4A4A}
 .what-we-do-ftr-1-2{width:64%;flex:0 0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:30px 24px}
 .what-we-do-ftr-1-2-1{display:flex;flex-direction:column;gap:18px 18px}
@@ -551,7 +551,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .our-work-ftr{background-color:#F4F2EA;padding:70px 34px 50px 34px;display:flex;flex-direction:column;align-items:center}
 .our-work-ftr-1{display:flex;flex-direction:row;gap:40px 40px;align-items:flex-start}
 .our-work-ftr-1-1{width:30%;flex:0 0 auto;display:flex;flex-direction:column;gap:16px 16px}
-.our-work-ftr-1-1-1 img{width:200px;border-radius:10px 10px 10px 10px}
+.our-work-ftr-1-1-1 img{width:200px;border-radius:0}
 .our-work-ftr-1-1-2{font-size:12px;line-height:1.6em;font-weight:400;color:#4A4A4A}
 .our-work-ftr-1-2{width:64%;flex:0 0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:30px 24px}
 .our-work-ftr-1-2-1{display:flex;flex-direction:column;gap:18px 18px}
@@ -687,7 +687,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .our-clients-ftr{background-color:#F4F2EA;padding:70px 34px 50px 34px;display:flex;flex-direction:column;align-items:center}
 .our-clients-ftr-1{display:flex;flex-direction:row;gap:40px 40px;align-items:flex-start}
 .our-clients-ftr-1-1{width:30%;flex:0 0 auto;display:flex;flex-direction:column;gap:16px 16px}
-.our-clients-ftr-1-1-1 img{width:200px;border-radius:10px 10px 10px 10px}
+.our-clients-ftr-1-1-1 img{width:200px;border-radius:0}
 .our-clients-ftr-1-1-2{font-size:12px;line-height:1.6em;font-weight:400;color:#4A4A4A}
 .our-clients-ftr-1-2{width:64%;flex:0 0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:30px 24px}
 .our-clients-ftr-1-2-1{display:flex;flex-direction:column;gap:18px 18px}
@@ -799,7 +799,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .contact-ftr{background-color:#F4F2EA;padding:70px 34px 50px 34px;display:flex;flex-direction:column;align-items:center}
 .contact-ftr-1{display:flex;flex-direction:row;gap:40px 40px;align-items:flex-start}
 .contact-ftr-1-1{width:30%;flex:0 0 auto;display:flex;flex-direction:column;gap:16px 16px}
-.contact-ftr-1-1-1 img{width:200px;border-radius:10px 10px 10px 10px}
+.contact-ftr-1-1-1 img{width:200px;border-radius:0}
 .contact-ftr-1-1-2{font-size:12px;line-height:1.6em;font-weight:400;color:#4A4A4A}
 .contact-ftr-1-2{width:64%;flex:0 0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:30px 24px}
 .contact-ftr-1-2-1{display:flex;flex-direction:column;gap:18px 18px}
@@ -879,7 +879,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .careers-ftr{background-color:#F4F2EA;padding:70px 34px 50px 34px;display:flex;flex-direction:column;align-items:center}
 .careers-ftr-1{display:flex;flex-direction:row;gap:40px 40px;align-items:flex-start}
 .careers-ftr-1-1{width:30%;flex:0 0 auto;display:flex;flex-direction:column;gap:16px 16px}
-.careers-ftr-1-1-1 img{width:200px;border-radius:10px 10px 10px 10px}
+.careers-ftr-1-1-1 img{width:200px;border-radius:0}
 .careers-ftr-1-1-2{font-size:12px;line-height:1.6em;font-weight:400;color:#4A4A4A}
 .careers-ftr-1-2{width:64%;flex:0 0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:30px 24px}
 .careers-ftr-1-2-1{display:flex;flex-direction:column;gap:18px 18px}
