@@ -945,7 +945,7 @@ body:not(.page-index) main>section:first-child{padding-top:110px !important}
    Header CTAs — Let's Talk + Work With Us (desktop), and inside the
    off-canvas menu (mobile). External links open in a new tab.
    ==================================================================== */
-.dlc-cta{position:fixed;top:20px;right:88px;z-index:100;display:flex;gap:10px;align-items:center}
+.dlc-cta{position:fixed;top:16px;right:88px;z-index:100;display:flex;gap:10px;align-items:center}
 .dlc-cta a{display:inline-block;text-decoration:none;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:11px 20px;border-radius:5px;white-space:nowrap;transition:background .25s,color .25s,border-color .25s}
 .dlc-cta .cta-talk{background:#fff;color:#0E3B24;border:1.5px solid #fff}
 .dlc-cta .cta-talk:hover{background:#0E3B24;color:#fff;border-color:#0E3B24}
@@ -968,9 +968,9 @@ body:not(.page-index):not(.page-who-we-are) .dlc-cta .cta-talk:hover{background:
    Sticky shrink-on-scroll header: fixed bar, transparent at top; on
    scroll it gains a white background and the logo shrinks to 50px.
    ==================================================================== */
-.dlc-header{position:fixed !important;top:0;left:0;right:0;width:100%;transition:background .3s ease,box-shadow .3s ease,padding .3s ease}
+.dlc-header{position:fixed !important;top:0;left:0;right:0;width:100%;min-height:76px;align-items:center;padding-top:0 !important;padding-bottom:0 !important;transition:background .3s ease,box-shadow .3s ease}
 .dlc-header [class*="hdr-2"] img{transition:width .3s ease}
-body.scrolled .dlc-header{background:#fff;box-shadow:0 2px 14px rgba(0,0,0,.09);padding-top:8px;padding-bottom:8px}
+body.scrolled .dlc-header{background:#fff;box-shadow:0 2px 14px rgba(0,0,0,.09)}
 body.scrolled .dlc-header [class*="hdr-2"] img{width:115px !important}
 /* On scroll the bar is white, so force dark controls everywhere */
 body.scrolled .dlc-burger span{background:#1A1A18}
