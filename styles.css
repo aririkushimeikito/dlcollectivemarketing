@@ -44,7 +44,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .dlc-burger.on-light span{background:#1A1A18}
 .dlc-menu{position:fixed;top:0;left:0;height:100vh;width:340px;max-width:85vw;background:#0E3B24;z-index:200;transform:translateX(-100%);transition:transform .35s ease;padding:40px 48px;box-sizing:border-box}
 .dlc-menu.open{transform:translateX(0)}
-.dlc-menu img{width:120px;height:auto;margin-bottom:34px}
+.dlc-menu img{width:150px;height:auto;margin-bottom:34px}
 .dlc-menu a{display:block;color:#fff;text-decoration:none;font-size:30px;font-weight:500;font-style:italic;margin:0 0 20px;letter-spacing:.3px}
 .dlc-menu a.current,.dlc-menu a:hover{color:#B6F11B}
 .dlc-menu .dlc-close{position:absolute;top:22px;right:22px;color:#fff;font-size:30px;cursor:pointer;background:none;border:0}
@@ -60,7 +60,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 
 /* ==== Home ==== */
 .index-hdr{padding:22px 34px 0px 34px;position:absolute;left:0px;top:0px;z-index:20;display:flex;flex-direction:row;justify-content:flex-start;align-items:center}
-.index-hdr-2 img{width:72px}
+.index-hdr-2 img{width:200px}
 .index-hdr-2{background:#FFFFFF;padding:6px 8px 6px 8px;border-radius:12px 12px 12px 12px}
 .index-social{position:fixed;right:22px;top:300px;z-index:50;display:flex;flex-direction:column;gap:22px 22px;align-items:center}
 .index-social-1{color:#FFFFFF;font-size:22px}
@@ -187,7 +187,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 
 /* ==== Who We Are ==== */
 .who-we-are-hdr{padding:22px 34px 0px 34px;position:absolute;left:0px;top:0px;z-index:20;display:flex;flex-direction:row;justify-content:flex-start;align-items:center}
-.who-we-are-hdr-2 img{width:72px}
+.who-we-are-hdr-2 img{width:200px}
 .who-we-are-hdr-2{background:#FFFFFF;padding:6px 8px 6px 8px;border-radius:12px 12px 12px 12px}
 .who-we-are-social{position:fixed;right:22px;top:300px;z-index:50;display:flex;flex-direction:column;gap:22px 22px;align-items:center}
 .who-we-are-social-1{color:#FFFFFF;font-size:22px}
@@ -368,7 +368,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 
 /* ==== What We Do ==== */
 .what-we-do-hdr{padding:22px 34px 0px 34px;position:absolute;left:0px;top:0px;z-index:20;display:flex;flex-direction:row;justify-content:flex-start;align-items:center}
-.what-we-do-hdr-2 img{width:72px}
+.what-we-do-hdr-2 img{width:200px}
 .what-we-do-hdr-2{background:#FFFFFF;padding:6px 8px 6px 8px;border-radius:12px 12px 12px 12px}
 .what-we-do-social{position:fixed;right:22px;top:300px;z-index:50;display:flex;flex-direction:column;gap:22px 22px;align-items:center}
 .what-we-do-social-1{color:#0E3B24;font-size:22px}
@@ -498,7 +498,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 
 /* ==== Our Work ==== */
 .our-work-hdr{padding:22px 34px 0px 34px;position:absolute;left:0px;top:0px;z-index:20;display:flex;flex-direction:row;justify-content:flex-start;align-items:center}
-.our-work-hdr-2 img{width:72px}
+.our-work-hdr-2 img{width:200px}
 .our-work-hdr-2{background:#FFFFFF;padding:6px 8px 6px 8px;border-radius:12px 12px 12px 12px}
 .our-work-social{position:fixed;right:22px;top:300px;z-index:50;display:flex;flex-direction:column;gap:22px 22px;align-items:center}
 .our-work-social-1{color:#0E3B24;font-size:22px}
@@ -592,7 +592,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 
 /* ==== Our Clients ==== */
 .our-clients-hdr{padding:22px 34px 0px 34px;position:absolute;left:0px;top:0px;z-index:20;display:flex;flex-direction:row;justify-content:flex-start;align-items:center}
-.our-clients-hdr-2 img{width:72px}
+.our-clients-hdr-2 img{width:200px}
 .our-clients-hdr-2{background:#FFFFFF;padding:6px 8px 6px 8px;border-radius:12px 12px 12px 12px}
 .our-clients-social{position:fixed;right:22px;top:300px;z-index:50;display:flex;flex-direction:column;gap:22px 22px;align-items:center}
 .our-clients-social-1{color:#0E3B24;font-size:22px}
@@ -730,7 +730,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 
 /* ==== Contact ==== */
 .contact-hdr{padding:22px 34px 0px 34px;position:absolute;left:0px;top:0px;z-index:20;display:flex;flex-direction:row;justify-content:flex-start;align-items:center}
-.contact-hdr-2 img{width:72px}
+.contact-hdr-2 img{width:200px}
 .contact-hdr-2{background:#FFFFFF;padding:6px 8px 6px 8px;border-radius:12px 12px 12px 12px}
 .contact-social{position:fixed;right:22px;top:300px;z-index:50;display:flex;flex-direction:column;gap:22px 22px;align-items:center}
 .contact-social-1{color:#0E3B24;font-size:22px}
@@ -855,7 +855,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 
 /* ==== Careers ==== */
 .careers-hdr{padding:22px 34px 0px 34px;position:absolute;left:0px;top:0px;z-index:20;display:flex;flex-direction:row;justify-content:flex-start;align-items:center}
-.careers-hdr-2 img{width:72px}
+.careers-hdr-2 img{width:200px}
 .careers-hdr-2{background:#FFFFFF;padding:6px 8px 6px 8px;border-radius:12px 12px 12px 12px}
 .careers-social{position:fixed;right:22px;top:300px;z-index:50;display:flex;flex-direction:column;gap:22px 22px;align-items:center}
 .careers-social-1{color:#0E3B24;font-size:22px}
@@ -919,9 +919,9 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
    logo floats over a transparent header; inner first-sections get enough
    top clearance so the logo never overlaps their content. */
 body:not(.page-index):not(.page-who-we-are) .dlc-burger span{background:#1A1A18}
-body:not(.page-index) main>section:first-child{padding-top:110px !important}
+body:not(.page-index) main>section:first-child{padding-top:185px !important}
 @media(max-width:767px){
-  body:not(.page-index) main>section:first-child{padding-top:100px !important}
+  body:not(.page-index) main>section:first-child{padding-top:150px !important}
 }
 
 /* ====================================================================
@@ -968,7 +968,7 @@ body:not(.page-index):not(.page-who-we-are) .dlc-cta .cta-talk:hover{background:
    Sticky shrink-on-scroll header: fixed bar, transparent at top; on
    scroll it gains a white background and the logo shrinks to 50px.
    ==================================================================== */
-.dlc-header{position:fixed !important;top:0;left:0;right:0;width:100%;min-height:76px;align-items:center;padding-top:0 !important;padding-bottom:0 !important;transition:background .3s ease,box-shadow .3s ease}
+.dlc-header{position:fixed !important;top:0;left:0;right:0;width:100%;min-height:165px;align-items:center;padding-top:0 !important;padding-bottom:0 !important;transition:background .3s ease,box-shadow .3s ease}
 .dlc-header [class*="hdr-2"] img{transition:width .3s ease}
 /* header stays transparent on scroll (no white bar, no logo shrink) */
 /* On scroll the bar is white, so force dark controls everywhere */
@@ -1028,3 +1028,9 @@ body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-light{display:inline-b
 .index-s1::before{z-index:1;background:rgba(0,0,0,.5) !important}
 .index-s1 .index-s1-2,.index-s1 .index-s1-3{z-index:2}
 .index-s1 .index-s1-2{text-shadow:0 2px 20px rgba(0,0,0,.5)}
+
+/* Header logo sizing on small screens (keep the 200px mark from dominating phones) */
+@media(max-width:767px){
+  .dlc-header{min-height:120px}
+  .dlc-header [class*="hdr-2"] img{width:140px !important}
+}
