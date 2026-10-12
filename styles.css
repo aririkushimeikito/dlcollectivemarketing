@@ -1059,3 +1059,14 @@ body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-light{display:inline-b
 .index-social .icon:nth-child(2){animation-delay:.4s}
 .index-social .icon:nth-child(3){animation-delay:.55s}
 .index-social .icon:nth-child(4){animation-delay:.7s}
+
+/* ====================================================================
+   Mobile: full-width off-canvas menu + right-side social icon column
+   ==================================================================== */
+.dlc-menu-social{display:none}
+@media(max-width:767px){
+  .dlc-menu{width:100vw;max-width:none}
+  .dlc-menu .dlc-menu-social{display:flex;flex-direction:column;gap:30px;position:absolute;right:26px;top:50%;transform:translateY(-50%);margin:0}
+  .dlc-menu .dlc-menu-social a{display:inline-flex;align-items:center;justify-content:center;margin:0;padding:0;background:none;width:auto}
+  .dlc-menu .dlc-menu-social svg{width:24px;height:24px}
+}
