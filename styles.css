@@ -970,8 +970,7 @@ body:not(.page-index):not(.page-who-we-are) .dlc-cta .cta-talk:hover{background:
    ==================================================================== */
 .dlc-header{position:fixed !important;top:0;left:0;right:0;width:100%;min-height:76px;align-items:center;padding-top:0 !important;padding-bottom:0 !important;transition:background .3s ease,box-shadow .3s ease}
 .dlc-header [class*="hdr-2"] img{transition:width .3s ease}
-body.scrolled .dlc-header{background:#fff;box-shadow:0 2px 14px rgba(0,0,0,.09)}
-body.scrolled .dlc-header [class*="hdr-2"] img{width:52px !important}
+/* header stays transparent on scroll (no white bar, no logo shrink) */
 /* On scroll the bar is white, so force dark controls everywhere */
 body.scrolled .dlc-burger span{background:#1A1A18}
 body.scrolled .dlc-cta .cta-talk{background:transparent;color:#0E3B24;border-color:#0E3B24}
@@ -991,7 +990,7 @@ body.scrolled .dlc-cta .cta-work{background:#0E3B24;color:#fff;border-color:#0E3
    the black logo on a white chip so it stays visible on dark green.
    ==================================================================== */
 .dlc-header [class*="hdr-2"]{background:transparent !important;padding:0 !important;border-radius:0 !important}
-.dlc-menu img{background:#fff !important;padding:12px 16px !important;border-radius:14px}
+.dlc-menu img{background:transparent !important;padding:0 !important}
 /* header: show black (dark) logo by default; white logo on the dark hero headers */
 .dlc-logo-light{display:none}
 body.page-index:not(.scrolled) .dlc-header .dlc-logo-dark,
