@@ -999,33 +999,18 @@ body.page-index:not(.scrolled) .dlc-header .dlc-logo-light,
 body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-light{display:inline-block}
 
 /* ====================================================================
-   Featured In — white logos scattered over the photo (no cards),
-   reference-style layout. Centered heading with logos around it.
+   Featured In — white logos in one row below the title, over the photo.
    ==================================================================== */
-.index-s5.fi-sec{min-height:92vh;padding:40px 24px;justify-content:center}
+.index-s5.fi-sec{min-height:auto;padding:96px 24px;justify-content:center}
 .index-s5.fi-sec::before{background:rgba(9,38,21,.62)}
-.fi-wrap{position:relative;width:100%;max-width:1280px;min-height:620px;margin:0 auto}
-.fi-head{position:absolute;left:50%;top:40%;transform:translate(-50%,-50%);text-align:center;width:92%;z-index:2}
+.fi-wrap{position:static;width:100%;max-width:1280px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:52px}
+.fi-head{text-align:center;width:100%}
 .fi-eyebrow{color:#B6F11B;font-size:14px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;margin:0 0 14px}
 .fi-title{color:#fff;font-size:54px;font-weight:600;line-height:1.05;letter-spacing:-.01em;margin:0}
-.fi-logo{position:absolute;height:auto;object-fit:contain;opacity:.95;z-index:1}
-.fi-a{width:200px;left:16%;top:15%}
-.fi-b{width:168px;right:16%;top:15%}
-.fi-c{width:170px;left:7%;top:60%}
-.fi-d{width:140px;right:9%;top:60%}
-.fi-e{width:240px;left:50%;top:86%;transform:translateX(-50%)}
-@media(max-width:1100px){
-  .fi-a{width:160px;left:10%;top:13%}.fi-b{width:140px;right:10%;top:13%}
-  .fi-c{width:140px;left:5%;top:62%}.fi-d{width:120px;right:6%;top:62%}
-  .fi-e{width:190px;top:87%}.fi-title{font-size:40px}
-}
-@media(max-width:860px){
-  .index-s5.fi-sec{min-height:auto;padding:64px 20px}
-  .fi-wrap{min-height:auto;display:flex;flex-direction:column;align-items:center;gap:34px}
-  .fi-head{position:static;transform:none;width:auto}
-  .fi-title{font-size:28px}
-  .fi-logo{position:static;transform:none !important;width:160px !important;opacity:.95}
-}
+.fi-row{display:flex;align-items:center;justify-content:space-between;gap:40px;width:100%;flex-wrap:nowrap}
+.fi-logo{height:auto;width:auto;max-height:58px;max-width:19%;object-fit:contain;opacity:.95;flex:0 1 auto}
+@media(max-width:1100px){.fi-title{font-size:40px}.fi-row{gap:24px}.fi-logo{max-height:46px}}
+@media(max-width:700px){.fi-title{font-size:26px}.index-s5.fi-sec{padding:64px 16px}.fi-row{gap:12px}.fi-logo{max-height:30px}}
 
 .dlc-logo-trigger{cursor:pointer}
 .dlc-logo-trigger:hover{opacity:.85}
