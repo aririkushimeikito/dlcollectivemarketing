@@ -1027,3 +1027,6 @@ body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-light{display:inline-b
   .fi-title{font-size:28px}
   .fi-logo{position:static;transform:none !important;width:160px !important;opacity:.95}
 }
+
+.dlc-logo-trigger{cursor:pointer}
+.dlc-logo-trigger:hover{opacity:.85}
