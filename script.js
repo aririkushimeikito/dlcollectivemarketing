@@ -28,3 +28,16 @@
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 })();
+
+// Hero image slideshow (auto-advancing)
+(function () {
+  var track = document.querySelector('.hero-track');
+  if (!track) return;
+  var n = track.children.length;
+  if (n < 2) return;
+  var i = 0, step = 100 / n;
+  setInterval(function () {
+    i = (i + 1) % n;
+    track.style.transform = 'translateX(-' + (i * step) + '%)';
+  }, 4500);
+})();
