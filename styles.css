@@ -1036,6 +1036,6 @@ body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-light{display:inline-b
 }
 
 /* Forbes wordmark is wide — cap it so it matches the other logos */
-.fi-logo.fi-forbes{max-width:130px}
+.fi-logo.fi-forbes{max-width:140px}
 @media(max-width:1100px){.fi-logo.fi-forbes{max-width:110px}}
 @media(max-width:700px){.fi-logo.fi-forbes{max-width:90px}}
