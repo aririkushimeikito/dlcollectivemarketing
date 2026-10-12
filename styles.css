@@ -1027,9 +1027,9 @@ body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-light{display:inline-b
 .index-s1 .hero-slider{position:absolute;inset:0;overflow:hidden;z-index:0}
 .hero-track{display:flex;width:500%;height:100%;transition:transform 1s cubic-bezier(.65,0,.35,1)}
 .hero-slide{flex:0 0 20%;width:20%;height:100%;background-size:cover;background-position:center;background-repeat:no-repeat}
-.index-s1::before{z-index:1;background:rgba(0,0,0,.5) !important}
+.index-s1::before{z-index:1;background:rgba(0,0,0,.3) !important}
 .index-s1 .index-s1-2,.index-s1 .index-s1-3{z-index:2}
-.index-s1 .index-s1-2{text-shadow:0 2px 20px rgba(0,0,0,.5)}
+.index-s1 .index-s1-2{text-shadow:none}
 
 /* Header logo sizing on small screens (keep the 200px mark from dominating phones) */
 @media(max-width:767px){
