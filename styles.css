@@ -984,3 +984,13 @@ body.scrolled .dlc-cta .cta-work{background:#0E3B24;color:#fff;border-color:#0E3
 @media(min-width:1025px){
   .index-s1{background-size:cover !important;aspect-ratio:2500/1406;min-height:0 !important}
 }
+
+/* ====================================================================
+   Monochrome logo — solid black on transparent (no white box);
+   inverted to white on dark backgrounds (off-canvas menu, and the
+   home/meet-us hero headers at the top of the page before scroll).
+   ==================================================================== */
+.dlc-header [class*="hdr-2"]{background:transparent !important;padding:0 !important;border-radius:0 !important}
+.dlc-menu img{background:transparent !important;padding:0 !important;filter:invert(1)}
+body.page-index:not(.scrolled) .dlc-header [class*="hdr-2"] img,
+body.page-who-we-are:not(.scrolled) .dlc-header [class*="hdr-2"] img{filter:invert(1)}
