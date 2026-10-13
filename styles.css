@@ -1103,3 +1103,6 @@ body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-light{display:inline-b
   .pe-section-title{font-size:26px;margin:44px 0 28px}
 }
 @media(max-width:540px){.pe-grid,.pe-grid.ve-grid{grid-template-columns:repeat(1,1fr)}}
+
+/* Unify floating social icons sitewide (same design as Home; color via per-page rule: white on dark hero, green on light) */
+.dlc-side-social svg{width:16px;height:16px}
