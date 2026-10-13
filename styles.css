@@ -1066,8 +1066,10 @@ body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-light{display:inline-b
 .dlc-menu-social{display:none}
 @media(max-width:767px){
   .dlc-menu{width:100vw;max-width:none}
-  .dlc-menu .dlc-menu-social{display:none}
-  /* when the menu is open, hide the floating social icons */
+  .dlc-menu .dlc-menu-social{display:flex;flex-direction:column;gap:30px;position:absolute;right:26px;top:50%;transform:translateY(-50%);margin:0}
+  .dlc-menu .dlc-menu-social a{display:inline-flex;align-items:center;justify-content:center;margin:0;padding:0;background:none;width:auto}
+  .dlc-menu .dlc-menu-social svg{width:26px;height:26px}
+  /* while the menu is open, hide the floating icons so only the in-menu column shows */
   body.menu-open .dlc-side-social{display:none !important}
   .dlc-menu .dlc-menu-social a{display:inline-flex;align-items:center;justify-content:center;margin:0;padding:0;background:none;width:auto}
   .dlc-menu .dlc-menu-social svg{width:24px;height:24px}
