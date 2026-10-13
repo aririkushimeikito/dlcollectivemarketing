@@ -6,8 +6,8 @@
   var burger = document.querySelector('.dlc-burger');
   var close = document.querySelector('.dlc-close');
   if (!menu) return;
-  function open() { menu.classList.add('open'); backdrop.classList.add('open'); menu.setAttribute('aria-hidden', 'false'); }
-  function shut() { menu.classList.remove('open'); backdrop.classList.remove('open'); menu.setAttribute('aria-hidden', 'true'); }
+  function open() { menu.classList.add('open'); backdrop.classList.add('open'); document.body.classList.add('menu-open'); menu.setAttribute('aria-hidden', 'false'); }
+  function shut() { menu.classList.remove('open'); backdrop.classList.remove('open'); document.body.classList.remove('menu-open'); menu.setAttribute('aria-hidden', 'true'); }
   // the logo opens the off-canvas navigation
   if (trigger) trigger.addEventListener('click', function (e) { e.preventDefault(); open(); });
   if (burger) burger.addEventListener('click', open);
