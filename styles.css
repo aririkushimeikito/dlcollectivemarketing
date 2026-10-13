@@ -198,7 +198,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .who-we-are-social-4{color:#FFFFFF;font-size:22px}
 .who-we-are-s1::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.45);border-radius:inherit}
 .who-we-are-s1>*{position:relative}
-.who-we-are-s1{background:url(media/images/client-allycar-cadillac.png) center center/cover no-repeat;padding:140px 100px 80px 100px;min-height:100vh;position:relative;display:flex;flex-direction:column;gap:10px 10px;justify-content:flex-end}
+.who-we-are-s1{background:url(media/images/about-hero.jpg) center center/cover no-repeat;padding:140px 100px 80px 100px;min-height:100vh;position:relative;display:flex;flex-direction:column;gap:10px 10px;justify-content:flex-end}
 .who-we-are-s1-1{font-size:12px;line-height:1.15em;letter-spacing:2px;font-weight:700;text-transform:uppercase;color:#FFFFFF}
 .who-we-are-s1-2{font-size:13px;line-height:1.15em;font-weight:500;color:#B6F11B}
 .who-we-are-s1-3{font-size:38px;line-height:1.15em;font-weight:500;font-style:italic;color:#FFFFFF}
