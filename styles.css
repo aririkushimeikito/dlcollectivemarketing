@@ -1126,3 +1126,9 @@ body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-light{display:inline-b
   .dlc-side-social{display:flex !important;position:fixed;right:12px;top:50%;bottom:auto;transform:translateY(-50%);z-index:60;gap:20px;align-items:center}
   .dlc-side-social svg{width:26px;height:26px;filter:drop-shadow(0 1px 3px rgba(0,0,0,.45))}
 }
+
+/* Services cards: full dark overlay + centered label on hover (reference style) */
+.what-we-do-s2 .dlc-tile{border-radius:16px;overflow:hidden}
+.what-we-do-s2 .dlc-cap{position:absolute;inset:0;top:0;right:0;bottom:0;left:0;background:rgba(14,59,36,.84);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;gap:6px}
+.what-we-do-s2 .dlc-cap h3{font-size:28px;line-height:1.15;font-weight:500;color:#fff;margin:0}
+.what-we-do-s2 .dlc-cap .text{font-size:13px;line-height:1.55;color:#fff;opacity:.9;max-width:260px}
