@@ -1133,3 +1133,8 @@ body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-light{display:inline-b
 .what-we-do-s2 .dlc-cap{position:absolute;inset:0;top:0;right:0;bottom:0;left:0;background:rgba(14,59,36,.84);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;gap:6px}
 .what-we-do-s2 .dlc-cap h3{font-size:28px;line-height:1.15;font-weight:500;color:#fff;margin:0}
 .what-we-do-s2 .dlc-cap .text{font-size:13px;line-height:1.55;color:#fff;opacity:.9;max-width:260px}
+
+/* Home hero: centered DL Collective logo lockup */
+.index-s1 .index-hero-logo{display:flex;justify-content:center;align-items:center;width:100%;max-width:none;margin:0;padding:0 24px;box-sizing:border-box}
+.index-s1 .index-hero-logo img{width:min(560px,70vw);height:auto;display:block;filter:drop-shadow(0 4px 24px rgba(0,0,0,.35))}
+@media(max-width:767px){.index-s1 .index-hero-logo img{width:min(420px,82vw)}}
