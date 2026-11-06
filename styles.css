@@ -266,8 +266,8 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .who-we-are-s3-2-6-3{font-size:13px;line-height:1.7em;font-weight:400;color:#1A1A18;text-align:center}
 .who-we-are-s4{display:flex;flex-direction:row;align-items:stretch}
 .who-we-are-s4-1{background:url(media/images/how-we-work.jpg) center center/cover no-repeat;min-height:760px;width:48%;flex:0 0 auto;display:flex;flex-direction:column}
-.who-we-are-s4-2{background-color:#0E3B24;padding:90px 60px 90px 60px;width:52%;flex:0 0 auto;display:flex;flex-direction:column;gap:16px 16px;justify-content:center}
-.who-we-are-s4-2-1{font-size:44px;line-height:1.15em;font-weight:600;color:#FFFFFF}
+.who-we-are-s4-2{background-color:#0a0a0a;padding:90px 60px 90px 60px;width:52%;flex:0 0 auto;display:flex;flex-direction:column;gap:16px 16px;justify-content:center}
+.who-we-are-s4-2-1{font-family:'Delight','Montserrat',sans-serif;font-size:48px;line-height:1.1em;font-weight:700;letter-spacing:-.01em;text-transform:lowercase;color:#FFFFFF}
 .who-we-are-s4-2-2{font-size:15px;line-height:1.7em;font-weight:400;color:#DCE8DF}
 .who-we-are-s4-2-3{font-size:13px;line-height:1.4em;letter-spacing:1.5px;font-weight:700;text-transform:uppercase;color:#FFFFFF}
 .who-we-are-s4-2-3 li{margin-bottom:0px}
@@ -1186,3 +1186,8 @@ body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-light{display:inline-b
 .svc-photo.svc-tall{aspect-ratio:4/5}
 .svc-photo img{width:100%;height:100%;object-fit:cover;display:block}
 @media(max-width:767px){.svc-gallery{grid-template-columns:1fr;gap:18px}.svc-col{gap:18px}.svc-sparkle{width:52px;top:-54px}.what-we-do-s1-1-1{font-size:40px}}
+
+/* How We Work steps: indented labels, green dot only on active step */
+.who-we-are-s4-2-3,.who-we-are-s4-2-5,.who-we-are-s4-2-7,.who-we-are-s4-2-9{padding-left:30px}
+.who-we-are-s4-2-7 li{position:relative}
+.who-we-are-s4-2-7 svg{position:absolute;left:-30px;top:50%;transform:translateY(-50%)}
