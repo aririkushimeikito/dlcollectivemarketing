@@ -1156,3 +1156,15 @@ body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-light{display:inline-b
 .index-s1 .index-hero-logo{display:flex;justify-content:center;align-items:center;width:100%;max-width:none;margin:0;padding:0 24px;box-sizing:border-box}
 .index-s1 .index-hero-logo img{width:min(560px,70vw);height:auto;display:block;filter:drop-shadow(0 4px 24px rgba(0,0,0,.35))}
 @media(max-width:767px){.index-s1 .index-hero-logo img{width:min(420px,82vw)}}
+
+/* ====================================================================
+   Footer — dark theme (black bg, white logo + text) sitewide
+   ==================================================================== */
+.dlc-footer{background:#0a0a0a !important}
+.dlc-footer h4{color:#ffffff !important}
+.dlc-footer .text{color:#b4b4b4 !important}
+.dlc-footer a{color:#e8e8e8 !important;transition:color .2s}
+.dlc-footer a:hover{color:#ffffff !important}
+.dlc-footer li{color:#e8e8e8 !important}
+.dlc-footer .list a,.dlc-footer .list li{text-transform:uppercase;letter-spacing:.6px}
+.dlc-footer [class*="-ftr-1-1-1"] img{width:230px;max-width:60vw}
