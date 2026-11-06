@@ -33,7 +33,15 @@
 (function () {
   var track = document.querySelector('.hero-track');
   if (!track) return;
-  var n = track.children.length;
+  var slides = track.children;
+  var n = slides.length;
+  if (n < 1) return;
+  // size the track + slides to the number of slides so it works for any count
+  track.style.width = (n * 100) + '%';
+  for (var k = 0; k < n; k++) {
+    slides[k].style.flex = '0 0 ' + (100 / n) + '%';
+    slides[k].style.width = (100 / n) + '%';
+  }
   if (n < 2) return;
   var i = 0, step = 100 / n;
   setInterval(function () {
