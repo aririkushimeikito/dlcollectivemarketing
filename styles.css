@@ -308,7 +308,12 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .who-we-are-s5-4 a:hover{background:rgba(0,0,0,0);color:#FFFFFF}
 .who-we-are-s5-4{text-align:center}
 .who-we-are-s6>.inner{max-width:1180px;width:100%;min-height:inherit;position:relative;display:flex;flex-direction:column;gap:34px 34px;align-items:center}
-.who-we-are-s6{background-color:#FFFFFF;padding:100px 34px 100px 34px;display:flex;flex-direction:column;align-items:center}
+.who-we-are-s6{background:url(media/images/orlando-bg.jpg) center center/cover no-repeat;background-color:#0a0a0a;padding:100px 34px 100px 34px;display:flex;flex-direction:column;align-items:center;position:relative}
+.who-we-are-s6::before{content:"";position:absolute;inset:0;background:rgba(8,10,12,.52);z-index:0;pointer-events:none}
+.who-we-are-s6>.inner{position:relative;z-index:1}
+.who-we-are-s6-1{color:#FFFFFF}
+.who-we-are-s6-2{color:#D8DCDE}
+.who-we-are-s6-3-1-2,.who-we-are-s6-3-2-2,.who-we-are-s6-3-3-2,.who-we-are-s6-3-4-2,.who-we-are-s6-3-5-2{color:#FFFFFF}
 .who-we-are-s6-1{font-size:44px;line-height:1.15em;font-weight:600;color:#1A1A18;text-align:center}
 .who-we-are-s6-2{font-size:14px;line-height:1.8em;font-weight:400;color:#4A4A4A;text-align:center}
 .who-we-are-s6-3>.inner{max-width:820px;width:100%;min-height:inherit;position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:36px 30px}
@@ -1204,3 +1209,8 @@ body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-light{display:inline-b
 
 /* Location sketch icons */
 .who-we-are-s6-3 .icon img{height:78px;width:auto;display:block;margin:0 auto}
+
+/* Orlando section on dark glass bg — white text (placed last to win) */
+.who-we-are-s6-1{color:#FFFFFF}
+.who-we-are-s6-2{color:#D8DCDE}
+.who-we-are-s6-3-1-2,.who-we-are-s6-3-2-2,.who-we-are-s6-3-3-2,.who-we-are-s6-3-4-2,.who-we-are-s6-3-5-2{color:#FFFFFF}
