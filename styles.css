@@ -1191,3 +1191,13 @@ body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-light{display:inline-b
 .who-we-are-s4-2-3,.who-we-are-s4-2-5,.who-we-are-s4-2-7,.who-we-are-s4-2-9{padding-left:30px}
 .who-we-are-s4-2-7 li{position:relative}
 .who-we-are-s4-2-7 svg{position:absolute;left:-30px;top:50%;transform:translateY(-50%)}
+
+/* Testimonials — replicate reference: centered cards, color-coded, SHOW MORE, monogram */
+.who-we-are-s5-2{text-transform:lowercase}
+.who-we-are-s5-3-1,.who-we-are-s5-3-2,.who-we-are-s5-3-3{text-align:center}
+.who-we-are-s5 .qm{font-size:26px;line-height:0;font-weight:700;vertical-align:-3px}
+.who-we-are-s5-3-1-2{color:#2E9BD6}
+.who-we-are-s5-3-2-2{color:#7CB342}
+.who-we-are-s5-3-3-2{color:#E0479E}
+.pb-mono{font-family:'Mr Bedfort',cursive;font-size:32px;line-height:1;color:#1A1A18;text-align:center;margin-top:2px}
+.who-we-are-s5-4 a{color:#FFFFFF;text-transform:uppercase;letter-spacing:2px;font-size:13px;font-weight:700;text-decoration:none}
