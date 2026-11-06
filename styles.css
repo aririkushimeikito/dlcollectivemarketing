@@ -1201,3 +1201,6 @@ body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-light{display:inline-b
 .who-we-are-s5-3-3-2{color:#E0479E}
 .pb-mono{font-family:'Mr Bedfort',cursive;font-size:32px;line-height:1;color:#1A1A18;text-align:center;margin-top:2px}
 .who-we-are-s5-4 a{color:#FFFFFF;text-transform:uppercase;letter-spacing:2px;font-size:13px;font-weight:700;text-decoration:none}
+
+/* Location sketch icons */
+.who-we-are-s6-3 .icon img{height:78px;width:auto;display:block;margin:0 auto}
