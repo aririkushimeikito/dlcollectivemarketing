@@ -1297,7 +1297,8 @@ html{scroll-behavior:smooth}
 @media(max-width:767px){.ct-row,.ct-rev{width:100%;flex-direction:column;gap:14px;text-align:center;align-items:center;margin:0 0 40px}.ct-img{flex:1 1 auto;max-width:280px}}
 
 /* ===== Content Creation service page ===== */
-.cc-sec{background:#F7F5EF;padding:118px 40px 80px;display:flex;justify-content:center}
+body.page-content-creation{background:#FAF7F2}
+.cc-sec{background:#FAF7F2;padding:118px 40px 80px;display:flex;justify-content:center}
 .cc-sec>.inner{max-width:1240px;width:100%}
 .cc-back{display:inline-flex;align-items:center;gap:12px;color:#FE5E1C;font-size:13px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;text-decoration:none;margin-bottom:36px}
 .cc-arrow{font-size:17px;line-height:1}
