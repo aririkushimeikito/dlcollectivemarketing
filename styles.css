@@ -1234,3 +1234,6 @@ body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-light{display:inline-b
 .pf-cap h3{font-size:clamp(19px,2vw,25px);font-weight:700;margin:0 0 4px;color:#fff;letter-spacing:-.01em}
 .pf-cap p{font-size:13px;margin:0;color:#fff;opacity:.92}
 @media(max-width:767px){.pf-card{width:100%;align-self:auto}.our-work-s2{padding:10px 18px 60px}}
+
+/* Portfolio page background to match body */
+.our-work-s1,.our-work-s2{background:#F9F7F1}
