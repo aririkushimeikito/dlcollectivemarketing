@@ -1319,3 +1319,7 @@ body.page-content-creation{background:#FAF7F2}
 .cc-list li{position:relative;padding-left:20px;font-size:15px;line-height:1.5;color:#333;margin-bottom:11px}
 .cc-list li::before{content:"";position:absolute;left:4px;top:9px;width:4px;height:4px;border-radius:50%;background:#333}
 @media(max-width:900px){.cc-top{flex-direction:column;gap:36px}.cc-top-r{flex:1 1 auto;max-width:100%;width:100%}.cc-lists{flex-direction:column;gap:0}.cc-list li:last-child{margin-bottom:11px}}
+/* Scroll-reveal entrance animations */
+html.anim-on .anim-item{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.22,.61,.36,1),transform .7s cubic-bezier(.22,.61,.36,1);will-change:opacity,transform}
+html.anim-on .anim-item.anim-in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html.anim-on .anim-item{opacity:1 !important;transform:none !important;transition:none !important}}
