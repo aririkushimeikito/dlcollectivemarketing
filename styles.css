@@ -1262,3 +1262,5 @@ body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-light{display:inline-b
 @media(max-width:767px){.pf-ex-head>.inner{flex-direction:column;gap:24px}.pf-ex-head-1,.pf-ex-head-2{width:100%;padding-top:0}.pf-row,.pf-row-portrait{flex-direction:column;gap:20px;margin-bottom:44px}.pf-row-img,.pf-row-portrait .pf-row-img{flex:1 1 auto;max-width:100%;width:100%}}
 body.page-photo-examples,body.page-video-examples{background:#FFFEF8}
 .pf-ex-divider{background:transparent}
+
+.pf-ex-cat{scroll-margin-top:100px}
