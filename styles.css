@@ -220,7 +220,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .who-we-are-s1-2{font-size:13px;line-height:1.15em;font-weight:500;color:#B6F11B}
 .who-we-are-s1-3{font-family:'Mr Bedfort',cursive;font-size:clamp(34px,3.6vw,50px);line-height:1em;font-weight:400;font-style:normal;color:#FFFFFF}
 .who-we-are-s2>.inner{max-width:1180px;width:100%;min-height:inherit;position:relative;display:flex;flex-direction:column;gap:30px 30px}
-.who-we-are-s2{background-color:#FFFFFF;padding:100px 34px 100px 34px;display:flex;flex-direction:column;align-items:center}
+.who-we-are-s2{background-color:#FFFEF8;padding:100px 34px 100px 34px;display:flex;flex-direction:column;align-items:center}
 .who-we-are-s2-1{font-family:'Delight','Montserrat',sans-serif;font-size:48px;line-height:1.1em;font-weight:500;letter-spacing:-.01em;text-transform:lowercase;color:#1A1A18}
 .who-we-are-s2-2{width:100%;flex:0 0 auto;display:flex;flex-direction:row;gap:30px 0px;align-items:flex-start}
 .who-we-are-s2-2-1{padding:0px 50px 0px 0px;width:52%;flex:0 0 auto;display:flex;flex-direction:column;gap:14px 14px}
