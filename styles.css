@@ -1264,3 +1264,5 @@ body.page-photo-examples,body.page-video-examples{background:#FFFEF8}
 .pf-ex-divider{background:transparent}
 
 .pf-ex-cat{scroll-margin-top:100px}
+
+html{scroll-behavior:smooth}
