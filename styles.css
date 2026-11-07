@@ -886,12 +886,13 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .careers-social-2{color:#0E3B24;font-size:22px}
 .careers-social-3{color:#0E3B24;font-size:22px}
 .careers-social-4{color:#0E3B24;font-size:22px}
-.careers-s1>.inner{max-width:1180px;width:100%;min-height:inherit;position:relative;display:flex;flex-direction:row;gap:30px 0px;align-items:flex-start}
+.careers-s1>.inner{max-width:900px;width:100%;min-height:inherit;position:relative;display:flex;flex-direction:column;gap:30px 0px;align-items:flex-start}
 .careers-s1{background-color:#FFFFFF;padding:130px 34px 110px 34px;display:flex;flex-direction:column;align-items:center}
-.careers-s1-1{padding:0px 60px 0px 0px;width:58%;flex:0 0 auto;display:flex;flex-direction:column;gap:22px 22px}
-.careers-s1-1-1{font-size:46px;line-height:1.15em;font-weight:500;color:#1A1A18}
-.careers-s1-1-2{font-size:14px;line-height:1.8em;font-weight:400;color:#1A1A18}
-.careers-s1-1-3 a{font-size:13px;line-height:1.4em;letter-spacing:1px;font-weight:600;text-transform:uppercase;background:#1A1A18;color:#FFFFFF;padding:14px 28px 14px 28px;border-radius:0px 0px 0px 0px}
+.careers-s1-1{padding:0;width:100%;flex:0 0 auto;display:flex;flex-direction:column;gap:30px 0}
+.careers-s1-1-1{font-size:clamp(40px,5vw,58px);line-height:1.1em;font-weight:500;color:#1A1A18;margin:0}
+.careers-s1-1-2{font-size:15px;line-height:1.75em;font-weight:400;color:#1A1A18;max-width:720px}
+.careers-s1-1-2 p{margin:0 0 22px} .careers-s1-1-2 p:last-child{margin:0}
+.careers-s1-1-3 a{display:inline-block;font-size:13px;line-height:1.4em;letter-spacing:1px;font-weight:600;text-transform:uppercase;background:#1A1A18;color:#FFFFFF;padding:18px 34px;border-radius:0}
 .careers-s1-2{width:42%;flex:0 0 auto;display:flex;flex-direction:column;gap:24px 24px;justify-content:flex-start;align-items:center}
 .careers-s1-2-1 img{width:100%;max-width:380px;height:520px;object-fit:cover;border-radius:14px 14px 14px 14px;margin:0 auto}
 .careers-s1-2-1{text-align:center}
