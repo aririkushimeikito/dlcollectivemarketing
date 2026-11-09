@@ -30,6 +30,9 @@ body main>section.sd-main:first-child{padding:0 !important}
 .sd-doodle-5{left:66.11rem;top:60.61rem;width:11.78rem}
 .sd-doodle-3{left:59.2rem;top:61.41rem;width:17.03rem}
 .sd-card-photo>img{left:0;top:-10.05rem;width:52.8rem;height:70.4rem}
+.sd-pink .sd-back{color:#FF4DAB}
+.sd-doodle-4{left:69.6rem;top:59.33rem;width:6.92rem}
+.sd-card-monstera>img{left:-24.78rem;top:0;width:89.42rem;height:50.3rem}
 .sd-card-laptop>video{left:-2.25rem;top:0;width:57.33rem;height:50.3rem}
 
 @media (max-width:1199px){
