@@ -28,7 +28,7 @@ body main>section.sd-main:first-child{padding:0 !important}
 .sd-card-video>video{position:absolute;left:0;top:-1.25rem;width:52.8rem;height:52.8rem;display:block;object-fit:cover;background:#FEFEFE}
 .sd-red .sd-back{color:#FF2E2E}
 .sd-doodle-5{left:66.11rem;top:60.61rem;width:11.78rem}
-.sd-card-laptop>video{left:-3.91rem;top:0;width:60.61rem;height:50.3rem;filter:brightness(1.052)}
+.sd-card-laptop>video{left:-2.25rem;top:0;width:57.33rem;height:50.3rem}
 
 @media (max-width:1199px){
   .sd-back,.sd-num,.sd-h1,.sd-body,.sd-doodle,.sd-main .sd-card,.sd-divider,.sd-list{position:static;white-space:normal;left:auto;top:auto}
