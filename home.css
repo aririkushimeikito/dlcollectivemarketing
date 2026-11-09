@@ -64,7 +64,7 @@ body.menu-open .hm-social{display:none}
 .hm-who-body p{margin:0 0 2.15rem}
 .hm-who-body p:last-child{margin:0}
 .hm-who .hm-cta{left:12.36rem;top:48.82rem}
-.hm-who .hm-cta-arrow{left:16.36rem;top:-.11rem;width:4.22rem}
+.hm-who .hm-cta-arrow{left:16.64rem;top:-.1rem;width:4.4rem}
 .hm-who-img{position:absolute;left:77.56rem;top:10rem;width:48.52rem;height:56rem;border-radius:1.2rem;overflow:hidden}
 .hm-who-img img{width:100%;height:100%;object-fit:cover}
 .hm-palm{position:absolute;left:60.9rem;top:54.18rem;width:20.01rem;height:auto;pointer-events:none;user-select:none}
@@ -79,7 +79,7 @@ body.menu-open .hm-social{display:none}
 .hm-services a{transition:color .2s}
 .hm-services a:hover{color:#00AAFF}
 .hm-what .hm-cta{left:77.05rem;top:50.92rem}
-.hm-what .hm-cta-arrow{left:11.97rem;top:-.07rem;width:4.22rem}
+.hm-what .hm-cta-arrow{left:11.97rem;top:-.1rem;width:4.4rem}
 
 /* ---- Our work (1440 × 1010, bg #000) ---- */
 .hm-work{position:relative;height:100.91rem;background:#000}
@@ -136,7 +136,7 @@ body.menu-open .hm-social{display:none}
   .hm-h2,.hm-cta,.hm-who-body,.hm-who-img,.hm-palm,.hm-collage,.hm-what-body,.hm-services,.hm-work-head,.hm-eyebrow,.hm-star,.hm-card,.hm-featured-title,.hm-logos img,.hm-footer-logo,.hm-copy,.hm-fcol{position:static}
   .hm-h2{font-size:3.6rem;white-space:normal}
   .hm-cta{display:inline-flex;align-items:center;gap:1.4rem}
-  .hm-cta-arrow{position:static;width:4.2rem !important}
+  .hm-cta-arrow{position:static;width:4.4rem !important}
   /* who we are */
   .hm-who{height:auto;padding:6.4rem 0 7.2rem}
   .hm-who .hm-h2{margin-bottom:2.2rem}
