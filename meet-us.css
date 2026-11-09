@@ -1,0 +1,166 @@
+/* ====================================================================
+   DL Collective — Meet Us page (Figma "meet us" frame, 1440 × 5097)
+   Same scale system as home.css: 1rem = 10px at a 1440px viewport.
+   ==================================================================== */
+.mu-h2{position:absolute;font-size:4.4rem;line-height:1;font-weight:500;letter-spacing:.05em;color:#1A1A18;white-space:nowrap;margin:0}
+.mu-h2-center{left:0;width:100%;text-align:center}
+.mu-h2-white{color:#FFFFFF}
+.mu-h2-bold{font-weight:700;letter-spacing:0}
+.mu-pink{color:#FF4DAB;font-weight:700}
+
+/* ---- Hero (1440 × 900) ---- */
+.mu-hero{position:relative;height:90rem;overflow:hidden;background:#1D0E0A url(media/images/meet/hero-tacos.jpg) no-repeat;background-size:118.47% auto;background-position:-18.57rem -81.06rem}
+.mu-hero-shade{position:absolute;inset:0;background:rgba(0,0,0,.46)}
+.mu-hero .hm-stage{position:absolute;left:50%;top:0;height:100%;margin:0;transform:translateX(-50%)}
+.mu-eyebrow{position:absolute;left:10.1rem;top:68.49rem;font-size:1.2rem;line-height:1;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;white-space:nowrap}
+.mu-sub{position:absolute;left:10.1rem;top:70.9rem;font-size:1.3rem;line-height:1;font-weight:400;letter-spacing:.07em;color:#B6F11B;white-space:nowrap}
+.mu-script{position:absolute;left:10.1rem;top:73.1rem;font-family:'Mr Bedfort',cursive;font-size:4.5rem;line-height:4.36rem;font-weight:400;color:#FFFFFF;white-space:nowrap;margin:0}
+
+/* ---- Meet the founders (1440 × 925.3, #FCF3EC) ---- */
+.mu-founders{position:relative;height:92.53rem;background:#FCF3EC}
+.mu-founders .mu-h2{left:12.4rem;top:10.38rem;color:#000}
+.mu-img-a{position:absolute;left:12.36rem;top:18.06rem;width:57.01rem;height:24rem;border-radius:1.2rem;overflow:hidden}
+.mu-img-a img{position:absolute;left:0;top:-25.18rem;width:100%;height:auto}
+.mu-img-b{position:absolute;left:83.12rem;top:18.06rem;width:48.52rem;height:62rem;border-radius:1.2rem;overflow:hidden}
+.mu-img-b img{width:100%;height:100%;object-fit:cover}
+.mu-script-pink{position:absolute;right:65.6rem;top:40rem;font-family:'Mr Bedfort',cursive;font-size:4rem;line-height:4.3rem;color:#FF4DAB;text-align:right;white-space:nowrap}
+.mu-p{position:absolute;left:12.36rem;font-size:1.4rem;line-height:2.4rem;font-weight:400;letter-spacing:.07em;color:#1A1A18;white-space:nowrap}
+.mu-p1{top:48.36rem;line-height:2.3rem}
+.mu-p2{top:54.41rem}
+.mu-p2b{top:65.71rem}
+.mu-p3{top:67.71rem}
+.mu-p4{top:81.01rem;font-weight:700}
+
+/* ---- Who we work with (1440 × 896.7, #F7E7DA) ---- */
+.mu-work{position:relative;height:89.67rem;background:#F7E7DA}
+.mu-work .mu-h2{top:10.42rem}
+.mu-cat{position:absolute;width:30rem;text-align:center}
+.mu-cat-1,.mu-cat-4{left:15.9rem}
+.mu-cat-1 .mu-circle,.mu-cat-4 .mu-circle{margin-left:9.3rem}
+.mu-cat-2,.mu-cat-5{left:56.9rem}
+.mu-cat-3,.mu-cat-6{left:97.6rem}
+.mu-cat-1,.mu-cat-2,.mu-cat-3{top:20.07rem}
+.mu-cat-4,.mu-cat-5,.mu-cat-6{top:53.37rem}
+.mu-cat .mu-circle{position:relative;width:12rem;height:12rem;margin:0 auto;border-radius:50%;overflow:hidden;background:#ddd}
+.mu-circle img{position:absolute;max-width:none}
+.mu-cat-1 .mu-circle img{left:0;top:-1.5rem;width:12rem}
+.mu-cat-2 .mu-circle img{left:-3.31rem;top:.04rem;width:19.95rem}
+.mu-cat-3 .mu-circle img{left:.07rem;top:-3.61rem;width:12.84rem}
+.mu-cat-4 .mu-circle img{left:-11.5rem;top:-4.67rem;width:23.48rem}
+.mu-cat-5 .mu-circle img{left:0;top:-3rem;width:12rem}
+.mu-cat-6 .mu-circle img{left:-.7rem;top:-3.58rem;width:12.8rem}
+.mu-cat h3{margin:1.1rem 0 0;font-size:1.3rem;line-height:1.3rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#00B2FF;white-space:nowrap}
+.mu-cat ul{margin:1.45rem 0 0;padding:0;list-style:none;font-size:1.3rem;line-height:1.6rem;font-weight:400;color:#1A1A18;white-space:nowrap}
+
+/* ---- How we work (1440 × 760) ---- */
+.mu-how{position:relative;height:76rem;background:#000}
+.mu-how-photo{position:absolute;left:0;top:0;width:48%;height:100%;background:#000 url(media/images/meet/how-palms.jpg) no-repeat;background-size:164.85% auto;background-position:-22.41rem 0}
+.mu-how .mu-h2{left:75.18rem;top:10.19rem}
+.mu-how-body{position:absolute;left:75.18rem;top:16.8rem;font-size:1.5rem;line-height:1.9rem;font-weight:400;letter-spacing:.07em;color:#DCE8DF;white-space:nowrap}
+.mu-how-body a{color:#B6F11B;font-weight:700}
+.mu-how-body a:hover{color:#fff}
+.mu-step{position:absolute;left:75rem;width:62rem}
+.mu-step-1{top:25.9rem}.mu-step-2{top:35.8rem}.mu-step-3{top:45.8rem}.mu-step-4{top:55.7rem}
+.mu-dot{position:absolute;left:0;top:0;width:1.3rem;height:1.3rem;border-radius:50%;background:#B6F11B}
+.mu-step h3{position:absolute;left:2.21rem;top:.06rem;margin:0;font-size:1.3rem;line-height:1.3rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#FFFFFF;white-space:nowrap}
+.mu-step p{position:absolute;left:.18rem;top:3.5rem;margin:0;font-size:1.4rem;line-height:1.8rem;font-weight:400;letter-spacing:.07em;color:#DCE8DF;white-space:nowrap}
+.mu-step-2 p{top:3.52rem}.mu-step-3 p{top:3.44rem}.mu-step-4 p{top:3.47rem;left:.2rem;letter-spacing:0}
+.mu-step p strong{color:#B6F11B;font-weight:700}
+
+/* ---- Our clients say it best (1440 × 830) ---- */
+.mu-clients{position:relative;height:83rem;background:#000 url(media/images/meet/clients-glass.jpg) no-repeat;background-size:100% auto;background-position:0 -8.28rem}
+.mu-clients-shade{position:absolute;inset:0;background:rgba(0,0,0,.61)}
+.mu-clients .mu-h2{left:48.4rem;top:16.63rem}
+.mu-card{position:absolute;width:32.34rem;height:32.72rem;border-radius:1.2rem;background:#F7F7F7;text-align:center;color:#1A1A18}
+.mu-card-1{left:21.47rem;top:33.24rem;transform:rotate(-2.26deg)}
+.mu-card-2{left:55.7rem;top:33.24rem;transform:rotate(1.7deg)}
+.mu-card-3{left:90.53rem;top:33.25rem;transform:rotate(-1.13deg)}
+.mu-quote{position:absolute;left:0;right:0;top:2.8rem;margin:0;font-size:1.6rem;line-height:2rem;font-weight:500;color:#1A1A18;white-space:nowrap}
+.mu-card-1 .mu-quote{font-weight:600;letter-spacing:.1em}
+.mu-card-2 .mu-quote,.mu-card-3 .mu-quote{top:3.1rem}
+.mu-qm{font-weight:700}
+.mu-card-1 .mu-qm{color:#0080FF}
+.mu-card-2 .mu-qm{color:#91C166}
+.mu-card-3 .mu-qm{color:#FF4DAB}
+.mu-card-logo{position:absolute;left:50%;transform:translateX(-50%);height:auto}
+.mu-card-1 .mu-card-logo{top:18.1rem;width:11.2rem}
+.mu-card-2 .mu-card-logo{top:17.4rem;width:7.1rem}
+.mu-card-3 .mu-card-logo{top:26.6rem;width:3rem}
+.mu-card h4{position:absolute;left:0;right:0;margin:0;font-size:1.3rem;line-height:1.3rem;font-weight:700;letter-spacing:0;text-transform:uppercase;white-space:nowrap}
+.mu-card-1 h4{top:21.56rem;color:#0080FF}
+.mu-card-2 h4{top:21.5rem;color:#91C166}
+.mu-card-3 h4{top:20.9rem;color:#FF4DAB}
+.mu-handle{position:absolute;left:0;right:0;margin:0;font-size:1.3rem;line-height:1.3rem;font-weight:400;color:#4A4A4A;white-space:nowrap}
+.mu-card-1 .mu-handle{top:23.5rem}
+.mu-card-2 .mu-handle{top:23.4rem}
+.mu-card-3 .mu-handle{top:22.7rem}
+.mu-more{position:absolute;left:66.2rem;top:75.65rem;font-size:1.3rem;line-height:1;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#FFFFFF;white-space:nowrap}
+.mu-more:hover{color:#B6F11B}
+
+/* ---- Orlando-based (1440 × 437.5, #FCF3EC) ---- */
+.mu-orlando{position:relative;height:43.75rem;background:#FCF3EC}
+.mu-orlando .mu-h2{left:36.92rem;top:7.23rem;letter-spacing:0}
+.mu-orlando-body{position:absolute;left:14.61rem;top:15.27rem;width:113.55rem;margin:0;font-size:1.4rem;line-height:2.52rem;font-weight:400;color:#4A4A4A;text-align:center;white-space:nowrap}
+.mu-locs,.mu-loc-item{display:contents}
+.mu-loc{position:absolute;top:26.1rem;height:auto}
+.mu-loc-1{left:31.1rem;width:11.5rem}
+.mu-loc-2{left:51.2rem;width:6.1rem}
+.mu-loc-3{left:68.12rem;width:6.37rem}
+.mu-loc-4{left:83.72rem;width:9.28rem}
+.mu-loc-5{left:101.5rem;width:9.3rem}
+.mu-loc-label{position:absolute;top:35.82rem;width:16rem;margin:0;font-size:1.1rem;line-height:1.1rem;font-weight:700;text-transform:uppercase;text-align:center;color:#1A1A18;white-space:nowrap}
+.mu-loc-label-1{left:28.83rem}.mu-loc-label-2{left:46.22rem}.mu-loc-label-3{left:63.19rem}.mu-loc-label-4{left:80.27rem}.mu-loc-label-5{left:97.56rem}
+
+/* ====================================================================
+   Stacked layout for tablets and phones (< 1200px). 1rem = 10px here.
+   ==================================================================== */
+@media (max-width:1199px){
+  .mu-h2,.mu-eyebrow,.mu-sub,.mu-script,.mu-script-pink,.mu-p,.mu-cat,.mu-how-body,.mu-how .mu-step,.mu-how .mu-step h3,.mu-how .mu-step p,.mu-card,.mu-card .mu-card-logo,.mu-card h4,.mu-card .mu-handle,.mu-card .mu-quote,.mu-more,.mu-orlando-body,.mu-loc,.mu-loc-label,.mu-founders .mu-img-a,.mu-founders .mu-img-b{position:static;white-space:normal;width:auto;transform:none;left:auto;top:auto;right:auto}
+  .mu-h2{font-size:3.6rem}
+  /* line breaks from the 1440 frame become spaces */
+  .mu-br br{display:none}
+  .mu-br::after{content:" "}
+  .mu-hero{height:auto;min-height:56rem;padding:22rem 0 6rem;background-size:cover;background-position:center;display:flex;align-items:flex-end}
+  .mu-hero .hm-stage{position:relative;left:auto;top:auto;height:auto;transform:none;margin:0 auto}
+  .mu-eyebrow{margin:0 0 1rem}
+  .mu-sub{margin:0 0 1.8rem}
+  .mu-script{font-size:clamp(2.8rem,6vw,4.2rem);line-height:1.1}
+  .mu-founders{height:auto;padding:6.4rem 0 7.2rem}
+  .mu-founders .mu-h2{margin-bottom:2.4rem}
+  .mu-founders .mu-img-a{position:relative;width:100%;height:auto;aspect-ratio:570/240;margin:0 0 2.4rem}
+  .mu-founders .mu-img-a img{position:static;width:100%;height:100%;object-fit:cover;object-position:50% 70%}
+  .mu-founders .mu-img-b{width:min(100%,48.5rem);height:auto;aspect-ratio:485/620;margin:0 0 2.4rem}
+  .mu-script-pink{text-align:left;margin:0 0 2rem;line-height:1.1}
+  .mu-p{margin:0 0 1.6rem !important;line-height:2.3rem;max-width:66rem}
+  .mu-p2b{display:none}
+  .mu-p2::after{content:" cohesive."}
+  .mu-work{height:auto;padding:6.4rem 0 7.2rem}
+  .mu-work .hm-stage{display:grid;grid-template-columns:repeat(auto-fit,minmax(22rem,1fr));gap:4rem 2rem}
+  .mu-work .mu-h2{grid-column:1/-1;text-align:center}
+  .mu-cat .mu-circle{margin:0 auto !important}
+  .mu-how{height:auto}
+  .mu-how-photo{position:relative;width:100%;height:46rem;background-size:cover;background-position:center}
+  .mu-how .hm-stage{padding-top:6.4rem;padding-bottom:7.2rem}
+  .mu-how .mu-h2{margin-bottom:2rem}
+  .mu-how-body{margin:0 0 3.6rem !important;line-height:2.2rem;max-width:62rem}
+  .mu-how .mu-step{position:relative;padding-left:2.4rem;margin:0 0 3rem !important;max-width:62rem}
+  .mu-how .mu-step .mu-dot{position:absolute;left:0;top:.1rem}
+  .mu-how .mu-step p{margin-top:1rem;line-height:2rem}
+  .mu-clients{height:auto;padding:6.4rem 0 7.2rem;background-size:cover;background-position:center}
+  .mu-clients .hm-stage{display:flex;flex-direction:column;align-items:center;gap:3rem}
+  .mu-clients .mu-h2{text-align:center;margin-bottom:1rem}
+  .mu-card{width:min(100%,32.3rem);height:auto;padding:3rem 2.4rem 3.4rem;display:flex;flex-direction:column;align-items:center;gap:1.2rem}
+  .mu-card .mu-quote,.mu-card h4,.mu-card .mu-handle{margin:0}
+  .mu-card .mu-quote{margin-bottom:1rem}
+  .mu-card-1 .mu-quote{letter-spacing:.04em}
+  .mu-card .mu-card-logo{margin:1rem 0}
+  .mu-card-1 .mu-card-logo{width:11.2rem}.mu-card-2 .mu-card-logo{width:7.1rem}.mu-card-3 .mu-card-logo{width:3rem}
+  .mu-more{margin-top:1rem}
+  .mu-orlando{height:auto;padding:6.4rem 0 7.2rem}
+  .mu-orlando .mu-h2{text-align:center;margin-bottom:2rem}
+  .mu-orlando-body{line-height:2.3rem;margin:0 auto 3.6rem;max-width:72rem;text-align:center}
+  .mu-orlando .mu-locs{display:flex;flex-wrap:wrap;justify-content:center;gap:2.8rem 3.2rem}
+  .mu-loc-item{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:1.4rem;width:14rem}
+  .mu-loc{height:6.9rem;width:auto;max-width:100%}
+  .mu-loc-label{text-align:center}
+}
