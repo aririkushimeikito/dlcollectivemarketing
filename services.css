@@ -34,8 +34,7 @@ body.page-what-we-do main>section.sv-intro:first-child{padding:0 !important}
 .sv-tile-9>img{left:0;top:-17.71rem;width:37.7rem;height:56.55rem}
 .sv-conrad-shade{position:absolute;inset:0;background:rgba(0,0,0,.455)}
 .sv-tile-7 .sv-conrad-logo{position:absolute;left:7rem;top:9.72rem;width:23.6rem;height:auto}
-.sv-book{position:absolute;left:11.2rem;top:19.6rem;width:13.4rem;height:4.6rem;border:.2rem solid #FFFFFF;border-radius:2.3rem;font-size:2rem;line-height:4.2rem;font-weight:400;letter-spacing:.04em;text-transform:uppercase;text-align:center;color:#FFFFFF;transition:background .2s,color .2s}
-.sv-book:hover{background:#FFFFFF;color:#1A1A18}
+.sv-book{position:absolute;left:11.2rem;top:19.6rem;width:13.4rem;height:4.6rem;border:.2rem solid #FFFFFF;border-radius:2.3rem;font-size:2rem;line-height:4.2rem;font-weight:400;letter-spacing:.04em;text-transform:uppercase;text-align:center;color:#FFFFFF;pointer-events:none}
 a.sv-tile>img{transition:transform .5s ease}
 a.sv-tile:hover>img{transform:scale(1.03)}
 
