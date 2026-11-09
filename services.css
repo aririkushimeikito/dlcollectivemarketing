@@ -18,7 +18,7 @@ body.page-what-we-do main>section.sv-intro:first-child{padding:0 !important}
 .sv-tile{position:absolute;display:block;width:37.73rem;height:34rem;margin:0;border-radius:1.6rem;overflow:hidden;background:#FEFEFE;box-shadow:0 1.8rem 4rem rgba(0,0,0,.12);transition:border-radius .45s cubic-bezier(.22,.61,.36,1)}
 /* hover: the tile morphs into an arch (semicircular top, small radius at the bottom) */
 .sv-tile:not(.sv-tile-conrad):hover{border-radius:50% 50% 1.6rem 1.6rem / 18.87rem 18.87rem 1.6rem 1.6rem}
-.sv-tile>img:not(.sv-conrad-logo){position:absolute;max-width:none;display:block}
+.sv-tile>img:not(.sv-conrad-logo),.sv-tile>video{position:absolute;max-width:none;display:block;object-fit:cover;background:#FEFEFE}
 .sv-tile-1,.sv-tile-4,.sv-tile-7{left:12.36rem}
 .sv-tile-2,.sv-tile-5,.sv-tile-8{left:53.13rem}
 .sv-tile-3,.sv-tile-6,.sv-tile-9{left:93.9rem}
@@ -26,10 +26,10 @@ body.page-what-we-do main>section.sv-intro:first-child{padding:0 !important}
 .sv-tile-4,.sv-tile-5,.sv-tile-6{top:40.8rem}
 .sv-tile-7,.sv-tile-8,.sv-tile-9{top:78.2rem}
 .sv-tile-1>img{left:-9.96rem;top:-8.63rem;width:57.6rem;height:51.3rem}
-.sv-tile-2>img{left:0;top:-1.87rem;width:37.73rem;height:37.73rem}
+.sv-tile-2>img,.sv-tile-2>video{left:0;top:-1.87rem;width:37.73rem;height:37.73rem}
 .sv-tile-3>img{left:0;top:-8.13rem;width:37.7rem;height:50.27rem}
 .sv-tile-4>img{left:-16.51rem;top:0;width:60.44rem;height:34rem}
-.sv-tile-5>img{left:-1.61rem;top:0;width:40.97rem;height:34rem}
+.sv-tile-5>img,.sv-tile-5>video{left:-1.61rem;top:0;width:40.97rem;height:34rem}
 .sv-tile-6>img{left:-6.65rem;top:0;width:50.99rem;height:34rem}
 .sv-tile-7>img{left:0;top:0;width:100%;height:100%;object-fit:cover}
 .sv-tile-8>img{left:-12.19rem;top:0;width:50.98rem;height:34rem}
@@ -60,8 +60,8 @@ body.page-what-we-do main>section.sv-intro:first-child{padding:0 !important}
   .sv-grid .sv-tile{position:relative;left:auto;top:auto;width:100%;height:auto;aspect-ratio:377.3/340}
   .sv-tile:not(.sv-tile-conrad):hover{border-radius:50% 50% 1.6rem 1.6rem / 55% 55% 1.6rem 1.6rem}
   .sv-ov-title{font-size:2.2rem}
-  .sv-tile>img:not(.sv-conrad-logo){position:absolute;left:0 !important;top:0 !important;width:100% !important;height:100% !important;object-fit:cover}
-  .sv-tile-1>img,.sv-tile-2>img,.sv-tile-5>img{object-fit:contain;background:#FEFEFE}
+  .sv-tile>img:not(.sv-conrad-logo),.sv-tile>video{position:absolute;left:0 !important;top:0 !important;width:100% !important;height:100% !important;object-fit:cover}
+  .sv-tile-1>img,.sv-tile-2>img,.sv-tile-5>img,.sv-tile-5>video{object-fit:contain;background:#FEFEFE}
   .sv-tile-1>img{object-fit:cover;object-position:50% 45%}
 }
 @media (max-width:760px){
