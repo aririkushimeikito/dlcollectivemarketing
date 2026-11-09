@@ -1,0 +1,189 @@
+/* ====================================================================
+   DL Collective — Home page (Figma "home page" frame, 1440 × 4226)
+   The page is laid out on the 1440px design frame. 1rem = 10px at a
+   1440px viewport (see the inline script in index.html), so every
+   measurement below is the Figma value ÷ 10 and the whole page scales
+   proportionally on laptops and desktops (1200px → 1920px). Below 1200px
+   the layout stacks (see the media query at the bottom).
+   ==================================================================== */
+html.hm{font-size:clamp(8.3333px,calc(100vw / 144),13.3333px);overflow-x:hidden;-webkit-text-size-adjust:100%}
+@media (max-width:1199px){html.hm{font-size:10px}}
+.hm-body{margin:0;background:#000;color:#1A1A18;font-family:'Delight','Montserrat',sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden}
+.hm-body *,.hm-body *::before,.hm-body *::after{box-sizing:border-box}
+.hm-body img{display:block;max-width:none}
+.hm-body figure,.hm-body p,.hm-body h1,.hm-body h2,.hm-body h3,.hm-body ul{margin:0;padding:0}
+.hm-body ul{list-style:none}
+.hm-body a{text-decoration:none}
+.hm-stage{position:relative;width:144rem;height:100%;margin:0 auto}
+
+/* ---- Header: logo (120 × 86 at 34, 20.7) ---- */
+.hm-header{position:relative;z-index:20}
+.hm-logo{position:fixed;left:3.4rem;top:2.07rem;z-index:30;width:12rem;cursor:pointer;transition:opacity .2s}
+.hm-logo:hover{opacity:.85}
+.hm-logo img{width:12rem;height:auto}
+.hm-logo .hm-logo-dark{display:none}
+body.scrolled .hm-logo .hm-logo-light{display:none}
+body.scrolled .hm-logo .hm-logo-dark{display:block}
+
+/* ---- Right-hand social column (fixed) ---- */
+.hm-social{position:fixed;right:1.5rem;top:30.29rem;z-index:30;width:2.8rem;height:18.8rem}
+.hm-social a{position:absolute;display:block;transition:opacity .2s}
+.hm-social a:hover{opacity:.75}
+.hm-social img{width:100%;height:auto}
+.hm-social-ig{left:.29rem;top:0;width:2.22rem}
+.hm-social-mail{left:.29rem;top:5.68rem;width:2.22rem}
+.hm-social-phone{left:.4rem;top:10.94rem;width:1.75rem}
+.hm-social-in{left:0;top:15.71rem;width:2.8rem}
+body.menu-open .hm-social{display:none}
+
+/* ---- Hero (1440 × 801) ---- */
+.hm-hero{position:relative;height:80.12rem;overflow:hidden;background:#1D0E0A}
+.hm-hero .hero-slider{position:absolute;inset:0;overflow:hidden;z-index:0}
+.hm-hero .hero-track{display:flex;width:100%;height:100%;transition:transform 1s cubic-bezier(.65,0,.35,1)}
+.hm-hero .hero-slide{flex:0 0 100%;width:100%;height:100%;background-size:cover;background-position:center;background-repeat:no-repeat}
+.hm-hero .hero-slide-figma{background-size:140.09% auto;background-position:-24.85rem -33.24rem}
+.hm-hero-shade{position:absolute;inset:0;z-index:1;background:rgba(0,0,0,.32)}
+.hm-wordmark{position:absolute;z-index:2;left:50%;top:33.7rem;width:63.02rem;transform:translateX(-50%)}
+.hm-wordmark img{width:100%;height:auto}
+
+/* ---- Shared type ---- */
+.hm-h2{position:absolute;font-size:4.4rem;line-height:1;font-weight:500;letter-spacing:.05em;color:#1A1A18;white-space:nowrap}
+.hm-h2-lg{font-size:5.4rem;letter-spacing:0;color:#FFFFFF}
+.hm-cta{position:absolute;display:block;font-size:1.3rem;line-height:1;font-weight:500;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+.hm-cta span{display:block}
+.hm-cta-arrow{position:absolute;height:auto;transition:transform .25s ease}
+.hm-cta:hover .hm-cta-arrow{transform:translateX(.5rem)}
+.hm-cta-orange{color:#FE5E1C}
+.hm-cta-blue{color:#00AAFF}
+.hm-cta-yellow{color:#FFEC5C;font-weight:700;letter-spacing:.08em}
+
+/* ---- Who we are (1440 × 760, bg #FCF3EC) ---- */
+.hm-who{position:relative;height:76rem;background:#FCF3EC}
+.hm-who .hm-h2{left:12.36rem;top:26.07rem}
+.hm-who-body{position:absolute;left:12.36rem;top:33.24rem;width:46rem;font-size:1.5rem;line-height:1.9rem;letter-spacing:.07em;font-weight:400;color:#4A4A4A}
+.hm-who-body p{margin:0 0 2.15rem}
+.hm-who-body p:last-child{margin:0}
+.hm-who .hm-cta{left:12.36rem;top:48.82rem}
+.hm-who .hm-cta-arrow{left:16.36rem;top:-.11rem;width:4.22rem}
+.hm-who-img{position:absolute;left:77.56rem;top:10rem;width:48.52rem;height:56rem;border-radius:1.2rem;overflow:hidden}
+.hm-who-img img{width:100%;height:100%;object-fit:cover}
+.hm-palm{position:absolute;left:60.9rem;top:54.18rem;width:20.01rem;height:auto;pointer-events:none;user-select:none}
+
+/* ---- What we do (1440 × 624.7, bg #F7E7DA) ---- */
+.hm-what{position:relative;height:62.47rem;background:#F7E7DA}
+.hm-collage{position:absolute;left:12.45rem;top:16.58rem;width:50.3rem;height:29.4rem;border-radius:1.2rem;overflow:hidden}
+.hm-collage img{width:100%;height:100%;object-fit:cover}
+.hm-what .hm-h2{left:77.05rem;top:13.37rem}
+.hm-what-body{position:absolute;left:77.05rem;top:22.36rem;width:53rem;font-size:1.5rem;line-height:2.55rem;font-weight:400;color:#4A4A4A}
+.hm-services{position:absolute;left:77.05rem;top:29.41rem;font-size:1.3rem;line-height:2.32rem;font-weight:700;letter-spacing:.072em;text-transform:uppercase;color:#1A1A18;white-space:nowrap}
+.hm-services a{transition:color .2s}
+.hm-services a:hover{color:#00AAFF}
+.hm-what .hm-cta{left:77.05rem;top:50.92rem}
+.hm-what .hm-cta-arrow{left:11.97rem;top:-.07rem;width:4.22rem}
+
+/* ---- Our work (1440 × 1010, bg #000) ---- */
+.hm-work{position:relative;height:100.91rem;background:#000}
+.hm-work-head{position:absolute;left:0;top:0;width:100%;height:0}
+.hm-eyebrow{position:absolute;left:12.36rem;top:10.15rem;font-size:1.3rem;line-height:1;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#FFEC5C;white-space:nowrap}
+.hm-work .hm-h2{left:12.36rem;top:12.94rem}
+.hm-star{position:absolute;height:auto;pointer-events:none}
+.hm-star-1{left:34.7rem;top:9.95rem;width:5.44rem}
+.hm-star-2{left:91.99rem;top:59.03rem;width:4.43rem}
+.hm-card{position:absolute;border-radius:1.2rem;overflow:hidden;box-shadow:0 2.6rem 6rem rgba(0,0,0,.4);background:#111}
+.hm-card img{width:100%;height:100%;object-fit:cover}
+.hm-card-lemon{left:12.36rem;top:28rem;width:39.36rem;height:25rem}
+.hm-card-lemon img{position:absolute;left:-9.58rem;top:-26.98rem;width:49.59rem;height:auto;object-fit:fill}
+.hm-card-butter{left:45.76rem;top:30.8rem;width:44.13rem;height:57.2rem}
+.hm-card-invite{left:95.26rem;top:17.8rem;width:30.41rem;height:43rem}
+.hm-work-cta{left:12.36rem;top:55.75rem}
+.hm-work .hm-cta-arrow{left:16.06rem;top:-.27rem;width:4.22rem}
+
+/* ---- Featured in (1440 × 682.8) ---- */
+.hm-featured{position:relative;height:68.2rem;background:#3C462D url(media/images/home/featured-bg.jpg) center center / 100% auto no-repeat}
+.hm-featured-shade{position:absolute;inset:0;background:rgba(0,0,0,.37)}
+.hm-featured-title{position:absolute;left:29.73rem;top:10.33rem;font-size:5.4rem;line-height:1;font-weight:500;letter-spacing:0;color:#FFFFFF;white-space:nowrap}
+.hm-logos img{position:absolute;height:auto}
+.hm-logo-wftv{left:32.06rem;top:24.28rem;width:22.42rem}
+.hm-logo-tudo{left:62.57rem;top:24.28rem;width:19.18rem}
+.hm-logo-ad{left:89.82rem;top:24.28rem;width:22.13rem}
+.hm-logo-forbes{left:46.15rem;top:48.9rem;width:15.16rem}
+.hm-logo-wwd{left:75.48rem;top:43.28rem;width:22.39rem}
+
+/* ---- Footer (1440 × 349.3, bg #000) ---- */
+.hm-footer{position:relative;height:34.93rem;background:#000;color:#FFFFFF}
+.hm-footer-logo{position:absolute;left:12.43rem;top:6.03rem;width:25.77rem}
+.hm-footer-logo img{width:100%;height:auto}
+.hm-copy{position:absolute;left:12.36rem;top:20.05rem;font-size:1.2rem;line-height:1.93rem;letter-spacing:.07em;font-weight:400;color:#FFFFFF;white-space:nowrap}
+.hm-fcol{position:absolute;top:6.9rem;white-space:nowrap}
+.hm-fcol-1{left:82.59rem}
+.hm-fcol-2{left:101.06rem}
+.hm-fcol-3{left:119.5rem}
+.hm-fcol h3{font-size:1.4rem;line-height:1;font-weight:700;letter-spacing:0;text-transform:uppercase;color:#FFFFFF}
+.hm-fcol ul{margin-top:1.37rem;font-size:1.2rem;line-height:2.9rem;font-weight:400;letter-spacing:0;text-transform:uppercase;color:#FFFFFF}
+.hm-fcol a{transition:color .2s}
+.hm-fcol a:hover{color:#B6F11B}
+
+/* ====================================================================
+   Stacked layout for tablets and phones (< 1200px). 1rem = 10px here.
+   ==================================================================== */
+@media (max-width:1199px){
+  .hm-stage{width:auto;height:auto;max-width:76rem;margin:0 auto;padding:0 2.4rem}
+  .hm-logo{left:2rem;top:1.6rem;width:9.6rem}
+  .hm-logo img{width:9.6rem}
+  .hm-social{right:1.2rem;top:50%;transform:translateY(-50%)}
+  .hm-hero{height:max(36rem,55.6vw)}
+  .hm-wordmark{top:50%;width:min(62vw,52rem);transform:translate(-50%,-50%)}
+  .hm-h2,.hm-cta,.hm-who-body,.hm-who-img,.hm-palm,.hm-collage,.hm-what-body,.hm-services,.hm-work-head,.hm-eyebrow,.hm-star,.hm-card,.hm-featured-title,.hm-logos img,.hm-footer-logo,.hm-copy,.hm-fcol{position:static}
+  .hm-h2{font-size:3.6rem;white-space:normal}
+  .hm-cta{display:inline-flex;align-items:center;gap:1.4rem}
+  .hm-cta-arrow{position:static;width:4.2rem !important}
+  /* who we are */
+  .hm-who{height:auto;padding:6.4rem 0 7.2rem}
+  .hm-who .hm-h2{margin-bottom:2.2rem}
+  .hm-who-body{width:auto;max-width:52rem;font-size:1.6rem;line-height:2.1rem}
+  .hm-who .hm-cta{margin-top:3.2rem}
+  .hm-who-img{width:min(100%,48.5rem);height:auto;aspect-ratio:485/560;margin:4.8rem 0 0}
+  .hm-palm{width:16rem;margin:1.6rem 0 0 .4rem}
+  /* what we do */
+  .hm-what{height:auto;padding:6.4rem 0 7.2rem}
+  .hm-collage{width:min(100%,50.3rem);height:auto;aspect-ratio:503/294;margin:0 0 4.4rem}
+  .hm-what .hm-h2{margin-bottom:2.2rem}
+  .hm-what-body{width:auto;max-width:52rem;font-size:1.6rem;line-height:2.5rem}
+  .hm-services{margin-top:3.2rem;font-size:1.3rem;line-height:2.4rem;white-space:normal}
+  .hm-what .hm-cta{margin-top:3.2rem}
+  /* our work */
+  .hm-work{height:auto;padding:6.4rem 0 7.2rem}
+  .hm-work-head{display:flex;flex-wrap:wrap;align-items:flex-end;gap:1rem 2rem;height:auto;width:auto}
+  .hm-work-head .hm-eyebrow{flex:0 0 100%}
+  .hm-h2-lg{font-size:4.4rem}
+  .hm-star-1{width:4.4rem;margin-bottom:.6rem}
+  .hm-star-2{display:none}
+  .hm-card{margin:4rem 0 0}
+  .hm-card-lemon{width:min(100%,39.4rem);height:auto;aspect-ratio:393.6/250}
+  .hm-card-lemon img{position:static;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+  .hm-hero .hero-slide-figma{background-size:cover;background-position:center}
+  .hm-work-cta{margin-top:3.2rem}
+  .hm-card-butter{width:min(100%,44.1rem);height:auto;aspect-ratio:441.3/572}
+  .hm-card-invite{width:min(100%,30.4rem);height:auto;aspect-ratio:304.1/430}
+  /* featured */
+  .hm-featured{height:auto;padding:7.2rem 0 8rem;background-size:cover}
+  .hm-featured-title{font-size:3.4rem;line-height:1.15;text-align:center;white-space:normal}
+  .hm-logos{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:1.6rem 3.2rem;margin-top:4rem}
+  .hm-logos img{width:17rem}
+  .hm-logo-forbes{width:11.5rem !important}
+  /* footer */
+  .hm-footer{height:auto;padding:6rem 0 5.6rem}
+  .hm-footer .hm-stage{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:3.2rem 2.4rem}
+  .hm-footer-logo{grid-column:1/-1;width:22rem}
+  .hm-copy{grid-column:1/-1;order:9;white-space:normal;line-height:1.9rem}
+  .hm-fcol ul{line-height:2.6rem}
+}
+@media (max-width:600px){
+  .hm-h2{font-size:3.2rem}
+  .hm-h2-lg{font-size:3.8rem}
+  .hm-featured-title{font-size:2.8rem}
+  .hm-logos{gap:1.2rem 2.4rem}
+  .hm-logos img{width:13rem}
+  .hm-logo-forbes{width:9rem !important}
+  .hm-wordmark{width:min(72vw,40rem)}
+}
