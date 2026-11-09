@@ -22,14 +22,15 @@ html.hm{font-size:clamp(8.3333px,calc(100vw / 144),13.3333px);overflow-x:hidden;
 .hm-logo:hover{opacity:.85}
 .hm-logo img{width:12rem;height:auto}
 .hm-logo .hm-logo-dark{display:none}
-body.scrolled .hm-logo .hm-logo-light{display:none}
-body.scrolled .hm-logo .hm-logo-dark{display:block}
+body.logo-on-light .hm-logo .hm-logo-light{display:none}
+body.logo-on-light .hm-logo .hm-logo-dark{display:block}
 
 /* ---- Right-hand social column (fixed) ---- */
 .hm-social{position:fixed;right:1.5rem;top:30.29rem;z-index:30;width:2.8rem;height:18.8rem}
 .hm-social a{position:absolute;display:block;transition:opacity .2s}
 .hm-social a:hover{opacity:.75}
-.hm-social img{width:100%;height:auto}
+.hm-social img{width:100%;height:auto;transition:filter .25s ease}
+body.social-on-light .hm-social img{filter:brightness(0) invert(.1)}
 .hm-social-ig{left:.29rem;top:0;width:2.22rem}
 .hm-social-mail{left:.29rem;top:5.68rem;width:2.22rem}
 .hm-social-phone{left:.4rem;top:10.94rem;width:1.75rem}
