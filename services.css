@@ -15,7 +15,9 @@ body.page-what-we-do main>section.sv-intro:first-child{padding:0 !important}
 .sv-list a:hover{color:#FE5E1C}
 
 .sv-grid{position:relative;height:124.2rem;background:#FCF3EC}
-.sv-tile{position:absolute;display:block;width:37.73rem;height:34rem;margin:0;border-radius:1.6rem;overflow:hidden;background:#FEFEFE;box-shadow:0 1.8rem 4rem rgba(0,0,0,.12)}
+.sv-tile{position:absolute;display:block;width:37.73rem;height:34rem;margin:0;border-radius:1.6rem;overflow:hidden;background:#FEFEFE;box-shadow:0 1.8rem 4rem rgba(0,0,0,.12);transition:border-radius .45s cubic-bezier(.22,.61,.36,1)}
+/* hover: the tile morphs into an arch (semicircular top, small radius at the bottom) */
+.sv-tile:not(.sv-tile-conrad):hover{border-radius:50% 50% 1.6rem 1.6rem / 18.87rem 18.87rem 1.6rem 1.6rem}
 .sv-tile>img:not(.sv-conrad-logo){position:absolute;max-width:none;display:block}
 .sv-tile-1,.sv-tile-4,.sv-tile-7{left:12.36rem}
 .sv-tile-2,.sv-tile-5,.sv-tile-8{left:53.13rem}
@@ -40,7 +42,7 @@ body.page-what-we-do main>section.sv-intro:first-child{padding:0 !important}
 .sv-tile:hover .sv-ov,.sv-ov:focus-visible{opacity:1;background:rgba(38,40,42,.5)}
 .sv-ov-title{color:#fff;font-size:2.7rem;font-weight:500;letter-spacing:-.01em;line-height:1.15;text-transform:lowercase;transform:translateY(1rem);transition:transform .4s cubic-bezier(.22,.61,.36,1)}
 .sv-tile:hover .sv-ov-title{transform:none}
-.sv-ov-arrow{position:absolute;top:1.4rem;right:1.4rem;width:4.6rem;height:4.6rem;border-radius:50%;background:#fff url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2044%2024'%20fill='none'%20stroke='%232E5BF0'%20stroke-width='2.6'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M3%2013q4-6%208%200t8%200%208%200'/%3E%3Cpath%20d='M30%208l6%205-6%205'/%3E%3C/svg%3E") center/2.6rem 1.6rem no-repeat;box-shadow:0 .6rem 1.6rem rgba(0,0,0,.18);transform:scale(.55);opacity:0;transition:transform .45s cubic-bezier(.2,.7,.3,1.5),opacity .35s ease}
+.sv-ov-arrow{position:absolute;top:3.6rem;right:5.2rem;width:4.6rem;height:4.6rem;border-radius:50%;background:#fff url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2044%2024'%20fill='none'%20stroke='%232E5BF0'%20stroke-width='2.6'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M3%2013q4-6%208%200t8%200%208%200'/%3E%3Cpath%20d='M30%208l6%205-6%205'/%3E%3C/svg%3E") center/2.6rem 1.6rem no-repeat;box-shadow:0 .6rem 1.6rem rgba(0,0,0,.18);transform:scale(.55);opacity:0;transition:transform .45s cubic-bezier(.2,.7,.3,1.5),opacity .35s ease}
 .sv-tile:hover .sv-ov-arrow{transform:scale(1);opacity:1}
 
 @media (max-width:1199px){
@@ -59,6 +61,7 @@ body.page-what-we-do main>section.sv-intro:first-child{padding:0 !important}
   .sv-grid{height:auto;padding:4rem 0 8rem}
   .sv-grid .hm-stage{display:grid;grid-template-columns:repeat(auto-fit,minmax(22rem,1fr));gap:2.8rem}
   .sv-grid .sv-tile{position:relative;left:auto;top:auto;width:100%;height:auto;aspect-ratio:377.3/340}
+  .sv-tile:not(.sv-tile-conrad):hover{border-radius:50% 50% 1.6rem 1.6rem / 55% 55% 1.6rem 1.6rem}
   .sv-ov-title{font-size:2.2rem}
   .sv-tile>img:not(.sv-conrad-logo){position:absolute;left:0 !important;top:0 !important;width:100% !important;height:100% !important;object-fit:cover}
   .sv-tile-1>img,.sv-tile-2>img,.sv-tile-5>img{object-fit:contain;background:#FEFEFE}
