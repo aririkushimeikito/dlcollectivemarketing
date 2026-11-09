@@ -36,6 +36,9 @@ body main>section.sd-main:first-child{padding:0 !important}
 .sd-body-mid{top:44.4rem}
 .sd-doodle-6{left:64.11rem;top:61.73rem;width:15.71rem}
 .sd-card-champagne>img{left:-11.32rem;top:0;width:75.44rem;height:50.3rem}
+.sd-blue .sd-back{color:#0080FF}
+.sd-doodle-7{left:63.9rem;top:61.6rem;width:16.1rem}
+.sd-card-conrad>img{left:0;top:0;width:100%;height:100%;object-fit:cover}
 .sd-card-laptop>video{left:-2.25rem;top:0;width:57.33rem;height:50.3rem}
 
 @media (max-width:1199px){
