@@ -1,0 +1,39 @@
+/* ====================================================================
+   DL Collective — Careers page (Figma "careers" frame, 1440 × 1453)
+   Same scale system as home.css: 1rem = 10px at a 1440px viewport.
+   ==================================================================== */
+.cr-main{position:relative;height:110.6rem;background:#FCF3EC}
+body.page-careers main>section.cr-main:first-child{padding:0 !important}
+.cr-copy{position:static}
+.cr-h1{position:absolute;left:12.36rem;top:19rem;margin:0;font-size:4.6rem;line-height:1;font-weight:400;letter-spacing:0;color:#1A1A18;white-space:nowrap}
+.cr-p{position:absolute;left:12.4rem;margin:0;font-size:1.4rem;line-height:1.8rem;font-weight:400;letter-spacing:0;color:#1A1A18;white-space:nowrap}
+.cr-p strong{font-weight:700}
+.cr-p1{top:26.57rem}.cr-p2{top:33.07rem}.cr-p3{top:41.97rem}
+.cr-btn{position:absolute;left:12.36rem;top:48.89rem;display:block;width:24.64rem;height:4.62rem;background:#1A1A18;color:#FCF3EC;font-size:1.3rem;line-height:4.62rem;font-weight:700;letter-spacing:0;text-transform:uppercase;text-align:left;padding-left:2.83rem;box-sizing:border-box;text-decoration:none;white-space:nowrap;transition:background .2s}
+.cr-btn:hover{background:#0E3B24}
+.cr-img{position:absolute;left:87.38rem;width:38.41rem;margin:0;border-radius:1rem;overflow:hidden;background:#ddd}
+.cr-img>img{display:block;width:100%;height:100%;object-fit:cover}
+.cr-img-1{top:15.2rem;height:52rem}
+.cr-img-2{top:69.6rem;height:30rem}
+
+@media (max-width:1199px){
+  .cr-h1,.cr-p,.cr-btn,.cr-main .cr-img{position:static;white-space:normal;left:auto;top:auto}
+  .mu-br br{display:none}
+  .mu-br::after{content:" "}
+  body.page-careers main>section.cr-main:first-child{padding:14rem 0 8rem !important}
+  .cr-main{height:auto}
+  .cr-main .hm-stage{display:grid;grid-template-columns:1fr minmax(26rem,38.4rem);gap:2.4rem 6rem;align-items:start}
+  .cr-copy{grid-column:1;grid-row:1/3}
+  .cr-copy .cr-h1{font-size:4rem;margin:0 0 2.4rem}
+  .cr-copy .cr-p{margin:0 0 2rem;line-height:2.1rem;max-width:48rem}
+  .cr-copy .cr-btn{display:inline-block;margin-top:1.2rem;padding:0 2.8rem;width:auto}
+  .cr-main .cr-img{width:100%;height:auto}
+  .cr-img-1{grid-column:2;grid-row:1;aspect-ratio:384/520}
+  .cr-img-2{grid-column:2;grid-row:2;aspect-ratio:384/300}
+}
+@media (max-width:760px){
+  .cr-main .hm-stage{grid-template-columns:1fr}
+  .cr-copy{grid-column:1;grid-row:auto}
+  .cr-img-1,.cr-img-2{grid-column:1;grid-row:auto;width:min(100%,38.4rem)}
+  .cr-h1{font-size:3.4rem}
+}
