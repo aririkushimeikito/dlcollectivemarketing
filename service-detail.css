@@ -28,6 +28,8 @@ body main>section.sd-main:first-child{padding:0 !important}
 .sd-card-video>video{position:absolute;left:0;top:-1.25rem;width:52.8rem;height:52.8rem;display:block;object-fit:cover;background:#FEFEFE}
 .sd-red .sd-back{color:#FF2E2E}
 .sd-doodle-5{left:66.11rem;top:60.61rem;width:11.78rem}
+.sd-doodle-3{left:59.2rem;top:61.41rem;width:17.03rem}
+.sd-card-photo>img{left:0;top:-10.05rem;width:52.8rem;height:70.4rem}
 .sd-card-laptop>video{left:-2.25rem;top:0;width:57.33rem;height:50.3rem}
 
 @media (max-width:1199px){
