@@ -44,6 +44,8 @@ body main>section.sd-main:first-child{padding:0 !important}
 .sd-card-crepes>img{left:0;top:-21.84rem;width:52.8rem;height:79.19rem}
 .sd-card-full>img{left:0;top:0;width:100%;height:100%;object-fit:cover}
 .sd-body-wrap{white-space:normal;width:55.6rem}
+.sd-salmon .sd-back{color:#FF9570}
+.sd-doodle-8{left:65.5rem;top:61.2rem;width:18.8rem}
 .sd-card-laptop>video{left:-2.25rem;top:0;width:57.33rem;height:50.3rem}
 
 @media (max-width:1199px){
