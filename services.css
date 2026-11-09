@@ -35,11 +35,16 @@ body.page-what-we-do main>section.sv-intro:first-child{padding:0 !important}
 .sv-conrad-shade{position:absolute;inset:0;background:rgba(0,0,0,.455)}
 .sv-tile-7 .sv-conrad-logo{position:absolute;left:7rem;top:9.72rem;width:23.6rem;height:auto}
 .sv-book{position:absolute;left:11.2rem;top:19.6rem;width:13.4rem;height:4.6rem;border:.2rem solid #FFFFFF;border-radius:2.3rem;font-size:2rem;line-height:4.2rem;font-weight:400;letter-spacing:.04em;text-transform:uppercase;text-align:center;color:#FFFFFF;pointer-events:none}
-a.sv-tile>img{transition:transform .5s ease}
-a.sv-tile:hover>img{transform:scale(1.03)}
+/* hover: service title + wavy-arrow button (Conrad tile excluded) */
+.sv-ov{position:absolute;inset:0;z-index:3;display:flex;align-items:center;justify-content:center;padding:2rem;text-align:center;text-decoration:none;background:rgba(38,40,42,0);opacity:0;transition:opacity .4s ease,background .4s ease}
+.sv-tile:hover .sv-ov,.sv-ov:focus-visible{opacity:1;background:rgba(38,40,42,.5)}
+.sv-ov-title{color:#fff;font-size:2.7rem;font-weight:500;letter-spacing:-.01em;line-height:1.15;text-transform:lowercase;transform:translateY(1rem);transition:transform .4s cubic-bezier(.22,.61,.36,1)}
+.sv-tile:hover .sv-ov-title{transform:none}
+.sv-ov-arrow{position:absolute;top:1.4rem;right:1.4rem;width:4.6rem;height:4.6rem;border-radius:50%;background:#fff url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2044%2024'%20fill='none'%20stroke='%232E5BF0'%20stroke-width='2.6'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M3%2013q4-6%208%200t8%200%208%200'/%3E%3Cpath%20d='M30%208l6%205-6%205'/%3E%3C/svg%3E") center/2.6rem 1.6rem no-repeat;box-shadow:0 .6rem 1.6rem rgba(0,0,0,.18);transform:scale(.55);opacity:0;transition:transform .45s cubic-bezier(.2,.7,.3,1.5),opacity .35s ease}
+.sv-tile:hover .sv-ov-arrow{transform:scale(1);opacity:1}
 
 @media (max-width:1199px){
-  .sv-h1,.sv-sparkles,.sv-lead,.sv-list,.sv-list li,.sv-tile{position:static;white-space:normal;left:auto;top:auto}
+  .sv-h1,.sv-sparkles,.sv-lead,.sv-list,.sv-list li,.sv-grid .sv-tile{position:static;white-space:normal;left:auto;top:auto}
   .mu-br br{display:none}
   .mu-br::after{content:" "}
   body.page-what-we-do main>section.sv-intro:first-child{padding:14rem 0 4rem !important}
@@ -54,6 +59,7 @@ a.sv-tile:hover>img{transform:scale(1.03)}
   .sv-grid{height:auto;padding:4rem 0 8rem}
   .sv-grid .hm-stage{display:grid;grid-template-columns:repeat(auto-fit,minmax(22rem,1fr));gap:2.8rem}
   .sv-grid .sv-tile{position:relative;left:auto;top:auto;width:100%;height:auto;aspect-ratio:377.3/340}
+  .sv-ov-title{font-size:2.2rem}
   .sv-tile>img:not(.sv-conrad-logo){position:absolute;left:0 !important;top:0 !important;width:100% !important;height:100% !important;object-fit:cover}
   .sv-tile-1>img,.sv-tile-2>img,.sv-tile-5>img{object-fit:contain;background:#FEFEFE}
   .sv-tile-1>img{object-fit:cover;object-position:50% 45%}
