@@ -52,6 +52,10 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
 .gs-phone1{top:238.7rem;height:54.8rem}
 .gs-phone{display:block}
 .gs-phone-1{left:64.1rem;top:0;width:27.6rem;height:auto}
+/* phone with a looping reel on its screen: video sits under the transparent-screen frame */
+.gs-phone-video{position:absolute;height:auto;aspect-ratio:276/547}
+.gs-grp .gs-phone-video video{position:absolute;left:2.2%;top:1.1%;width:95.6%;height:97.8%;object-fit:cover;border-radius:13.8% / 7%;background:#E2DED7;display:block}
+.gs-grp .gs-phone-video img{position:absolute;left:0;top:0;width:100%;height:100%;max-width:none}
 .gs-stat-posts{left:38.7rem;top:14.8rem}
 .gs-stat-posts span{margin:-.4rem 0 0 -8.2rem}
 
@@ -145,6 +149,7 @@ body.page-monstera .hm-logo .hm-logo-dark,body.page-go-soiree .hm-logo .hm-logo-
   .gs-img-post{grid-column:1/-1;width:min(24rem,60%);justify-self:center}
   .gs-phone1{display:flex;align-items:center;justify-content:center;gap:4rem}
   .gs-phone-1{width:min(22rem,40%)}
+  .gs-phone-video{position:relative;left:auto;top:auto;flex:none}
   .gs-gal3{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;position:relative;padding-top:12rem}
   .gs-gal3 .gs-doodle{position:absolute;right:0;top:0;width:14rem}
   .gs-card{width:100%;aspect-ratio:415/563;border-radius:1.6rem}
