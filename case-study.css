@@ -96,12 +96,25 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
 .page-mahj-and-away .gs-stat-kits span{margin:-.4rem 0 0 -8.2rem}
 .page-mahj-and-away .gs-doodle{left:93rem;top:.6rem;width:23rem}
 
+/* ---------- Monstera: hero, services / brief, one brand-board column ---------- */
+.page-monstera .gs-main{height:616.4rem}
+.page-monstera .gs-title{left:115.7rem;top:20.5rem}
+.page-monstera .gs-hero-img{top:28.8rem;height:70.2rem;border-radius:2.7rem}
+.page-monstera .gs-more-link img{top:-.1rem;width:7.3rem;height:2.7rem}
+.gs-brief{top:107.9rem;height:16rem}
+.gs-brief .gs-col{top:0}
+.page-monstera .gs-label{color:#E55033;top:.2rem}
+.page-monstera .gs-services,.page-monstera .gs-body{top:3.8rem}
+.gs-board{top:136.78rem;height:454.1rem;padding-left:20.4rem}
+.gs-board img{position:relative;display:block;width:103.2rem;height:auto}
+.page-monstera .gs-more{top:605.2rem}
+
 /* ---------- stacked layout (phones / small tablets) ---------- */
 @media (max-width:1199px){
   .mu-br br{display:none}
   .mu-br::after{content:" "}
   body.page-case-study main>section.gs-main:first-child{padding:12rem 0 6rem !important}
-  .gs-main{height:auto}
+  .gs-main,.page-monstera .gs-main{height:auto}
   .gs-grp,.gs-grp img,.gs-title,.gs-what,.gs-oval,.gs-oval-label,.gs-oval-num,.gs-col,.gs-label,.gs-services,.gs-body,.gs-stat,.gs-script-title,.gs-more-link{position:static;left:auto;top:auto;width:auto;height:auto;white-space:normal}
   .gs-grp{margin:0 0 5.6rem}
   .gs-grp img{max-width:100%}
@@ -116,6 +129,10 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
   .gs-label{margin-bottom:2rem}
   .gs-services{line-height:2.2rem}
   .gs-body{line-height:2.2rem;letter-spacing:.04em}
+  .gs-brief{display:grid;grid-template-columns:1fr 1fr;gap:3.2rem 2.4rem;align-items:start}
+  .page-monstera .gs-hero-img{border-radius:1.6rem}
+  .gs-board{padding:0}
+  .gs-board img{width:100%}
   .gs-gal1{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;align-items:center}
   .gs-img-table{grid-column:1/-1;width:100%;aspect-ratio:700/520}
   .gs-stat{text-align:center}
@@ -139,7 +156,7 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
   .gs-more-link img{width:6rem;height:auto}
 }
 @media (max-width:600px){
-  .gs-stats,.gs-gal1,.gs-gal4{grid-template-columns:1fr}
+  .gs-stats,.gs-brief,.gs-gal1,.gs-gal4{grid-template-columns:1fr}
   .gs-gal3{grid-template-columns:1fr;padding-top:10rem}
   .gs-phone1{flex-direction:column}
   .gs-phone-1,.gs-phone-2{width:16rem}
