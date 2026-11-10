@@ -76,11 +76,11 @@
   <div class="hm-stage">
     <h2 class="pv-script pv-script-video"><img src="../media/images/photo-video/script-videography.svg" alt="videography"></h2>
     <div class="pv-row pv-row-4 pv-row-rev">
-      <figure class="pv-tile pv-tile-tall"><img src="../media/images/photo-video/allycar-reel.jpg" alt="Mahjong table under a lamp"></figure>
+      <figure class="pv-tile pv-tile-tall pv-reel"><video src="../media/video/allycar-reel.mp4" poster="../media/video/allycar-reel-poster.jpg" loop muted playsinline preload="metadata" aria-label="Founder interview reel for Allycar"></video><button class="pv-play" type="button" aria-label="Play video"><svg class="pv-ic pv-ic-play" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z"/></svg><svg class="pv-ic pv-ic-pause" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg></button><button class="pv-mute" type="button" aria-label="Unmute video"><svg class="pv-ic pv-ic-muted" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 9v6h3.5L12 19V5L7.5 9H4z"/><path d="M15.5 9l5 6m0-6l-5 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg><svg class="pv-ic pv-ic-sound" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 9v6h3.5L12 19V5L7.5 9H4z"/><path d="M15.5 8.6a5 5 0 0 1 0 6.8M17.9 6.3a8 8 0 0 1 0 11.4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg></button></figure>
       <p class="pv-text">Founder interview reel for <strong>Allycar</strong>: an authentic,<span class="mu-br"><br></span>story-driven piece introducing the people behind<span class="mu-br"><br></span>the brand and their promise of transparent,<span class="mu-br"><br></span>family-friendly car rental in Orlando.</p>
     </div>
     <div class="pv-row pv-row-5">
-      <figure class="pv-tile pv-tile-tall"><img src="../media/images/photo-video/mahj-away-reel.jpg" alt="Guests at the Mahj &amp; Away event"></figure>
+      <figure class="pv-tile pv-tile-tall pv-reel"><video src="../media/video/mahj-away-reel.mp4" poster="../media/video/mahj-away-reel-poster.jpg" loop muted playsinline preload="metadata" aria-label="Event recap reel for Mahj &amp; Away"></video><button class="pv-play" type="button" aria-label="Play video"><svg class="pv-ic pv-ic-play" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z"/></svg><svg class="pv-ic pv-ic-pause" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg></button><button class="pv-mute" type="button" aria-label="Unmute video"><svg class="pv-ic pv-ic-muted" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 9v6h3.5L12 19V5L7.5 9H4z"/><path d="M15.5 9l5 6m0-6l-5 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg><svg class="pv-ic pv-ic-sound" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 9v6h3.5L12 19V5L7.5 9H4z"/><path d="M15.5 8.6a5 5 0 0 1 0 6.8M17.9 6.3a8 8 0 0 1 0 11.4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg></button></figure>
       <p class="pv-text">Event recap for <strong>Mahj &amp; Away</strong>: a stylish, detail-<span class="mu-br"><br></span>driven reel showcasing an evening of mahjong,<span class="mu-br"><br></span>great food and good company.</p>
     </div>
     <div class="pv-row pv-row-6 pv-row-rev">
@@ -112,19 +112,24 @@
 <script src="../script.js?v=9"></script>
 <script>
 (function(){
-  var fig=document.querySelector('.pv-reel');
-  if(!fig)return;
-  var v=fig.querySelector('video'),playBtn=fig.querySelector('.pv-play'),muteBtn=fig.querySelector('.pv-mute');
-  function syncPlay(){fig.classList.toggle('is-playing',!v.paused);playBtn.setAttribute('aria-label',v.paused?'Play video':'Pause video');}
-  function syncMute(){fig.classList.toggle('is-unmuted',!v.muted);muteBtn.setAttribute('aria-label',v.muted?'Unmute video':'Mute video');}
-  function togglePlay(){if(v.paused){v.play();}else{v.pause();}}
-  playBtn.addEventListener('click',function(e){e.stopPropagation();togglePlay();});
-  muteBtn.addEventListener('click',function(e){e.stopPropagation();v.muted=!v.muted;syncMute();});
-  v.addEventListener('click',togglePlay);
-  v.addEventListener('play',function(){syncPlay();fig.classList.add('show-controls');setTimeout(function(){fig.classList.remove('show-controls');},1200);});
-  v.addEventListener('pause',syncPlay);
-  v.addEventListener('volumechange',syncMute);
-  syncPlay();syncMute();
+  var reels=[].slice.call(document.querySelectorAll('.pv-reel'));
+  reels.forEach(function(fig){
+    var v=fig.querySelector('video'),playBtn=fig.querySelector('.pv-play'),muteBtn=fig.querySelector('.pv-mute');
+    if(!v||!playBtn||!muteBtn)return;
+    function syncPlay(){fig.classList.toggle('is-playing',!v.paused);playBtn.setAttribute('aria-label',v.paused?'Play video':'Pause video');}
+    function syncMute(){fig.classList.toggle('is-unmuted',!v.muted);muteBtn.setAttribute('aria-label',v.muted?'Unmute video':'Mute video');}
+    function togglePlay(){if(v.paused){v.play();}else{v.pause();}}
+    playBtn.addEventListener('click',function(e){e.stopPropagation();togglePlay();});
+    muteBtn.addEventListener('click',function(e){e.stopPropagation();v.muted=!v.muted;syncMute();});
+    v.addEventListener('click',togglePlay);
+    v.addEventListener('play',function(){
+      reels.forEach(function(o){var ov=o.querySelector('video');if(ov&&ov!==v&&!ov.paused){ov.pause();}});
+      syncPlay();fig.classList.add('show-controls');setTimeout(function(){fig.classList.remove('show-controls');},1200);
+    });
+    v.addEventListener('pause',syncPlay);
+    v.addEventListener('volumechange',syncMute);
+    syncPlay();syncMute();
+  });
 })();
 </script>
 </body>
