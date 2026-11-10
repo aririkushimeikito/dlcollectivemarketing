@@ -43,6 +43,8 @@
     // heroes already have their own entrance / background motion
     if (sec.matches && (sec.matches('.dlc-hero') || sec.matches('.index-s1'))) return;
     var inner = sec.querySelector ? sec.querySelector(':scope > .inner') : null;
+    // case-study pages: one very tall section — reveal its groups one by one
+    if (!inner && sec.matches && sec.matches('.gs-main')) inner = sec.querySelector(':scope > .hm-stage');
     var group = (inner && inner.children.length)
       ? Array.prototype.slice.call(inner.children)
       : [sec];
@@ -54,9 +56,14 @@
   });
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
-      if (e.isIntersecting) { e.target.classList.add('anim-in'); io.unobserve(e.target); }
+      if (!e.isIntersecting) return;
+      // reveal once 12% of the element is in view, or — for elements taller than the
+      // viewport, which can never reach 12% — once the visible part fills 30% of it
+      var vh = window.innerHeight || document.documentElement.clientHeight || 0;
+      var visible = e.intersectionRect ? e.intersectionRect.height : 0;
+      if (e.intersectionRatio >= 0.12 || visible >= vh * 0.3) { e.target.classList.add('anim-in'); io.unobserve(e.target); }
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+  }, { threshold: [0, 0.03, 0.06, 0.09, 0.12], rootMargin: '0px 0px -8% 0px' });
   items.forEach(function (el) { io.observe(el); });
 })();
 
