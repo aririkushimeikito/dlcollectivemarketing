@@ -7,7 +7,7 @@ body.page-our-work main>section.pw-intro:first-child{padding:0 !important}
 .pw-h1{position:absolute;left:12.37rem;top:17.55rem;margin:0;font-size:4.6rem;line-height:1;font-weight:500;letter-spacing:0;color:#1A1A18;white-space:nowrap}
 .pw-lead{position:absolute;left:12.37rem;top:24.82rem;margin:0;font-size:1.5rem;line-height:1;font-weight:400;letter-spacing:0;color:#4A4A4A;white-space:nowrap}
 .pw-hearts{position:absolute;left:31.64rem;top:14.56rem;width:8.1rem;height:auto}
-.pw-list{position:absolute;left:65.56rem;top:15.2rem;height:22rem;margin:0;padding:0 0 0 2.02rem;list-style:none;border-left:.2rem solid #8BC45F;font-size:1.25rem;line-height:1.25rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#1A1A18;white-space:nowrap}
+.pw-list{position:absolute;left:65.56rem;top:13.5rem;height:22rem;margin:0;padding:0 0 0 2.02rem;list-style:none;border-left:.2rem solid #8BC45F;font-size:1.25rem;line-height:1.25rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#1A1A18;white-space:nowrap}
 .pw-list li{position:absolute;left:2.02rem;margin-top:.2rem}
 .pw-list li:nth-child(1){top:.85rem}.pw-list li:nth-child(2){top:3.75rem}.pw-list li:nth-child(3){top:6.55rem}.pw-list li:nth-child(4){top:9.45rem}.pw-list li:nth-child(5){top:12.35rem}.pw-list li:nth-child(6){top:15.25rem}.pw-list li:nth-child(7){top:18.05rem}.pw-list li:nth-child(8){top:20.95rem}
 .pw-list a{color:inherit;transition:color .2s}
