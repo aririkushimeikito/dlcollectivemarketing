@@ -47,7 +47,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .dlc-menu{position:fixed;top:0;left:0;height:100vh;width:420px;max-width:92vw;background:#141414;z-index:200;transform:translateX(-100%);transition:transform .4s cubic-bezier(.22,.61,.36,1);padding:48px 32px 64px 72px;box-sizing:border-box;overflow-y:auto}
 .dlc-menu.open{transform:translateX(0)}
 /* spacer so the panel always runs a little past the screen and scrolls, like the reference */
-.dlc-menu::after{content:"";display:block;height:calc(100vh - 525px);min-height:48px}
+.dlc-menu::after{content:"";display:block;height:calc(100vh - 605px);min-height:40px}
 /* logo and links drop into place one after another once the panel is open */
 .dlc-menu img{width:108px;height:auto;margin:0 0 56px -36px;display:block;opacity:0;transform:translateY(-28px);transition:opacity .4s ease,transform .5s cubic-bezier(.22,.61,.36,1)}
 .dlc-menu a{display:block;color:#fff;text-decoration:none;font-family:'Mr Bedfort',cursive;font-size:64px;line-height:84px;font-weight:400;font-style:normal;text-transform:lowercase;margin:0;letter-spacing:0;opacity:0;transform:translateY(-32px);transition:color .2s,opacity .45s ease,transform .55s cubic-bezier(.22,.61,.36,1)}
