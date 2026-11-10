@@ -149,7 +149,7 @@ body.page-monstera .hm-logo .hm-logo-dark,body.page-go-soiree .hm-logo .hm-logo-
   .gs-img-post{grid-column:1/-1;width:min(24rem,60%);justify-self:center}
   .gs-phone1{display:flex;align-items:center;justify-content:center;gap:4rem}
   .gs-phone-1{width:min(22rem,40%)}
-  .gs-phone-video{position:relative;left:auto;top:auto;flex:none}
+  .gs-phone-video{position:relative;left:auto;top:auto;height:auto;flex:none}
   .gs-gal3{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;position:relative;padding-top:12rem}
   .gs-gal3 .gs-doodle{position:absolute;right:0;top:0;width:14rem}
   .gs-card{width:100%;aspect-ratio:415/563;border-radius:1.6rem}
