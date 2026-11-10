@@ -56,6 +56,14 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
 .gs-phone-video{position:absolute;height:auto;aspect-ratio:276/547}
 .gs-grp .gs-phone-video video{position:absolute;left:2.2%;top:1.1%;width:95.6%;height:97.8%;object-fit:cover;border-radius:13.8% / 7%;background:#E2DED7;display:block}
 .gs-grp .gs-phone-video img{position:absolute;left:0;top:0;width:100%;height:100%;max-width:none}
+/* sound on/off toggle sitting on top of the autoplaying phone reel */
+.gs-phone-video .gs-mute{position:absolute;z-index:3;right:9%;bottom:5.5%;width:2.9rem;height:2.9rem;border:0;padding:0;cursor:pointer;color:#fff;display:inline-flex;align-items:center;justify-content:center;background:rgba(0,0,0,.5);border-radius:50%;transition:background .2s ease}
+.gs-phone-video .gs-mute:hover{background:rgba(0,0,0,.72)}
+.gs-phone-video .gs-mute:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.gs-phone-video .gs-mute .gs-ic{width:1.55rem;height:1.55rem}
+.gs-phone-video .gs-ic-sound{display:none}
+.gs-phone-video.is-unmuted .gs-ic-muted{display:none}
+.gs-phone-video.is-unmuted .gs-ic-sound{display:block}
 .gs-stat-posts{left:38.7rem;top:14.8rem}
 .gs-stat-posts span{margin:-.4rem 0 0 -8.2rem}
 

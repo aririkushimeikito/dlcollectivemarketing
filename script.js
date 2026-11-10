@@ -135,3 +135,26 @@
   window.addEventListener('load', schedule);
   setTimeout(update, 300);
 })();
+
+/* sound on/off toggle for autoplaying phone reels on the case-study pages */
+(function () {
+  var wraps = document.querySelectorAll('.gs-phone-video');
+  Array.prototype.forEach.call(wraps, function (wrap) {
+    var v = wrap.querySelector('video');
+    var btn = wrap.querySelector('.gs-mute');
+    if (!v || !btn) return;
+    function sync() {
+      wrap.classList.toggle('is-unmuted', !v.muted);
+      btn.setAttribute('aria-label', v.muted ? 'Unmute video' : 'Mute video');
+    }
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      v.muted = !v.muted;
+      if (!v.muted && v.paused) { v.play(); }
+      sync();
+    });
+    v.addEventListener('volumechange', sync);
+    sync();
+  });
+})();
