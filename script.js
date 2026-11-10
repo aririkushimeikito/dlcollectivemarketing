@@ -103,28 +103,112 @@
     if (p.length > 3 && p[3] === 0) return null;
     return (0.2126 * p[0] + 0.7152 * p[1] + 0.0722 * p[2]) / 255;
   }
-  function toneAt(x, y) {
+  function clamp(v, a, b) { return Math.min(Math.max(v, a), b); }
+  // a tiny reusable canvas to read pixel brightness from images/videos
+  var _c, _ctx;
+  function ctx() {
+    if (!_c) { _c = document.createElement('canvas'); _ctx = _c.getContext('2d', { willReadFrequently: true }); }
+    return _ctx;
+  }
+  // parse object-position / background-position into 0..1 fractions [x, y]
+  function parsePos(v) {
+    var parts = (v || '50% 50%').trim().split(/\s+/);
+    if (parts.length === 1) parts[1] = 'center';
+    function conv(p) {
+      if (p === 'left' || p === 'top') return 0;
+      if (p === 'right' || p === 'bottom') return 1;
+      if (p === 'center') return 0.5;
+      var pct = /^(-?\d+(?:\.\d+)?)%$/.exec(p); if (pct) return clamp(parseFloat(pct[1]) / 100, 0, 1);
+      return 0.5;
+    }
+    return [conv(parts[0]), conv(parts[1])];
+  }
+  // average brightness of a small patch of a source image/video at viewport point (x,y)
+  function sampleSource(src, nw, nh, r, fit, posStr, x, y) {
+    if (!nw || !nh || r.width <= 0 || r.height <= 0) return null;
+    var pos = parsePos(posStr);
+    var fx = clamp((x - r.left) / r.width, 0, 1), fy = clamp((y - r.top) / r.height, 0, 1);
+    var sx, sy;
+    if (fit === 'cover' || fit === 'contain') {
+      var scale = fit === 'cover' ? Math.max(r.width / nw, r.height / nh) : Math.min(r.width / nw, r.height / nh);
+      sx = (fx * r.width + (nw * scale - r.width) * pos[0]) / scale;
+      sy = (fy * r.height + (nh * scale - r.height) * pos[1]) / scale;
+    } else { sx = fx * nw; sy = fy * nh; }
+    sx = clamp(sx, 0, nw - 1); sy = clamp(sy, 0, nh - 1);
+    var patch = Math.max(6, Math.round(Math.min(nw, nh) * 0.06));
+    var ox = clamp(sx - patch / 2, 0, Math.max(0, nw - patch));
+    var oy = clamp(sy - patch / 2, 0, Math.max(0, nh - patch));
+    try {
+      var c = ctx(); _c.width = 1; _c.height = 1;
+      c.drawImage(src, ox, oy, patch, patch, 0, 0, 1, 1);
+      var d = c.getImageData(0, 0, 1, 1).data;
+      if (d[3] === 0) return null;
+      return (0.2126 * d[0] + 0.7152 * d[1] + 0.0722 * d[2]) / 255;
+    } catch (e) { return null; }
+  }
+  function mediaLum(el, x, y) {
+    var cs = getComputedStyle(el);
+    if (el.tagName === 'IMG') return sampleSource(el, el.naturalWidth, el.naturalHeight, el.getBoundingClientRect(), cs.objectFit, cs.objectPosition, x, y);
+    return sampleSource(el, el.videoWidth, el.videoHeight, el.getBoundingClientRect(), cs.objectFit, cs.objectPosition, x, y);
+  }
+  // background-image: load the url once (cached) and sample it like an <img>
+  var bgCache = {};
+  function getBg(url) {
+    if (bgCache[url]) return bgCache[url];
+    var o = { img: new Image(), ready: false };
+    o.img.onload = function () { o.ready = true; schedule(); };
+    o.img.onerror = function () { o.ready = 'error'; };
+    o.img.src = url;
+    bgCache[url] = o;
+    return o;
+  }
+  function bgLum(el, cs, x, y) {
+    var m = /url\((['"]?)(.*?)\1\)/.exec(cs.backgroundImage); if (!m) return null;
+    var o = getBg(m[2]); if (o.ready !== true) return null;
+    var size = cs.backgroundSize || 'auto';
+    var fit = size.indexOf('contain') > -1 ? 'contain' : 'cover';
+    return sampleSource(o.img, o.img.naturalWidth, o.img.naturalHeight, el.getBoundingClientRect(), fit, cs.backgroundPosition, x, y);
+  }
+  // luminance (0..1) of whatever is painted under a single point, or null
+  function lumAt(x, y) {
     var els = document.elementsFromPoint ? document.elementsFromPoint(x, y) : [];
     for (var i = 0; i < els.length; i++) {
       var el = els[i]; if (inFixed(el)) continue;
-      var tag = el.tagName;
-      if (tag === 'IMG' || tag === 'VIDEO' || tag === 'CANVAS' || tag === 'IFRAME') return 'dark';
+      var tag = el.tagName, l;
+      if (tag === 'IMG' || tag === 'VIDEO') {
+        l = mediaLum(el, x, y);
+        if (l !== null) return l;
+        continue; // not loaded / unreadable — look at what's behind it
+      }
+      if (tag === 'CANVAS' || tag === 'IFRAME') return 0.12; // assume dark
       var cs = getComputedStyle(el);
-      if (cs.backgroundImage && cs.backgroundImage.indexOf('url(') > -1) return 'dark';
-      var l = lum(cs.backgroundColor);
-      if (l !== null) return l > 0.55 ? 'light' : 'dark';
+      if (cs.backgroundImage && cs.backgroundImage.indexOf('url(') > -1) {
+        l = bgLum(el, cs, x, y);
+        if (l !== null) return l;
+      }
+      l = lum(cs.backgroundColor);
+      if (l !== null) return l;
     }
-    return 'light';
+    return null;
   }
+  // average brightness over a grid of points across the element, so a single
+  // dark/light speckle behind the logo doesn't flip the whole colour
   function apply(prefix, el) {
     if (!el) return;
     var r = el.getBoundingClientRect();
     if (r.width === 0 || r.height === 0) return;
-    var x = Math.min(Math.max(r.left + r.width / 2, 1), window.innerWidth - 1);
-    var y = Math.min(Math.max(r.top + r.height / 2, 1), window.innerHeight - 1);
-    var t = toneAt(x, y);
-    document.body.classList.toggle(prefix + '-on-light', t === 'light');
-    document.body.classList.toggle(prefix + '-on-dark', t === 'dark');
+    var xs = [0.15, 0.5, 0.85], ys = [0.3, 0.7], sum = 0, cnt = 0;
+    for (var a = 0; a < xs.length; a++) {
+      for (var b = 0; b < ys.length; b++) {
+        var x = clamp(r.left + r.width * xs[a], 1, window.innerWidth - 1);
+        var y = clamp(r.top + r.height * ys[b], 1, window.innerHeight - 1);
+        var l = lumAt(x, y);
+        if (l !== null) { sum += l; cnt++; }
+      }
+    }
+    var light = cnt ? (sum / cnt) >= 0.5 : true;
+    document.body.classList.toggle(prefix + '-on-light', light);
+    document.body.classList.toggle(prefix + '-on-dark', !light);
   }
   var queued = false;
   function update() { queued = false; apply('logo', logo); apply('social', social); }

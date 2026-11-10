@@ -113,9 +113,8 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
 .page-monstera .gs-title{left:115.7rem;top:20.5rem}
 .page-monstera .gs-hero-img{top:28.8rem;height:70.2rem;border-radius:2.7rem}
 .page-monstera .gs-more-link img{top:-.1rem;width:7.3rem;height:2.7rem}
-/* the fixed logo stays black over the whole Monstera, Go Soiree and Mahj & Away pages (no white switch over the photos) */
-body.page-monstera .hm-logo .hm-logo-light,body.page-go-soiree .hm-logo .hm-logo-light,body.page-mahj-and-away .hm-logo .hm-logo-light{display:none}
-body.page-monstera .hm-logo .hm-logo-dark,body.page-go-soiree .hm-logo .hm-logo-dark,body.page-mahj-and-away .hm-logo .hm-logo-dark{display:block}
+/* the fixed logo colour is handled by the auto-contrast script (script.js),
+   so it switches black/white based on the brightness behind it on every page */
 .gs-brief{top:107.9rem;height:16rem}
 .gs-brief .gs-col{top:0}
 .page-monstera .gs-label{color:#E55033;top:.2rem}
