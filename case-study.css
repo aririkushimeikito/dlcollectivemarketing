@@ -1,10 +1,10 @@
 /* ====================================================================
-   DL Collective — Go Soiree case study (Figma "go soiree" frame, 1440 × 5403)
+   DL Collective — portfolio case studies (Figma "go soiree" / "mahj and away" frames, 1440 × 5403)
    Same scale system as home.css: 1rem = 10px at a 1440px viewport.
    ==================================================================== */
-body.page-go-soiree{background:#FCF3EC}
+body.page-case-study{background:#FCF3EC}
 .gs-main{position:relative;height:505.6rem;background:#FCF3EC;color:#1A1A1A}
-body.page-go-soiree main>section.gs-main:first-child{padding:0 !important}
+body.page-case-study main>section.gs-main:first-child{padding:0 !important}
 .gs-grp{position:absolute;left:0;width:144rem}
 .gs-grp img{position:absolute;display:block;max-width:none}
 
@@ -83,11 +83,24 @@ body.page-go-soiree main>section.gs-main:first-child{padding:0 !important}
 .gs-more-link:hover{color:#E55033}
 .gs-more-link:hover img{transform:translateX(.6rem)}
 
+/* ---------- Mahj and Away: same layout, its own title, hero crop, coral labels and tile doodle ---------- */
+.page-mahj-and-away .gs-title{left:105.1rem;top:20.5rem}
+.page-mahj-and-away .gs-hero-img{top:28.8rem;height:70.2rem}
+.page-mahj-and-away .gs-oval-num{width:max-content;font-weight:700;letter-spacing:0;transform-origin:0 0}
+.page-mahj-and-away .gs-oval-1 .gs-oval-num{left:7.3rem;top:6.7rem;transform:scaleX(.83)}
+.page-mahj-and-away .gs-oval-2 .gs-oval-label{left:5.7rem;top:3rem}
+.page-mahj-and-away .gs-oval-2 .gs-oval-num{left:6.3rem;top:6.7rem;transform:scaleX(.88)}
+.page-mahj-and-away .gs-col-goals .gs-label{letter-spacing:.05em}
+.page-mahj-and-away .gs-label{color:#E55033;top:.1rem}
+.page-mahj-and-away .gs-services{top:3.7rem}
+.page-mahj-and-away .gs-stat-kits span{margin:-.4rem 0 0 -8.2rem}
+.page-mahj-and-away .gs-doodle{left:93rem;top:.6rem;width:23rem}
+
 /* ---------- stacked layout (phones / small tablets) ---------- */
 @media (max-width:1199px){
   .mu-br br{display:none}
   .mu-br::after{content:" "}
-  body.page-go-soiree main>section.gs-main:first-child{padding:12rem 0 6rem !important}
+  body.page-case-study main>section.gs-main:first-child{padding:12rem 0 6rem !important}
   .gs-main{height:auto}
   .gs-grp,.gs-grp img,.gs-title,.gs-what,.gs-oval,.gs-oval-label,.gs-oval-num,.gs-col,.gs-label,.gs-services,.gs-body,.gs-stat,.gs-script-title,.gs-more-link{position:static;left:auto;top:auto;width:auto;height:auto;white-space:normal}
   .gs-grp{margin:0 0 5.6rem}
