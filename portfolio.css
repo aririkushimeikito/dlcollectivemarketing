@@ -16,6 +16,9 @@ body.page-our-work main>section.pw-intro:first-child{padding:0 !important}
 .pw-gallery{position:relative;height:190rem;background:#FCF3EC}
 .pw-card{position:absolute;width:86.1rem;height:44.1rem;margin:0;border-radius:1.2rem;overflow:hidden;background:#ddd}
 .pw-card>img{position:absolute;max-width:none;display:block}
+.pw-card-link{position:absolute;inset:0;z-index:2;border-radius:inherit}
+.pw-card>img{transition:transform .6s cubic-bezier(.22,.61,.36,1)}
+.pw-card:has(.pw-card-link):hover>img{transform:scale(1.03)}
 .pw-card-1{left:12.36rem;top:1rem}
 .pw-card-2{left:45.7rem;top:49rem}
 .pw-card-3{left:12.36rem;top:97rem}
