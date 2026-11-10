@@ -1103,7 +1103,9 @@ body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-light{display:inline-b
 .dlc-menu-social{display:none}
 @media(max-width:767px){
   /* phones keep the earlier layout: full-width panel, regular-size links, social icons in a column on the right */
-  .dlc-menu{width:100vw;max-width:none;padding:40px 24px 56px 24px}
+  /* extra left padding so the script font's left overhang (e.g. the "h" in
+     "home") isn't cut off at the screen edge */
+  .dlc-menu{width:100vw;max-width:none;padding:40px 24px 56px 44px}
   .dlc-menu img{width:76px;margin:0 0 36px 0}
   .dlc-menu a{font-size:54px;line-height:68px;margin:0}
   .dlc-menu::after{height:0;min-height:0}
