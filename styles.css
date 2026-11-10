@@ -44,11 +44,11 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .dlc-burger{position:fixed;top:26px;right:34px;z-index:100;width:34px;height:26px;cursor:pointer;background:none;border:0;padding:0}
 .dlc-burger span{display:block;height:3px;background:#fff;margin:0 0 7px;border-radius:2px;transition:.3s}
 .dlc-burger.on-light span{background:#1A1A18}
-.dlc-menu{position:fixed;top:0;left:0;height:100vh;width:340px;max-width:85vw;background:#0E3B24;z-index:200;transform:translateX(-100%);transition:transform .35s ease;padding:40px 48px;box-sizing:border-box}
+.dlc-menu{position:fixed;top:0;left:0;height:100vh;width:340px;max-width:85vw;background:#111111;z-index:200;transform:translateX(-100%);transition:transform .35s ease;padding:40px 48px;box-sizing:border-box}
 .dlc-menu.open{transform:translateX(0)}
-.dlc-menu img{width:120px;height:auto;margin-bottom:34px}
-.dlc-menu a{display:block;color:#fff;text-decoration:none;font-size:30px;font-weight:500;font-style:italic;margin:0 0 20px;letter-spacing:.3px}
-.dlc-menu a.current,.dlc-menu a:hover{color:#B6F11B}
+.dlc-menu img{width:120px;height:auto;margin-bottom:44px}
+.dlc-menu a{display:block;color:#fff;text-decoration:none;font-family:'Mr Bedfort',cursive;font-size:44px;line-height:1;font-weight:400;font-style:normal;text-transform:lowercase;margin:0 0 26px;letter-spacing:0;transition:color .2s}
+.dlc-menu a.current,.dlc-menu a:hover{color:#B7D334}
 .dlc-menu .dlc-close{position:absolute;top:22px;right:22px;color:#fff;font-size:30px;cursor:pointer;background:none;border:0}
 .dlc-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:150;display:none}
 .dlc-backdrop.open{display:block}
