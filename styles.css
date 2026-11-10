@@ -1091,9 +1091,10 @@ body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-light{display:inline-b
 @media(max-width:767px){
   .dlc-menu{width:100vw;max-width:none;padding-top:30px}
   /* push the nav block down the screen (Bread & Butter style) */
-  .dlc-menu img{margin-bottom:88px}
-  /* proportionate, evenly-spread links instead of a top-heavy cluster */
-  .dlc-menu a{font-size:46px;line-height:1.18;margin-bottom:44px}
+  .dlc-menu{padding-left:44px}
+  .dlc-menu img{margin-bottom:96px}
+  /* bigger, evenly-spread links that fill the screen (slight scroll on short phones) */
+  .dlc-menu a{font-size:60px;line-height:1.12;margin-bottom:48px}
   .dlc-menu .dlc-menu-social{display:flex;flex-direction:column;gap:30px;position:absolute;right:26px;top:50%;transform:translateY(-50%);margin:0}
   .dlc-menu .dlc-menu-social a{display:inline-flex;align-items:center;justify-content:center;margin:0;padding:0;background:none;width:auto}
   .dlc-menu .dlc-menu-social svg{width:26px;height:26px}
