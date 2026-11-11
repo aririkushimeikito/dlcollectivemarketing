@@ -44,6 +44,11 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
 /* the stat numerals are set in a heavier, narrower cut than the body face — Delight 700 condensed to the frame's glyph widths */
 .gs-stat strong{display:block;width:max-content;font-size:6.4rem;line-height:1;font-weight:700;letter-spacing:0;color:#1A1A1A;transform:scaleX(.83);transform-origin:0 0}
 .gs-stat span{display:block;font-family:'Mr Bedfort',cursive;font-size:4rem;line-height:1;font-weight:400;color:#4A453E}
+/* updated stat labels supplied as SVG artwork (green script) */
+.gs-stat .gs-stat-lbl{display:block;height:auto;max-width:none}
+.gs-stat-kits .gs-stat-lbl{width:8rem;margin:.6rem 0 0 .4rem}
+.gs-stat-posts .gs-stat-lbl{width:15.4rem;margin:.2rem 0 0 -2rem}
+.gs-stat-videos .gs-stat-lbl{width:12.8rem;margin:.4rem 0 0 -1.5rem}
 .gs-stat-kits{left:99.2rem;top:2.2rem}
 .gs-stat-kits strong{transform:scaleX(.88)}
 .gs-stat-kits span{margin:.3rem 0 0 .4rem}
@@ -152,6 +157,10 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
   .gs-stat{text-align:center}
   .gs-stat strong{font-size:5.6rem;margin:0 auto}
   .gs-stat span{font-size:3.4rem;margin:.4rem 0 0 !important}
+  /* centre the SVG stat labels on mobile */
+  .gs-stat .gs-stat-lbl{width:auto;margin:1rem auto 0 !important}
+  .gs-stat-posts .gs-stat-lbl,.gs-stat-videos .gs-stat-lbl{height:6rem}
+  .gs-stat-kits .gs-stat-lbl{height:3.6rem}
   .gs-img-bar{width:100%;aspect-ratio:520/350}
   .gs-img-post{grid-column:1/-1;width:min(24rem,60%);justify-self:center}
   .gs-phone1{display:flex;align-items:center;justify-content:center;gap:4rem}
