@@ -83,3 +83,19 @@ body main>section.sd-main:first-child{padding:0 !important}
   .sd-list-1{order:8;grid-column:1}
   .sd-main .sd-list-2{order:9;grid-column:1;margin-top:-1.6rem}
 }
+
+/* ---- previous / next pager (service-detail pages) ---- */
+.sd-pager{background:#FCF3EC;padding:0 0 10rem}
+.sd-pager .hm-stage{display:flex;gap:4.5rem;align-items:flex-start}
+.sd-pg{flex:1 1 0;min-width:0;display:block;text-decoration:none;color:#1A1A18}
+.sd-pg-label{display:block;font-size:4.4rem;font-weight:400;line-height:1;letter-spacing:-.01em;margin:0 0 2.2rem}
+.sd-pg-next .sd-pg-label{text-align:right}
+.sd-pager .hm-stage>.sd-pg:only-child .sd-pg-label{text-align:left}
+.sd-pg-card{margin:0;border-radius:1.6rem;overflow:hidden;background:#FEFEFE;transition:transform .45s cubic-bezier(.22,.61,.36,1)}
+.sd-pg-card img{display:block;width:100%;height:auto}
+.sd-pg:hover .sd-pg-card{transform:scale(1.02)}
+@media (max-width:1199px){
+  .sd-pager{padding:0 0 8rem}
+  .sd-pager .hm-stage{flex-direction:column;gap:3.6rem}
+  .sd-pg-label{font-size:4.4rem;margin:0 0 1.8rem}
+}
