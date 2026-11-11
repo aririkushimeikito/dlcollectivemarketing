@@ -208,7 +208,18 @@
         if (l !== null) { sum += l; cnt++; }
       }
     }
-    var light = cnt ? (sum / cnt) >= 0.5 : true;
+    var onLight = document.body.classList.contains(prefix + '-on-light');
+    var onDark = document.body.classList.contains(prefix + '-on-dark');
+    if (!cnt) {
+      // nothing readable under the logo (image still loading, etc.) — keep the
+      // current colour instead of snapping to a default, so it never gets stuck wrong
+      if (!onLight && !onDark) document.body.classList.add(prefix + '-on-dark');
+      return;
+    }
+    var avg = sum / cnt;
+    // hysteresis: require a clear margin past the midpoint to flip, so the colour
+    // doesn't flicker back and forth over busy / mid-tone images
+    var light = onLight ? avg >= 0.42 : avg >= 0.58;
     document.body.classList.toggle(prefix + '-on-light', light);
     document.body.classList.toggle(prefix + '-on-dark', !light);
   }
@@ -220,6 +231,20 @@
   window.addEventListener('resize', schedule);
   window.addEventListener('load', schedule);
   setTimeout(update, 300);
+  // the hero slideshow swaps the background behind the fixed logo/icons without a
+  // scroll, so re-sample as each slide slides in and once it settles
+  var heroTrack = document.querySelector('.hero-track');
+  if (heroTrack) {
+    heroTrack.addEventListener('transitionend', function (e) { if (e.propertyName === 'transform') schedule(); });
+    try {
+      // the slideshow advances by changing the track's inline transform; follow it
+      // with a few samples across the 1s slide so the colour keeps up, not just at the end
+      new MutationObserver(function () {
+        schedule();
+        for (var t = 160; t <= 1000; t += 180) setTimeout(schedule, t);
+      }).observe(heroTrack, { attributes: true, attributeFilter: ['style'] });
+    } catch (e) {}
+  }
 })();
 
 /* sound on/off toggle for autoplaying phone reels on the case-study pages */
