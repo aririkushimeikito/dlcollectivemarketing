@@ -1103,13 +1103,11 @@ body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-light{display:inline-b
 .dlc-menu-social{display:none}
 @media(max-width:767px){
   /* phones keep the earlier layout: full-width panel, regular-size links, social icons in a column on the right */
-  /* extra left padding so the script font's left overhang (e.g. the "h" in
-     "home") isn't cut off at the screen edge */
-  .dlc-menu{width:100vw;max-width:none;padding:40px 24px 56px 64px}
-  /* mobile: slide in from the left (previous behaviour), not down from the top */
-  .dlc-menu{transform:translateX(-100%)}
-  .dlc-menu.open{transform:translateX(0)}
-  /* links fade in without the vertical drop so nothing is clipped on open */
+  /* left-aligned items near the edge (Bread & Butter style); the script "h"
+     only overhangs ~4px so a small left padding is safe */
+  .dlc-menu{width:100vw;max-width:none;padding:40px 24px 56px 26px}
+  /* the panel slides down from the top (base translateY) = top-to-down entrance;
+     links fade in without the per-link vertical drop so nothing clips on open */
   .dlc-menu a,.dlc-menu img{transform:none}
   .dlc-menu img{width:76px;margin:0 0 36px 0}
   .dlc-menu a{font-size:54px;line-height:68px;margin:0}
