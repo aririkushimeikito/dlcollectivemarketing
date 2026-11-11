@@ -39,8 +39,8 @@ body.page-what-we-do main>section.sv-intro:first-child{padding:0 !important}
 .sv-ov{position:absolute;inset:0;z-index:3;border-radius:inherit;display:flex;align-items:center;justify-content:center;padding:2rem;text-align:center;text-decoration:none;opacity:0;transition:opacity .4s ease}
 .sv-ov::before{content:"";position:absolute;inset:0;border-radius:inherit;background:rgba(38,40,42,.5)}
 .sv-tile:hover .sv-ov,.sv-ov:focus-visible{opacity:1}
-.sv-ov-title{position:relative;color:#fff;font-size:2.7rem;font-weight:500;letter-spacing:-.01em;line-height:1.15;text-transform:lowercase;transform:translateY(1rem);transition:transform .4s cubic-bezier(.22,.61,.36,1)}
-.sv-tile:hover .sv-ov-title{transform:none}
+.sv-ov-title{position:relative;color:#fff;font-size:2.7rem;font-weight:400;letter-spacing:-.01em;line-height:1.15;text-transform:lowercase;opacity:0;transform:translateY(1rem);transition:opacity .9s ease .15s,transform .7s cubic-bezier(.22,.61,.36,1) .15s}
+.sv-tile:hover .sv-ov-title,.sv-ov:focus-visible .sv-ov-title{opacity:1;transform:none}
 .sv-ov-arrow{position:absolute;top:.4rem;left:25.4rem;width:10.4rem;height:10.4rem;border-radius:50%;background:#fff url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2044%2024'%20fill='none'%20stroke='%232E5BF0'%20stroke-width='2.6'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M3%2013q4-6%208%200t8%200%208%200'/%3E%3Cpath%20d='M30%208l6%205-6%205'/%3E%3C/svg%3E") center/5.8rem 3.4rem no-repeat;box-shadow:0 .8rem 2.4rem rgba(0,0,0,.18);transform:scale(.55);opacity:0;transition:transform .45s cubic-bezier(.2,.7,.3,1.5),opacity .35s ease}
 .sv-tile:hover .sv-ov-arrow{transform:scale(1);opacity:1}
 
