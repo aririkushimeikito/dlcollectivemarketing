@@ -44,7 +44,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .dlc-burger{position:fixed;top:26px;right:34px;z-index:100;width:34px;height:26px;cursor:pointer;background:none;border:0;padding:0}
 .dlc-burger span{display:block;height:3px;background:#fff;margin:0 0 7px;border-radius:2px;transition:.3s}
 .dlc-burger.on-light span{background:#1A1A18}
-.dlc-menu{position:fixed;top:0;left:0;height:100vh;width:420px;max-width:92vw;background:#141414;z-index:200;transform:translateY(-100%);transition:transform .34s cubic-bezier(.22,.61,.36,1);will-change:transform;padding:48px 32px 64px 72px;box-sizing:border-box;overflow-y:auto}
+.dlc-menu{position:fixed;top:0;left:0;height:100vh;height:100dvh;width:420px;max-width:92vw;background:#141414;z-index:200;transform:translateY(-100%);transition:transform .34s cubic-bezier(.22,.61,.36,1);will-change:transform;padding:48px 32px 64px 72px;box-sizing:border-box;overflow-y:auto}
 .dlc-menu.open{transform:translateY(0)}
 /* spacer so the panel always runs a little past the screen and scrolls, like the reference */
 .dlc-menu::after{content:"";display:block;height:calc(100vh - 605px);min-height:40px}
@@ -1105,12 +1105,12 @@ body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-light{display:inline-b
   /* phones keep the earlier layout: full-width panel, regular-size links, social icons in a column on the right */
   /* left-aligned items near the edge (Bread & Butter style); the script "h"
      only overhangs ~4px so a small left padding is safe */
-  .dlc-menu{width:100vw;max-width:none;padding:40px 24px 56px 26px}
+  .dlc-menu{width:100vw;max-width:none;padding:32px 24px 40px 26px}
   /* the panel slides down from the top (base translateY) = top-to-down entrance;
      links fade in without the per-link vertical drop so nothing clips on open */
   .dlc-menu a,.dlc-menu img{transform:none}
-  .dlc-menu img{width:76px;margin:0 0 36px 0}
-  .dlc-menu a{font-size:54px;line-height:68px;margin:0}
+  .dlc-menu img{width:76px;margin:0 0 26px 0}
+  .dlc-menu a{font-size:54px;line-height:60px;margin:0}
   .dlc-menu::after{height:0;min-height:0}
   .dlc-menu .dlc-menu-social{display:flex;flex-direction:column;gap:30px;position:absolute;right:24px;top:50%;transform:translateY(-50%);margin:0}
   .dlc-menu .dlc-menu-social a{display:inline-flex;align-items:center;justify-content:center;margin:0;padding:0;background:none;width:auto;font-size:0;line-height:0}
