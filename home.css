@@ -32,9 +32,9 @@ body.logo-on-light .hm-logo .hm-logo-dark{display:block}
 .hm-social img{width:100%;height:auto;transition:filter .25s ease}
 body.social-on-light .hm-social img{filter:brightness(0) invert(.1)}
 .hm-social-ig{top:0}
-.hm-social-mail{top:5.47rem}
-.hm-social-phone{top:10.93rem}
-.hm-social-in{top:16.4rem}
+.hm-social-mail{top:5.2rem}
+.hm-social-phone{top:10.4rem}
+.hm-social-in{top:15.6rem}
 body.menu-open .hm-social{display:none}
 
 /* ---- Hero (1440 × 801) ---- */

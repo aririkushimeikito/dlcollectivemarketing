@@ -30,7 +30,9 @@
 })();
 
 // Scroll-reveal entrance animations (fade + rise, staggered per section)
+// Disabled: content is shown immediately, with no fade-in on scroll.
 (function () {
+  return;
   if (!('IntersectionObserver' in window)) return;
   try { if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return; } catch (e) {}
   var main = document.querySelector('main');
