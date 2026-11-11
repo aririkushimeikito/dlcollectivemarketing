@@ -13,7 +13,7 @@ body.page-our-work main>section.pw-intro:first-child{padding:0 !important}
 .pw-list a{color:inherit;transition:color .2s}
 .pw-list a:hover{color:#8BC45F}
 
-.pw-gallery{position:relative;height:147rem;background:#FCF3EC}
+.pw-gallery{position:relative;height:156rem;background:#FCF3EC}
 .pw-card{position:absolute;width:86.1rem;height:44.1rem;margin:0;border-radius:1.2rem;overflow:hidden;background:#ddd}
 .pw-card>img{position:absolute;max-width:none;display:block}
 .pw-card-link{position:absolute;inset:0;z-index:2;border-radius:inherit}
