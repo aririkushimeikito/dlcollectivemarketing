@@ -67,7 +67,7 @@ body.page-what-we-do main>section.sv-intro:first-child{padding:0 !important}
   .sv-list li:last-child{margin:0}
   .sv-grid{height:auto;padding:4rem 0 8rem}
   .sv-grid .hm-stage{display:grid;grid-template-columns:repeat(auto-fit,minmax(22rem,1fr));gap:2.8rem}
-  .sv-grid .sv-tile{position:relative;left:auto;top:auto;width:100%;height:auto;aspect-ratio:377.3/340}
+  .sv-grid .sv-tile{position:relative;left:auto;top:auto;width:100%;height:auto;aspect-ratio:1/1}
   .sv-tile:hover{border-radius:50%;aspect-ratio:1}
   .sv-ov-title{font-size:2.2rem}
   .sv-media>img,.sv-media>video{position:absolute;left:0 !important;top:0 !important;width:100% !important;height:100% !important;object-fit:cover}
