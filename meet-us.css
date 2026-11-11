@@ -9,12 +9,12 @@
 .mu-pink{color:#FF4DAB;font-weight:700}
 
 /* ---- Hero (1440 × 900) ---- */
-.mu-hero{position:relative;height:90rem;overflow:hidden;background:#1D0E0A url(media/images/meet/hero-tacos.jpg) no-repeat;background-size:118.47% auto;background-position:-18.57rem -81.06rem}
+.mu-hero{position:relative;height:72rem;overflow:hidden;background:#1D0E0A url(media/images/meet/hero-tacos.jpg) no-repeat;background-size:118.47% auto;background-position:-18.57rem -72rem}
 .mu-hero-shade{position:absolute;inset:0;background:rgba(0,0,0,.46)}
 .mu-hero .hm-stage{position:absolute;left:50%;top:0;height:100%;margin:0;transform:translateX(-50%)}
-.mu-eyebrow{position:absolute;left:10.1rem;top:68.49rem;font-size:1.2rem;line-height:1;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;white-space:nowrap}
-.mu-sub{position:absolute;left:10.1rem;top:70.9rem;font-size:1.3rem;line-height:1;font-weight:400;letter-spacing:.07em;color:#B6F11B;white-space:nowrap}
-.mu-script{position:absolute;left:10.1rem;top:75.3rem;font-family:'Mr Bedfort',cursive;font-size:4.5rem;line-height:5.8rem;font-weight:400;color:#FFFFFF;white-space:nowrap;margin:0}
+.mu-eyebrow{position:absolute;left:10.1rem;top:50.49rem;font-size:1.2rem;line-height:1;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;white-space:nowrap}
+.mu-sub{position:absolute;left:10.1rem;top:52.9rem;font-size:1.3rem;line-height:1;font-weight:400;letter-spacing:.07em;color:#B6F11B;white-space:nowrap}
+.mu-script{position:absolute;left:10.1rem;top:57.3rem;font-family:'Mr Bedfort',cursive;font-size:4.5rem;line-height:5.8rem;font-weight:400;color:#FFFFFF;white-space:nowrap;margin:0}
 
 /* ---- Meet the founders (1440 × 925.3, #FCF3EC) ---- */
 .mu-founders{position:relative;height:92.53rem;background:#FCF3EC}
