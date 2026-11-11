@@ -217,9 +217,10 @@
       return;
     }
     var avg = sum / cnt;
-    // hysteresis: require a clear margin past the midpoint to flip, so the colour
-    // doesn't flicker back and forth over busy / mid-tone images
-    var light = onLight ? avg >= 0.42 : avg >= 0.58;
+    // small hysteresis band around the midpoint: enough to stop flicker on
+    // busy / mid-tone images, but tight so the colour still flips when the
+    // background clearly crosses from light to dark (and vice-versa)
+    var light = onLight ? avg >= 0.45 : avg >= 0.55;
     document.body.classList.toggle(prefix + '-on-light', light);
     document.body.classList.toggle(prefix + '-on-dark', !light);
   }
