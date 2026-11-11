@@ -66,9 +66,9 @@ body.menu-open .hm-social{display:none}
 .hm-who-body p:last-child{margin:0}
 .hm-who .hm-cta{left:12.36rem;top:48.82rem}
 .hm-who .hm-cta-arrow{left:16.64rem;top:-.1rem;width:4.4rem}
-.hm-who-img{position:absolute;left:77.56rem;top:10rem;width:48.52rem;height:56rem;border-radius:1.2rem;overflow:hidden}
-.hm-who-img img{width:100%;height:100%;object-fit:cover}
-.hm-palm{position:absolute;left:60.9rem;top:54.18rem;width:20.01rem;height:auto;pointer-events:none;user-select:none}
+.hm-who-img{position:absolute;left:77.56rem;top:10rem;width:48.52rem;height:56rem}
+.hm-who-img>img:not(.hm-palm){width:100%;height:100%;object-fit:cover;border-radius:1.2rem}
+.hm-palm{position:absolute;left:-16.66rem;top:44.18rem;width:20.01rem;height:auto;pointer-events:none;user-select:none}
 
 /* ---- What we do (1440 × 624.7, bg #F7E7DA) ---- */
 .hm-what{position:relative;height:62.47rem;background:#F7E7DA}
@@ -123,6 +123,7 @@ body.menu-open .hm-social{display:none}
 .hm-fcol ul{margin-top:1.37rem;font-size:1.2rem;line-height:2.9rem;font-weight:400;letter-spacing:0;text-transform:uppercase;color:#FFFFFF}
 .hm-fcol a{transition:color .2s}
 .hm-fcol a:hover{color:#B6F11B}
+.hm-copy-short,.hm-footer-social{display:none}
 
 /* ====================================================================
    Stacked layout for tablets and phones (< 1200px). 1rem = 10px here.
@@ -143,11 +144,13 @@ body.menu-open .hm-social{display:none}
   .hm-who .hm-h2{margin-bottom:2.2rem}
   .hm-who-body{width:auto;max-width:52rem;font-size:1.6rem;line-height:2.1rem}
   .hm-who .hm-cta{margin-top:3.2rem}
-  .hm-who-img{width:min(100%,48.5rem);height:auto;aspect-ratio:485/560;margin:4.8rem 0 0}
-  .hm-palm{width:16rem;margin:1.6rem 0 0 .4rem}
-  /* what we do */
+  .hm-who-img{position:relative;left:auto;top:auto;width:min(100%,48.5rem);height:auto;aspect-ratio:97/100;margin:4.8rem 0 0}
+  .hm-palm{position:absolute;left:auto;top:auto;right:-.6rem;bottom:-3.4rem;width:14rem;margin:0;z-index:2}
+  /* what we do — text first, collage image last (matches reference) */
   .hm-what{height:auto;padding:6.4rem 0 7.2rem}
-  .hm-collage{width:min(100%,50.3rem);height:auto;aspect-ratio:503/294;margin:0 0 4.4rem}
+  .hm-what .hm-stage{display:flex;flex-direction:column}
+  .hm-what-text{order:1}
+  .hm-collage{order:2;width:min(100%,50.3rem);height:auto;aspect-ratio:503/294;margin:4.4rem 0 0}
   .hm-what .hm-h2{margin-bottom:2.2rem}
   .hm-what-body{width:auto;max-width:52rem;font-size:1.6rem;line-height:2.5rem}
   .hm-services{margin-top:3.2rem;font-size:1.3rem;line-height:2.4rem;white-space:normal}
@@ -155,7 +158,7 @@ body.menu-open .hm-social{display:none}
   /* our work */
   .hm-work{height:auto;padding:6.4rem 0 7.2rem}
   .hm-work-head{display:flex;flex-wrap:wrap;align-items:flex-end;gap:1rem 2rem;height:auto;width:auto}
-  .hm-work-head .hm-eyebrow{flex:0 0 100%}
+  .hm-work-head .hm-eyebrow{display:none}
   .hm-h2-lg{font-size:4.4rem}
   .hm-star-1{width:4.4rem;margin-bottom:.6rem}
   .hm-star-2{display:none}
@@ -168,20 +171,30 @@ body.menu-open .hm-social{display:none}
   .hm-card-invite{width:min(100%,30.4rem);height:auto;aspect-ratio:304.1/430}
   /* featured */
   .hm-featured{height:auto;padding:7.2rem 0 8rem;background-size:cover}
-  .hm-featured-title{font-size:3.4rem;line-height:1.15;text-align:center;white-space:normal}
+  .hm-featured-title{font-size:3.4rem;line-height:1.15;text-align:center;white-space:normal;text-transform:lowercase}
   .hm-logos{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:1.6rem 3.2rem;margin-top:4rem}
   .hm-logos img{width:17rem}
   .hm-logo-forbes{width:11.5rem !important}
-  /* footer */
+  /* footer — single centered column to match the mobile reference */
   .hm-footer{height:auto;padding:6rem 0 5.6rem}
-  .hm-footer .hm-stage{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:3.2rem 2.4rem}
-  .hm-footer-logo{grid-column:1/-1;width:22rem}
-  .hm-copy{grid-column:1/-1;order:9;white-space:normal;line-height:1.9rem}
-  .hm-fcol ul{line-height:2.6rem}
+  .hm-footer .hm-stage{display:flex;flex-direction:column;align-items:center;text-align:center;gap:0}
+  .hm-footer-logo{order:1;width:22rem;margin:0 0 1.4rem}
+  .hm-copy-short{display:block;order:2;margin:0 0 3.6rem;font-size:1.2rem;letter-spacing:.07em;color:#fff}
+  .hm-fcol{order:3;margin:0 0 3.4rem}
+  .hm-fcol-2{order:4}
+  .hm-fcol-3{order:5}
+  .hm-fcol h3{margin:0 0 1.4rem}
+  .hm-fcol ul{line-height:2.8rem}
+  .hm-footer-social{display:flex;order:6;gap:2.8rem;margin:.4rem 0 3.6rem}
+  .hm-footer-social a{display:block;width:2rem;transition:opacity .2s}
+  .hm-footer-social a:hover{opacity:.7}
+  .hm-footer-social img{width:100%;height:auto}
+  .hm-copy{order:7;width:min(100%,34rem);padding-top:3.4rem;border-top:1px solid rgba(255,255,255,.18);white-space:normal;line-height:1.9rem}
 }
 /* phones: the hero fills the whole first screen, like the reference */
 @media (max-width:767px){
-  .hm-hero{height:100vh;height:100svh;min-height:56rem}
+  .hm-hero{height:64.4rem}
+  .hm-logo,.hm-logo img{width:6.4rem}
 }
 @media (max-width:600px){
   .hm-h2{font-size:3.2rem}
