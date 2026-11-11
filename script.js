@@ -171,27 +171,33 @@
     var fit = size.indexOf('contain') > -1 ? 'contain' : 'cover';
     return sampleSource(o.img, o.img.naturalWidth, o.img.naturalHeight, el.getBoundingClientRect(), fit, cs.backgroundPosition, x, y);
   }
-  // luminance (0..1) of whatever is painted under a single point, or null
+  // luminance (0..1) of whatever is painted under a single point, or null.
+  // Prefer a full-bleed background (the section / hero image) over narrow
+  // elements floating on it (testimonial cards, badges), so a light card on a
+  // dark section doesn't flip the fixed logo to black.
   function lumAt(x, y) {
     var els = document.elementsFromPoint ? document.elementsFromPoint(x, y) : [];
+    var vw = window.innerWidth || document.documentElement.clientWidth || 1;
+    var fallback = null; // nearest readable narrow element, used only if nothing full-bleed is found
     for (var i = 0; i < els.length; i++) {
       var el = els[i]; if (inFixed(el)) continue;
       var tag = el.tagName, l;
+      var wide = el.getBoundingClientRect().width >= vw * 0.9;
       if (tag === 'IMG' || tag === 'VIDEO') {
         l = mediaLum(el, x, y);
-        if (l !== null) return l;
-        continue; // not loaded / unreadable — look at what's behind it
+        if (l !== null) { if (wide) return l; if (fallback === null) fallback = l; }
+        continue; // unreadable / narrow — look at what's behind it
       }
-      if (tag === 'CANVAS' || tag === 'IFRAME') return 0.12; // assume dark
+      if (tag === 'CANVAS' || tag === 'IFRAME') { if (wide) return 0.12; if (fallback === null) fallback = 0.12; continue; }
       var cs = getComputedStyle(el);
       if (cs.backgroundImage && cs.backgroundImage.indexOf('url(') > -1) {
         l = bgLum(el, cs, x, y);
-        if (l !== null) return l;
+        if (l !== null) { if (wide) return l; if (fallback === null) fallback = l; continue; }
       }
       l = lum(cs.backgroundColor);
-      if (l !== null) return l;
+      if (l !== null) { if (wide) return l; if (fallback === null) fallback = l; }
     }
-    return null;
+    return fallback;
   }
   // average brightness over a grid of points across the element, so a single
   // dark/light speckle behind the logo doesn't flip the whole colour
