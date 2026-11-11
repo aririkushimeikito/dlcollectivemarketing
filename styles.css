@@ -50,7 +50,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .dlc-menu::after{content:"";display:block;height:calc(100vh - 605px);min-height:40px}
 /* logo and links drop into place one after another once the panel is open */
 .dlc-menu img{width:108px;height:auto;margin:0 0 56px -36px;display:block;opacity:0;transform:translateY(-28px);transition:opacity .26s ease,transform .3s cubic-bezier(.22,.61,.36,1)}
-.dlc-menu a{display:block;color:#fff;text-decoration:none;font-family:'Mr Bedfort',cursive;font-size:64px;line-height:84px;font-weight:400;font-style:normal;text-transform:lowercase;margin:0;letter-spacing:0;opacity:0;transform:translateY(-32px);transition:color .2s,opacity .26s ease,transform .34s cubic-bezier(.22,.61,.36,1)}
+.dlc-menu a{display:block;color:#fff;text-decoration:none;font-family:'Mr Bedfort',cursive;font-size:64px;line-height:84px;font-weight:400;font-style:normal;text-transform:lowercase;margin:0;letter-spacing:0;-webkit-text-stroke:0.85px currentColor;text-stroke:0.85px currentColor;opacity:0;transform:translateY(-32px);transition:color .2s,opacity .26s ease,transform .34s cubic-bezier(.22,.61,.36,1)}
 .dlc-menu.open img,.dlc-menu.open a{opacity:1;transform:none}
 .dlc-menu .dlc-menu-social a{opacity:1;transform:none}
 .dlc-menu.open img{transition-delay:.04s}
