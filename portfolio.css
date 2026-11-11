@@ -16,16 +16,23 @@ body.page-our-work main>section.pw-intro:first-child{padding:0 !important}
 .pw-gallery{position:relative;height:156rem;background:#FCF3EC}
 .pw-card{position:absolute;width:86.1rem;height:44.1rem;margin:0;border-radius:1.2rem;overflow:hidden;background:#ddd}
 .pw-card>img{position:absolute;max-width:none;display:block}
-.pw-card-link{position:absolute;inset:0;z-index:2;border-radius:inherit}
+.pw-card-link{position:absolute;inset:0;z-index:5;border-radius:inherit}
 .pw-card>img{transition:transform .6s cubic-bezier(.22,.61,.36,1)}
-.pw-card:has(.pw-card-link):hover>img{transform:scale(1.03)}
+.pw-card:has(.pw-card-link):hover>img{transform:scale(1.04)}
+/* Hover: fading overlay + revealed title + arrow button */
+.pw-card::after{content:"";position:absolute;inset:0;z-index:1;border-radius:inherit;background:linear-gradient(to top,rgba(20,10,8,.62) 0%,rgba(20,10,8,.14) 42%,rgba(20,10,8,0) 66%);opacity:0;transition:opacity .45s ease;pointer-events:none}
+.pw-card:hover::after{opacity:1}
+.pw-card-arrow{position:absolute;top:2.4rem;right:2.4rem;z-index:3;display:flex;align-items:center;justify-content:center;width:5.8rem;height:5.8rem;border-radius:50%;background:#FBF7F1;box-shadow:0 .6rem 1.8rem rgba(0,0,0,.2);opacity:0;transform:translateY(-.8rem) scale(.9);transition:opacity .45s ease,transform .45s ease;pointer-events:none}
+.pw-card-arrow img{width:2.9rem;height:auto;display:block}
+.pw-card:hover .pw-card-arrow{opacity:1;transform:translateY(0) scale(1)}
 .pw-card-1{left:12.36rem;top:1rem}
 .pw-card-2{left:45.7rem;top:49rem}
 .pw-card-3{left:12.36rem;top:97rem}
 .pw-card-1>img{left:.09rem;top:-3.66rem;width:85.86rem;height:57.26rem}
 .pw-card-2>img{left:-15.55rem;top:-11.92rem;width:105rem;height:70.03rem}
 .pw-card-3>img{left:-2.89rem;top:-.9rem;width:91.75rem;height:51.61rem}
-.pw-card figcaption{position:absolute;left:2.04rem;bottom:0;height:6.6rem;color:#FAF7F2;white-space:nowrap}
+.pw-card figcaption{position:absolute;left:2.04rem;bottom:0;height:6.6rem;z-index:3;color:#FAF7F2;white-space:nowrap;opacity:0;transform:translateY(1.2rem);transition:opacity .45s ease,transform .45s ease}
+.pw-card:hover figcaption{opacity:1;transform:translateY(0)}
 .pw-card figcaption strong{display:block;font-size:1.8rem;line-height:1;font-weight:700;letter-spacing:0}
 .pw-card figcaption span{display:block;margin-top:1.17rem;font-size:1.2rem;line-height:1;font-weight:400;letter-spacing:0}
 
@@ -45,6 +52,10 @@ body.page-our-work main>section.pw-intro:first-child{padding:0 !important}
   .pw-gallery .pw-card{position:relative;width:100%;height:auto;aspect-ratio:861/441}
   .pw-card>img{left:0 !important;top:0 !important;width:100% !important;height:100% !important;object-fit:cover}
   .pw-card-2>img{object-position:50% 40%}
+  /* touch: keep the title visible, overlay on for legibility, drop the hover arrow */
+  .pw-card figcaption{opacity:1;transform:none}
+  .pw-card::after{opacity:1}
+  .pw-card-arrow{display:none}
 }
 @media (max-width:760px){
   .pw-intro .hm-stage{grid-template-columns:1fr}
