@@ -14,7 +14,7 @@
 .mu-hero .hm-stage{position:absolute;left:50%;top:0;height:100%;margin:0;transform:translateX(-50%)}
 .mu-eyebrow{position:absolute;left:10.1rem;top:68.49rem;font-size:1.2rem;line-height:1;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;white-space:nowrap}
 .mu-sub{position:absolute;left:10.1rem;top:70.9rem;font-size:1.3rem;line-height:1;font-weight:400;letter-spacing:.07em;color:#B6F11B;white-space:nowrap}
-.mu-script{position:absolute;left:10.1rem;top:73.1rem;font-family:'Mr Bedfort',cursive;font-size:4.5rem;line-height:5.8rem;font-weight:400;color:#FFFFFF;white-space:nowrap;margin:0}
+.mu-script{position:absolute;left:10.1rem;top:75.3rem;font-family:'Mr Bedfort',cursive;font-size:4.5rem;line-height:5.8rem;font-weight:400;color:#FFFFFF;white-space:nowrap;margin:0}
 
 /* ---- Meet the founders (1440 × 925.3, #FCF3EC) ---- */
 .mu-founders{position:relative;height:92.53rem;background:#FCF3EC}
