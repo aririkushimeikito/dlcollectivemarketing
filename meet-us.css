@@ -53,7 +53,7 @@
 .mu-cat ul{margin:1.45rem 0 0;padding:0;list-style:none;font-size:1.3rem;line-height:1.6rem;font-weight:400;color:#1A1A18;white-space:nowrap}
 
 /* ---- How we work (1440 × 760) ---- */
-.mu-how{position:relative;height:76rem;background:#000}
+.mu-how{position:relative;height:68rem;background:#000}
 .mu-how-photo{position:absolute;left:0;top:0;width:48%;height:100%;background:#000 url(media/images/meet/how-palms.jpg) no-repeat;background-size:164.85% auto;background-position:-22.41rem 0}
 .mu-how .mu-h2{left:75.18rem;top:10.19rem}
 .mu-how-body{position:absolute;left:75.18rem;top:16.8rem;font-size:1.5rem;line-height:1.9rem;font-weight:400;letter-spacing:.07em;color:#DCE8DF;white-space:nowrap}
