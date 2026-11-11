@@ -50,7 +50,7 @@ body{font-family:'Delight','Montserrat',sans-serif;margin:0;color:#1A1A18;}
 .dlc-menu::after{content:"";display:block;height:calc(100vh - 605px);min-height:40px}
 /* logo and links drop into place one after another once the panel is open */
 .dlc-menu img{width:108px;height:auto;margin:0 0 56px -36px;display:block;opacity:0;transform:translateY(-28px);transition:opacity .26s ease,transform .3s cubic-bezier(.22,.61,.36,1)}
-.dlc-menu a{display:block;color:#fff;text-decoration:none;font-family:'Mr Bedfort',cursive;font-size:64px;line-height:84px;font-weight:400;font-style:normal;text-transform:lowercase;margin:0;letter-spacing:0;opacity:0;transform:translateY(-32px);transition:color .2s,opacity .26s ease,transform .34s cubic-bezier(.22,.61,.36,1)}
+.dlc-menu a{display:block;color:#fff;text-decoration:none;font-family:'Mr De Haviland',cursive;font-size:72px;line-height:84px;font-weight:400;font-style:normal;text-transform:lowercase;margin:0;letter-spacing:0;opacity:0;transform:translateY(-32px);transition:color .2s,opacity .26s ease,transform .34s cubic-bezier(.22,.61,.36,1)}
 .dlc-menu.open img,.dlc-menu.open a{opacity:1;transform:none}
 .dlc-menu .dlc-menu-social a{opacity:1;transform:none}
 .dlc-menu.open img{transition-delay:.04s}
@@ -1110,7 +1110,7 @@ body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-light{display:inline-b
      links fade in without the per-link vertical drop so nothing clips on open */
   .dlc-menu a,.dlc-menu img{transform:none}
   .dlc-menu img{width:76px;margin:0 0 36px 0}
-  .dlc-menu a{font-size:54px;line-height:68px;margin:0}
+  .dlc-menu a{font-size:62px;line-height:68px;margin:0}
   .dlc-menu::after{height:0;min-height:0}
   .dlc-menu .dlc-menu-social{display:flex;flex-direction:column;gap:30px;position:absolute;right:24px;top:50%;transform:translateY(-50%);margin:0}
   .dlc-menu .dlc-menu-social a{display:inline-flex;align-items:center;justify-content:center;margin:0;padding:0;background:none;width:auto;font-size:0;line-height:0}
