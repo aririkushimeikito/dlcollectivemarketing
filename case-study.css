@@ -46,11 +46,11 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
 .gs-stat span{display:block;font-family:'Mr Bedfort',cursive;font-size:4rem;line-height:1;font-weight:400;color:#4A453E}
 /* updated stat labels supplied as SVG artwork (green script) */
 .gs-stat .gs-stat-lbl{display:block;height:auto;max-width:none}
-.gs-stat-kits .gs-stat-lbl{width:8rem;margin:.6rem 0 0 .4rem}
+.gs-stat-kits .gs-stat-lbl{width:8rem;margin:-2.5rem 0 0 2.7rem}
 /* Mahj & Away's "total press hits" label is a 2-line coral SVG */
-.page-mahj-and-away .gs-stat-kits .gs-stat-lbl{width:15rem;margin:.2rem 0 0 -3.5rem}
-.gs-stat-posts .gs-stat-lbl{width:15.4rem;margin:.2rem 0 0 -2rem}
-.gs-stat-videos .gs-stat-lbl{width:12.8rem;margin:.4rem 0 0 -1.5rem}
+.page-mahj-and-away .gs-stat-kits .gs-stat-lbl{width:15rem;margin:-2.5rem 0 0 3.24rem}
+.gs-stat-posts .gs-stat-lbl{width:15.4rem;margin:-1.9rem 0 0 -6.65rem}
+.gs-stat-videos .gs-stat-lbl{width:12.8rem;margin:-2.8rem 0 0 3.4rem}
 .gs-stat-kits{left:99.2rem;top:2.2rem}
 .gs-stat-kits strong{transform:scaleX(.88)}
 .gs-stat-kits span{margin:.3rem 0 0 .4rem}
