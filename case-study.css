@@ -22,11 +22,11 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
 .gs-oval-1{left:56.7rem}
 .gs-oval-2{left:106.9rem}
 .gs-oval-label{position:absolute;font-size:1.4rem;line-height:1;font-weight:400;letter-spacing:.075em;text-transform:uppercase;color:#8A8378;white-space:nowrap}
-.gs-oval-1 .gs-oval-label{left:10.5rem;top:3.1rem}
-.gs-oval-2 .gs-oval-label{left:7.7rem;top:3.3rem}
+.gs-oval-1 .gs-oval-label{left:50%;top:3.1rem;transform:translateX(-50%)}
+.gs-oval-2 .gs-oval-label{left:50%;top:3.3rem;transform:translateX(-50%)}
 .gs-oval-num{position:absolute;font-size:7.2rem;line-height:1;font-weight:600;letter-spacing:.02em;color:#1A1A1A;white-space:nowrap}
-.gs-oval-1 .gs-oval-num{left:6.3rem;top:7.2rem}
-.gs-oval-2 .gs-oval-num{left:8.3rem;top:7.5rem}
+.gs-oval-1 .gs-oval-num{left:50%;top:7.2rem;transform:translateX(-50%)}
+.gs-oval-2 .gs-oval-num{left:50%;top:7.5rem;transform:translateX(-50%)}
 .gs-col{position:absolute;top:28.4rem}
 .gs-col-services{left:9.2rem}
 .gs-col-goals{left:78rem}
@@ -105,10 +105,10 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
 /* ---------- Mahj and Away: same layout, its own title, hero crop, coral labels and tile doodle ---------- */
 .page-mahj-and-away .gs-title{left:105.1rem;top:20.5rem}
 .page-mahj-and-away .gs-hero-img{top:28.8rem;height:70.2rem}
-.page-mahj-and-away .gs-oval-num{width:max-content;font-weight:700;letter-spacing:0;transform-origin:0 0}
-.page-mahj-and-away .gs-oval-1 .gs-oval-num{left:7.3rem;top:6.7rem;transform:scaleX(.83)}
-.page-mahj-and-away .gs-oval-2 .gs-oval-label{left:5.7rem;top:3rem}
-.page-mahj-and-away .gs-oval-2 .gs-oval-num{left:6.3rem;top:6.7rem;transform:scaleX(.88)}
+.page-mahj-and-away .gs-oval-num{width:max-content;font-weight:700;letter-spacing:0;transform-origin:center}
+.page-mahj-and-away .gs-oval-1 .gs-oval-num{left:50%;top:6.7rem;transform:translateX(-50%) scaleX(.83)}
+.page-mahj-and-away .gs-oval-2 .gs-oval-label{left:50%;top:3rem;transform:translateX(-50%)}
+.page-mahj-and-away .gs-oval-2 .gs-oval-num{left:50%;top:6.7rem;transform:translateX(-50%) scaleX(.88)}
 .page-mahj-and-away .gs-col-goals .gs-label{letter-spacing:.05em}
 .page-mahj-and-away .gs-label{color:#E55033;top:.1rem}
 .page-mahj-and-away .gs-services{top:3.7rem}
