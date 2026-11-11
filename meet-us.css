@@ -126,10 +126,17 @@
   .mu-sub{margin:0 0 1.8rem}
   .mu-script{font-size:clamp(2.8rem,6vw,4.2rem);line-height:1.1}
   .mu-founders{height:auto;padding:6.4rem 0 7.2rem}
-  .mu-founders .mu-h2{margin-bottom:2.4rem}
-  .mu-founders .mu-img-a{position:relative;width:100%;height:auto;aspect-ratio:570/240;margin:0 0 2.4rem}
+  /* order to match the reference: heading, cocktails, script, bios, founders photo */
+  .mu-founders .hm-stage{display:flex;flex-direction:column}
+  .mu-founders .mu-h2{order:1;margin-bottom:2.4rem}
+  .mu-founders .mu-img-a{order:2;position:relative;width:100%;height:auto;aspect-ratio:570/240;margin:0 0 2rem}
   .mu-founders .mu-img-a img{position:static;width:100%;height:100%;object-fit:cover;object-position:50% 70%}
-  .mu-founders .mu-img-b{width:min(100%,48.5rem);height:auto;aspect-ratio:485/620;margin:0 0 2.4rem}
+  .mu-founders .mu-script-pink{order:3}
+  .mu-founders .mu-p1{order:4}
+  .mu-founders .mu-p2{order:5}
+  .mu-founders .mu-p3{order:6}
+  .mu-founders .mu-p4{order:7}
+  .mu-founders .mu-img-b{order:8;width:min(100%,48.5rem);height:auto;aspect-ratio:485/620;margin:3.2rem auto 0}
   .mu-script-pink{text-align:left;margin:0 0 2rem;line-height:1.1}
   .mu-p{margin:0 0 1.6rem !important;line-height:2.3rem;max-width:66rem}
   .mu-p2b{display:none}
