@@ -100,7 +100,7 @@ body.menu-open .hm-social{display:none}
 .hm-work .hm-cta-arrow{left:16.06rem;top:-.27rem;width:4.22rem}
 
 /* ---- Featured in (1440 × 682.8) ---- */
-.hm-featured{position:relative;height:68.2rem;background:#3C462D url(media/images/home/featured-bg.jpg) center center / 100% auto no-repeat}
+.hm-featured{position:relative;height:68.2rem;background:#3C462D url(media/images/home/featured-bg.webp) center center / 100% auto no-repeat}
 .hm-featured-shade{position:absolute;inset:0;background:rgba(0,0,0,.37)}
 .hm-featured-title{position:absolute;left:29.73rem;top:10.33rem;font-size:5.4rem;line-height:1;font-weight:500;letter-spacing:0;color:#FFFFFF;white-space:nowrap}
 .hm-logos img{position:absolute;height:auto}
