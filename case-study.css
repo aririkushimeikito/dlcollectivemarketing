@@ -93,8 +93,9 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
 .gs-img-booth{left:17.5rem;top:0;width:69.8rem;height:48.5rem;object-fit:cover}
 .gs-phone-2{left:77rem;top:19.6rem;width:20.7rem;height:40.7rem;z-index:2}
 /* this reel already has the phone frame baked in — no overlay frame, rounding or inset */
-.gs-phone-framed{height:auto;aspect-ratio:9/16}
-.gs-grp .gs-phone-framed video{left:0;top:0;width:100%;height:100%;object-fit:cover;border-radius:0;background:transparent}
+.gs-phone-framed{height:auto;aspect-ratio:9/16;overflow:hidden}
+/* the clip already has a thin black edge baked in — scale a hair and clip it off */
+.gs-grp .gs-phone-framed video{left:0;top:0;width:100%;height:100%;object-fit:cover;border-radius:0;background:transparent;transform:scale(1.02)}
 .gs-stat-videos{left:109.1rem;top:6.2rem}
 .gs-stat-videos span{margin:.3rem 0 0 -6.5rem}
 
