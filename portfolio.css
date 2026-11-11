@@ -20,11 +20,11 @@ body.page-our-work main>section.pw-intro:first-child{padding:0 !important}
 .pw-card>img{transition:transform .6s cubic-bezier(.22,.61,.36,1)}
 .pw-card:has(.pw-card-link):hover>img{transform:scale(1.04)}
 /* Hover: fading overlay + revealed title + arrow button */
-.pw-card::after{content:"";position:absolute;inset:0;z-index:1;border-radius:inherit;background:linear-gradient(to top,rgba(20,10,8,.62) 0%,rgba(20,10,8,.14) 42%,rgba(20,10,8,0) 66%);opacity:0;transition:opacity .45s ease;pointer-events:none}
+.pw-card::after{content:"";position:absolute;inset:0;z-index:1;border-radius:inherit;background:rgba(38,40,42,.5);opacity:0;transition:opacity .9s ease .15s;pointer-events:none}
 .pw-card:hover::after{opacity:1}
-.pw-card-arrow{position:absolute;top:2.4rem;right:2.4rem;z-index:3;display:flex;align-items:center;justify-content:center;width:5.8rem;height:5.8rem;border-radius:50%;background:#FBF7F1;box-shadow:0 .6rem 1.8rem rgba(0,0,0,.2);opacity:0;transform:translateY(-.8rem) scale(.9);transition:opacity .45s ease,transform .45s ease;pointer-events:none}
-.pw-card-arrow img{width:2.9rem;height:auto;display:block}
-.pw-card:hover .pw-card-arrow{opacity:1;transform:translateY(0) scale(1)}
+.pw-card-arrow{position:absolute;top:2.4rem;right:2.4rem;z-index:3;display:flex;align-items:center;justify-content:center;width:10.4rem;height:10.4rem;border-radius:50%;background:#fff;box-shadow:0 .8rem 2.4rem rgba(0,0,0,.18);opacity:0;transform:scale(.55);transition:opacity .35s ease,transform .45s cubic-bezier(.2,.7,.3,1.5);pointer-events:none}
+.pw-card-arrow img{width:5.8rem;height:auto;display:block}
+.pw-card:hover .pw-card-arrow{opacity:1;transform:scale(1)}
 .pw-card-1{left:12.36rem;top:1rem}
 .pw-card-2{left:45.7rem;top:49rem}
 .pw-card-3{left:12.36rem;top:97rem}
