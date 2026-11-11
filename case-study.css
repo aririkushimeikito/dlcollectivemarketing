@@ -47,6 +47,8 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
 /* updated stat labels supplied as SVG artwork (green script) */
 .gs-stat .gs-stat-lbl{display:block;height:auto;max-width:none}
 .gs-stat-kits .gs-stat-lbl{width:8rem;margin:.6rem 0 0 .4rem}
+/* Mahj & Away's "total press hits" label is a 2-line coral SVG */
+.page-mahj-and-away .gs-stat-kits .gs-stat-lbl{width:15rem;margin:.2rem 0 0 -3.5rem}
 .gs-stat-posts .gs-stat-lbl{width:15.4rem;margin:.2rem 0 0 -2rem}
 .gs-stat-videos .gs-stat-lbl{width:12.8rem;margin:.4rem 0 0 -1.5rem}
 .gs-stat-kits{left:99.2rem;top:2.2rem}
@@ -161,6 +163,7 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
   .gs-stat .gs-stat-lbl{width:auto;margin:1rem auto 0 !important}
   .gs-stat-posts .gs-stat-lbl,.gs-stat-videos .gs-stat-lbl{height:6rem}
   .gs-stat-kits .gs-stat-lbl{height:3.6rem}
+  .page-mahj-and-away .gs-stat-kits .gs-stat-lbl{height:6.5rem}
   .gs-img-bar{width:100%;aspect-ratio:520/350}
   .gs-img-post{grid-column:1/-1;width:min(24rem,60%);justify-self:center}
   .gs-phone1{display:flex;align-items:center;justify-content:center;gap:4rem}
