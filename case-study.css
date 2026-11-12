@@ -189,12 +189,12 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
   .gs-more{text-align:right;margin-bottom:0}
   .gs-more-link{display:inline-flex;align-items:center;gap:1.4rem}
   .gs-more-link img{width:6rem;height:auto}
-  /* ---- Go Soiree: match the supplied mobile reference ---- */
-  .page-go-soiree .gs-title{text-align:right}
-  .page-go-soiree .gs-hero-img{aspect-ratio:650/476;border-radius:1.6rem}
+  /* ---- Go Soiree + Mahj & Away: match the supplied mobile reference ---- */
+  .page-go-soiree .gs-title,.page-mahj-and-away .gs-title{text-align:right}
+  .page-go-soiree .gs-hero-img,.page-mahj-and-away .gs-hero-img{height:auto;aspect-ratio:650/476;border-radius:1.6rem}
   /* "what we get" is a single centred line in the reference (not stacked) */
-  .page-go-soiree .gs-what span{display:inline}
-  .page-go-soiree .gs-what span+span::before{content:"\00a0"}
+  .page-go-soiree .gs-what span,.page-mahj-and-away .gs-what span{display:inline}
+  .page-go-soiree .gs-what span+span::before,.page-mahj-and-away .gs-what span+span::before{content:"\00a0"}
 }
 @media (max-width:600px){
   .gs-stats,.gs-brief,.gs-gal1,.gs-gal4{grid-template-columns:1fr}
@@ -203,10 +203,10 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
   .gs-phone-1,.gs-phone-2{width:16rem}
   .gs-gal3 .gs-doodle{width:11rem}
   .gs-oval-num{font-size:5.2rem}
-  /* Go Soiree: ovals staggered left then right, sized so the label fits inside */
-  .page-go-soiree .gs-oval{max-width:26rem;aspect-ratio:260/168}
-  .page-go-soiree .gs-oval-1{justify-self:start}
-  .page-go-soiree .gs-oval-2{justify-self:end}
-  .page-go-soiree .gs-oval-label{font-size:1.3rem}
-  .page-go-soiree .gs-oval-num{font-size:6rem}
+  /* Go Soiree + Mahj: ovals staggered left then right, sized so the label fits inside */
+  .page-go-soiree .gs-oval,.page-mahj-and-away .gs-oval{max-width:26rem;aspect-ratio:260/168}
+  .page-go-soiree .gs-oval-1,.page-mahj-and-away .gs-oval-1{justify-self:start}
+  .page-go-soiree .gs-oval-2,.page-mahj-and-away .gs-oval-2{justify-self:end}
+  .page-go-soiree .gs-oval-label,.page-mahj-and-away .gs-oval-label{font-size:1.3rem}
+  .page-go-soiree .gs-oval-num,.page-mahj-and-away .gs-oval-num{font-size:6rem}
 }
