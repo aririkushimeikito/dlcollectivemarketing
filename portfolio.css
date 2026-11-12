@@ -56,10 +56,8 @@ body.page-our-work main>section.pw-intro:first-child{padding:0 !important}
   .pw-gallery .pw-card{position:relative;width:100%;height:auto;aspect-ratio:1.31}
   .pw-card>img{left:0 !important;top:0 !important;width:100% !important;height:100% !important;object-fit:cover}
   .pw-card-2>img{object-position:50% 40%}
-  /* reference shows clean photo cards on mobile — no caption, overlay or arrow */
-  .pw-card figcaption{display:none}
-  .pw-card::after{opacity:0}
-  .pw-card-arrow{display:none}
+  /* mobile: clean photo by default; first tap reveals the overlay, title and
+     arrow (the base :hover rules), second tap follows the link */
 }
 @media (max-width:760px){
   .pw-intro .hm-stage{grid-template-columns:1fr}

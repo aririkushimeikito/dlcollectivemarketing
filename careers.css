@@ -35,5 +35,5 @@ body.page-careers main>section.cr-main:first-child{padding:0 !important}
   .cr-main .hm-stage{grid-template-columns:1fr}
   .cr-copy{grid-column:1;grid-row:auto}
   .cr-img-1,.cr-img-2{grid-column:1;grid-row:auto;width:min(100%,38.4rem)}
-  .cr-h1{font-size:3.4rem}
+  .cr-copy .cr-h1{font-size:4.6rem;line-height:1.05}
 }
