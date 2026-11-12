@@ -125,6 +125,8 @@
   .mu-eyebrow{margin:0 0 1rem;font-size:1.35rem}
   .mu-sub{margin:0 0 3.2rem;font-size:1.45rem}
   .mu-script{font-size:3.6rem;line-height:1.25;text-transform:lowercase}
+  /* keep the hero text clear of the fixed social icons on the right */
+  .mu-hero .mu-eyebrow,.mu-hero .mu-sub,.mu-hero .mu-script{padding-right:3.4rem}
   .mu-founders{height:auto;padding:6.4rem 0 7.2rem}
   /* order to match the reference: heading, cocktails, script, bios, founders photo */
   .mu-founders .hm-stage{display:flex;flex-direction:column}
