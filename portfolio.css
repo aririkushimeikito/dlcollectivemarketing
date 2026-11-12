@@ -23,7 +23,10 @@ body.page-our-work main>section.pw-intro:first-child{padding:0 !important}
 .pw-card::after{content:"";position:absolute;inset:0;z-index:1;border-radius:inherit;background:rgba(38,40,42,.5);opacity:0;transition:opacity .9s ease .15s;pointer-events:none}
 .pw-card:hover::after{opacity:1}
 .pw-card-arrow{position:absolute;top:2.4rem;right:2.4rem;z-index:3;display:flex;align-items:center;justify-content:center;width:10.4rem;height:10.4rem;border-radius:50%;background:#fff;box-shadow:0 .8rem 2.4rem rgba(0,0,0,.18);opacity:0;transform:scale(.55);transition:opacity .35s ease,transform .45s cubic-bezier(.2,.7,.3,1.5);pointer-events:none}
-.pw-card-arrow img{width:5.8rem;height:auto;display:block}
+/* skinny hand-drawn arrow (wave connected to the arrowhead), recoloured via a CSS mask */
+.pw-card-arrow::before{content:"";position:absolute;inset:0;background-color:#3183F9;-webkit-mask:url("media/images/services/arrow-wave.svg") center / 6.4rem auto no-repeat;mask:url("media/images/services/arrow-wave.svg") center / 6.4rem auto no-repeat}
+.pw-card-2 .pw-card-arrow::before{background-color:#8BC460}
+.pw-card-3 .pw-card-arrow::before{background-color:#FE5E1C}
 .pw-card:hover .pw-card-arrow{opacity:1;transform:scale(1)}
 .pw-card-1{left:12.36rem;top:1rem}
 .pw-card-2{left:45.7rem;top:49rem}
