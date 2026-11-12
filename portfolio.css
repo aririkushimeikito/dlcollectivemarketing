@@ -69,3 +69,11 @@ body.page-our-work main>section.pw-intro:first-child{padding:0 !important}
   .pw-card figcaption strong{font-size:1.6rem}
   .pw-card figcaption span{margin-top:.8rem;font-size:1.1rem;white-space:normal}
 }
+/* Touch devices: a single tap opens the case study — no hover reveal/zoom first. */
+@media (hover:none){
+  .pw-card:hover::after{opacity:0}
+  .pw-card:hover .pw-card-arrow{opacity:0}
+  .pw-card:hover figcaption{opacity:0}
+  .pw-card:has(.pw-card-link):hover>img{transform:none}
+  .pw-card:active::after{opacity:.3}
+}

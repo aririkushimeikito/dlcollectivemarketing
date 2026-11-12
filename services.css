@@ -82,3 +82,10 @@ body.page-what-we-do main>section.sv-intro:first-child{padding:0 !important}
   .sv-h1{font-size:3.6rem}
   .sv-sparkles{margin-left:min(22rem,70%)}
 }
+/* Touch devices: a single tap navigates cleanly — no hover-morph / reveal that
+   made the first tap feel like it "did nothing". */
+@media (hover:none){
+  .sv-tile:hover{border-radius:1.6rem;aspect-ratio:1/1;height:auto;margin-top:0;z-index:auto}
+  .sv-tile:hover .sv-ov,.sv-tile:hover .sv-ov::before,.sv-tile:hover .sv-ov-title,.sv-tile:hover .sv-ov-arrow{opacity:0;transform:none}
+  .sv-ov:active::before{opacity:.4}
+}
