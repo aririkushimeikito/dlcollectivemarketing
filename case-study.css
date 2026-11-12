@@ -203,9 +203,10 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
   .gs-phone-1,.gs-phone-2{width:16rem}
   .gs-gal3 .gs-doodle{width:11rem}
   .gs-oval-num{font-size:5.2rem}
-  /* Go Soiree: narrower ovals, staggered left then right (per reference) */
-  .page-go-soiree .gs-oval{max-width:21rem;aspect-ratio:210/125}
+  /* Go Soiree: ovals staggered left then right, sized so the label fits inside */
+  .page-go-soiree .gs-oval{max-width:26rem;aspect-ratio:260/168}
   .page-go-soiree .gs-oval-1{justify-self:start}
   .page-go-soiree .gs-oval-2{justify-self:end}
+  .page-go-soiree .gs-oval-label{font-size:1.3rem}
   .page-go-soiree .gs-oval-num{font-size:6rem}
 }
