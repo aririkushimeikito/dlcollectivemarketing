@@ -69,7 +69,10 @@ body.page-photo-examples main>section.pv-intro:first-child{padding:0 !important}
   .pv-list li:last-child{margin:0}
   .pv-photo,.pv-video{height:auto;padding:4rem 0 6rem}
   .pv-script{margin:0 0 4rem}
-  .pv-script-photo{width:20rem;margin-left:auto}.pv-script-video{width:19.5rem}
+  .pv-script-photo,.pv-script-video{width:100%}
+  .pv-script-photo{text-align:right}
+  .pv-script-photo img{display:inline-block;width:20rem}
+  .pv-script-video img{width:19.5rem}
   .pv-row{display:flex;align-items:center;gap:4rem;margin:0 0 5.6rem}
   .pv-row-rev{flex-direction:row-reverse}
   .pv-row .pv-tile{position:relative;left:auto;top:auto;flex:0 0 auto}
@@ -90,4 +93,7 @@ body.page-photo-examples main>section.pv-intro:first-child{padding:0 !important}
   .pv-row,.pv-row-rev{flex-direction:column;align-items:flex-start;gap:2rem}
   .pv-row .pv-tile-wide{width:100%}
   .pv-row .pv-tile-tall{width:min(100%,30rem)}
+  /* reference: the Go Soiree event photo is a taller crop that captures the chef and the dishes */
+  .pv-row-1 .pv-tile-wide{aspect-ratio:4/5}
+  .pv-row-1 .pv-tile>img{object-position:50% 42%}
 }
