@@ -141,6 +141,8 @@
   .mu-p{margin:0 0 1.6rem !important;line-height:2.3rem;max-width:66rem}
   .mu-p2b{display:none}
   .mu-p2::after{content:" cohesive."}
+  /* keep wide body text clear of the fixed social icons */
+  .mu-founders .mu-p,.mu-how .mu-how-body,.mu-how .mu-step p,.mu-orlando .mu-orlando-body{padding-right:4rem}
   .mu-work{height:auto;padding:6.4rem 0 7.2rem}
   .mu-work .hm-stage{display:grid;grid-template-columns:repeat(auto-fit,minmax(22rem,1fr));gap:4rem 2rem}
   .mu-work .mu-h2{grid-column:1/-1;text-align:center}
