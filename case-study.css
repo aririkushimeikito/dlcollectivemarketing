@@ -175,7 +175,7 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
   .gs-img-bar{width:100%;aspect-ratio:520/350}
   .gs-img-post{grid-column:1/-1;width:min(24rem,60%);justify-self:center}
   .gs-phone1{display:flex;align-items:center;justify-content:center;gap:4rem}
-  .gs-phone-1{width:min(22rem,40%)}
+  .gs-phone-1{width:min(26rem,52%)}
   .gs-phone-video{position:relative;left:auto;top:auto;height:auto;flex:none}
   /* smaller corner radius on the phone reels (mobile only) */
   .gs-phone-framed,.gs-grp .gs-phone-framed video{border-radius:20px}
@@ -184,13 +184,14 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
   .gs-card{width:100%;aspect-ratio:415/563;border-radius:1.6rem}
   .gs-script-title{margin-bottom:2.4rem}
   .gs-body-center{text-align:center;max-width:62rem;margin:0 auto}
-  .gs-body-2{margin-top:1.8rem}
+  /* 2-class selector so the paragraph gap beats the .hm-body p{margin:0} reset */
+  .gs-content .gs-body-2{margin-top:2.6rem}
   .gs-gal4{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;align-items:center}
   .gs-img-booth{grid-column:1/-1;width:100%;aspect-ratio:698/485}
-  .gs-phone-2{width:min(18rem,50%);justify-self:center}
+  .gs-phone-2{width:min(24rem,58%);justify-self:center}
   .gs-more{text-align:right;margin-bottom:0}
-  .gs-more-link{display:inline-flex;align-items:center;gap:1.4rem}
-  .gs-more-link img{width:6rem;height:auto}
+  .gs-more-link{display:inline-flex;align-items:center;gap:1.2rem;font-size:2rem}
+  .gs-more-link img{width:4.4rem;height:auto}
   /* ---- Go Soiree + Mahj & Away: match the supplied mobile reference ---- */
   .page-go-soiree .gs-title,.page-mahj-and-away .gs-title,.page-monstera .gs-title{text-align:right}
   .page-go-soiree .gs-hero-img,.page-mahj-and-away .gs-hero-img{height:auto;aspect-ratio:650/476;border-radius:1.6rem}
@@ -202,13 +203,13 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
   .gs-stats,.gs-brief,.gs-gal1,.gs-gal4{grid-template-columns:1fr}
   .gs-gal3{grid-template-columns:1fr;padding-top:10rem}
   .gs-phone1{flex-direction:column}
-  .gs-phone-1,.gs-phone-2{width:16rem}
+  .gs-phone-1,.gs-phone-2{width:23rem}
   .gs-gal3 .gs-doodle{width:11rem}
   .gs-oval-num{font-size:5.2rem}
   /* Go Soiree + Mahj: ovals staggered left then right, sized so the label fits inside */
-  .page-go-soiree .gs-oval,.page-mahj-and-away .gs-oval{max-width:26rem;aspect-ratio:260/168}
+  .page-go-soiree .gs-oval,.page-mahj-and-away .gs-oval{max-width:22rem;aspect-ratio:260/168}
   .page-go-soiree .gs-oval-1,.page-mahj-and-away .gs-oval-1{justify-self:start}
   .page-go-soiree .gs-oval-2,.page-mahj-and-away .gs-oval-2{justify-self:end}
-  .page-go-soiree .gs-oval-label,.page-mahj-and-away .gs-oval-label{font-size:1.3rem}
-  .page-go-soiree .gs-oval-num,.page-mahj-and-away .gs-oval-num{font-size:6rem}
+  .page-go-soiree .gs-oval-label,.page-mahj-and-away .gs-oval-label{font-size:1.2rem}
+  .page-go-soiree .gs-oval-num,.page-mahj-and-away .gs-oval-num{font-size:5rem}
 }
