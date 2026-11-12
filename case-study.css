@@ -143,7 +143,7 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
   .gs-grp,.gs-grp img,.gs-title,.gs-what,.gs-oval,.gs-oval-label,.gs-oval-num,.gs-col,.gs-label,.gs-services,.gs-body,.gs-stat,.gs-script-title,.gs-more-link{position:static;left:auto;top:auto;width:auto;height:auto;white-space:normal}
   .gs-grp{margin:0 0 5.6rem}
   .gs-grp img{max-width:100%}
-  .gs-title{font-size:4rem;margin-bottom:2.4rem}
+  .gs-hero .gs-title{font-size:4rem;margin-bottom:3.6rem}
   .gs-hero-img{width:100%;aspect-ratio:1280/700;height:auto}
   .gs-stats{display:grid;grid-template-columns:1fr 1fr;gap:3.2rem 2.4rem;align-items:center}
   .gs-what{grid-column:1/-1;font-size:4.8rem;text-align:center}
