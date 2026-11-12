@@ -1109,12 +1109,12 @@ body.page-who-we-are:not(.scrolled) .dlc-header .dlc-logo-light{display:inline-b
   /* the panel slides down from the top (base translateY) = top-to-down entrance;
      links fade in without the per-link vertical drop so nothing clips on open */
   .dlc-menu a,.dlc-menu img{transform:none}
-  .dlc-menu img{width:76px;margin:0 0 26px 0}
+  .dlc-menu img{width:94px;margin:0 0 26px 0}
   .dlc-menu a{font-size:54px;line-height:60px;margin:0}
   .dlc-menu::after{height:calc(100dvh - 455px);min-height:24px}
-  .dlc-menu .dlc-menu-social{display:flex;flex-direction:column;gap:30px;position:absolute;right:24px;top:50%;transform:translateY(-50%);margin:0}
+  .dlc-menu .dlc-menu-social{display:flex;flex-direction:column;gap:33px;position:absolute;right:24px;top:50%;transform:translateY(-50%);margin:0}
   .dlc-menu .dlc-menu-social a{display:inline-flex;align-items:center;justify-content:center;margin:0;padding:0;background:none;width:auto;font-size:0;line-height:0}
-  .dlc-menu .dlc-menu-social svg{width:26px;height:26px}
+  .dlc-menu .dlc-menu-social svg{width:29px;height:29px}
   /* while the menu is open, hide the floating icons so only the in-menu column shows */
   body.menu-open .dlc-side-social{display:none !important}
 }
