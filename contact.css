@@ -53,18 +53,20 @@ body.page-contact main>section.cu-rows:first-child{padding:0 !important}
   .cu-h{padding-top:0}
   .cu-divider{width:100%;margin:2rem 0 0}
   .cu-faq{height:auto;padding:6rem 0 4rem}
-  .cu-faq-title{text-align:center;margin:0 0 3rem}
+  .cu-faq-title{text-align:left;margin:0 0 3rem}
   .cu-acc{max-width:90rem;margin:0 auto}
   .cu-item>summary{height:auto;padding:1.6rem 0;white-space:normal;gap:2rem}
   .cu-map{height:auto;padding:4rem 0 8rem}
-  .cu-map-title{text-align:center;margin:0 0 3.6rem;font-size:3.2rem;letter-spacing:.02em;white-space:normal}
+  .cu-map-title{text-align:left;margin:0 0 3.6rem;font-size:3.2rem;letter-spacing:.02em;white-space:normal}
   .cu-map .hm-stage{display:flex;flex-direction:column}
   .cu-map-box{position:relative;width:100%;height:auto;aspect-ratio:1083/324;min-height:28rem}
   .cu-map-box iframe{position:absolute;inset:0}
 }
 @media (max-width:640px){
-  .cu-row,.cu-row-rev{flex-direction:column;align-items:flex-start;gap:2.6rem;margin-bottom:6.8rem}
+  .cu-row,.cu-row-rev{flex-direction:column;align-items:center;gap:2.6rem;margin-bottom:6.8rem}
   .cu-row .cu-tile{width:100%;aspect-ratio:342/244}
   .cu-h{font-size:2.8rem}
-  .cu-row .cu-script{margin-left:0}
+  /* reference: CTA label + script centred under each full-width image */
+  .cu-row .cu-cta{text-align:center}
+  .cu-row .cu-script{margin:1.2rem auto 0}
 }
