@@ -62,8 +62,10 @@ body.page-photo-examples main>section.pv-intro:first-child{padding:0 !important}
   .pv-intro .hm-stage{display:grid;grid-template-columns:1fr auto;gap:2rem 4rem;align-items:start}
   .pv-h1{font-size:3.6rem;line-height:1.05;grid-column:1;grid-row:1}
   .pv-lead{grid-column:1;grid-row:2;max-width:52rem}
-  .pv-list{grid-column:2;grid-row:1/3;height:auto;padding:.6rem 0 .6rem 1.8rem}
-  .pv-list li{margin:0 0 1.6rem}
+  .pv-list{grid-column:2;grid-row:1/3;height:auto;font-size:1.3rem;line-height:1.3rem}
+  /* higher specificity so the blue rule gets breathing space from the text */
+  .pv-intro .pv-list{padding:.6rem 0 .6rem 2.6rem}
+  .pv-list li{margin:0 0 1rem}
   .pv-list li:last-child{margin:0}
   .pv-photo,.pv-video{height:auto;padding:4rem 0 6rem}
   .pv-script{margin:0 0 4rem}
