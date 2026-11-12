@@ -55,7 +55,6 @@
 /* ---- How we work (1440 × 760) ---- */
 .mu-how{position:relative;height:68rem;background:#000}
 .mu-how-photo{position:absolute;left:0;top:0;width:48%;height:100%;background:#000 url(media/images/meet/how-palms.jpg) no-repeat;background-size:164.85% auto;background-position:-22.41rem 0}
-.mu-how-photo::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.3);pointer-events:none}
 .mu-how .mu-h2{left:75.18rem;top:10.19rem}
 .mu-how-body{position:absolute;left:75.18rem;top:16.8rem;font-size:1.5rem;line-height:1.9rem;font-weight:400;letter-spacing:.07em;color:#DCE8DF;white-space:nowrap}
 .mu-how-body a{color:#B6F11B;font-weight:700}
@@ -152,6 +151,7 @@
   .mu-cat .mu-circle{margin:0 auto !important}
   .mu-how{height:auto}
   .mu-how-photo{position:relative;width:100%;height:46rem;background-size:cover;background-position:center}
+  .mu-how-photo::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.3);pointer-events:none}
   .mu-how .hm-stage{padding-top:6.4rem;padding-bottom:7.2rem}
   .mu-how .mu-h2{margin-bottom:2rem}
   .mu-how-body{margin:0 0 3.6rem !important;line-height:2.2rem;max-width:62rem}
