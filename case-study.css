@@ -157,7 +157,7 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
   .gs-services{line-height:2.2rem}
   .gs-body{line-height:2.2rem;letter-spacing:.04em}
   .gs-brief{display:grid;grid-template-columns:1fr 1fr;gap:3.2rem 2.4rem;align-items:start}
-  .page-monstera .gs-hero-img{border-radius:1.6rem}
+  .page-monstera .gs-hero-img{border-radius:1.6rem;height:auto;aspect-ratio:1.46;object-fit:cover}
   .gs-board{padding:0}
   .gs-board img{width:100%}
   .gs-gal1{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;align-items:center}
