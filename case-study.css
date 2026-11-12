@@ -149,9 +149,11 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
   .gs-what{grid-column:1/-1;font-size:4.8rem;text-align:center}
   .gs-oval{position:relative;width:100%;max-width:30.7rem;aspect-ratio:307/181;justify-self:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.2rem;text-align:center}
   .gs-oval-num{font-size:6rem}
-  .gs-oval-1 .gs-oval-num,.gs-oval-2 .gs-oval-num{left:auto;top:auto}
+  .gs-oval-1 .gs-oval-num,.gs-oval-2 .gs-oval-num{left:auto;top:auto;transform:none}
+  .gs-oval-1 .gs-oval-label,.gs-oval-2 .gs-oval-label{left:auto;top:auto;transform:none}
   /* mobile: Mahj numbers render like Go Soiree (drop the desktop scaleX squeeze) */
   .page-mahj-and-away .gs-oval-1 .gs-oval-num,.page-mahj-and-away .gs-oval-2 .gs-oval-num{transform:none;font-weight:600;letter-spacing:.02em}
+  .page-mahj-and-away .gs-oval-2 .gs-oval-label{transform:none}
   .gs-col{align-self:start}
   .gs-label{margin-bottom:2rem}
   .gs-services{line-height:2.2rem}
@@ -187,6 +189,12 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
   .gs-more{text-align:right;margin-bottom:0}
   .gs-more-link{display:inline-flex;align-items:center;gap:1.4rem}
   .gs-more-link img{width:6rem;height:auto}
+  /* ---- Go Soiree: match the supplied mobile reference ---- */
+  .page-go-soiree .gs-title{text-align:right}
+  .page-go-soiree .gs-hero-img{aspect-ratio:650/476;border-radius:1.6rem}
+  /* "what we get" is a single centred line in the reference (not stacked) */
+  .page-go-soiree .gs-what span{display:inline}
+  .page-go-soiree .gs-what span+span::before{content:"\00a0"}
 }
 @media (max-width:600px){
   .gs-stats,.gs-brief,.gs-gal1,.gs-gal4{grid-template-columns:1fr}
@@ -195,4 +203,9 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
   .gs-phone-1,.gs-phone-2{width:16rem}
   .gs-gal3 .gs-doodle{width:11rem}
   .gs-oval-num{font-size:5.2rem}
+  /* Go Soiree: narrower ovals, staggered left then right (per reference) */
+  .page-go-soiree .gs-oval{max-width:21rem;aspect-ratio:210/125}
+  .page-go-soiree .gs-oval-1{justify-self:start}
+  .page-go-soiree .gs-oval-2{justify-self:end}
+  .page-go-soiree .gs-oval-num{font-size:6rem}
 }
