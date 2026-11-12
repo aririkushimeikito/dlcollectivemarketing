@@ -233,3 +233,8 @@ body.menu-open .hm-social{display:none}
 @media (max-width:820px){
   .hm-stage{padding-right:2.4rem}
 }
+/* mobile: a more pronounced bottom-to-top fade-in for the scroll reveals
+   (elements rise further as they fade in) */
+@media (max-width:1199px){
+  html.anim-on .anim-item{transform:translateY(48px)}
+}
