@@ -186,6 +186,8 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
   .gs-grp .gs-reel-doodle{display:block;position:absolute;right:-3rem;bottom:-2.2rem;width:10rem;height:auto;max-width:none;z-index:4;pointer-events:none}
   .gs-gal3{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;position:relative;padding-top:12rem}
   .gs-gal3 .gs-doodle{position:absolute;right:0;top:0;width:14rem}
+  /* Go Soiree: hide the lower cheers doodle on mobile — the reel doodle covers it */
+  .page-go-soiree .gs-doodle{display:none}
   .gs-card{width:100%;aspect-ratio:415/563;border-radius:1.6rem}
   .gs-script-title{margin-bottom:2.4rem}
   .gs-body-center{text-align:center;max-width:62rem;margin:0 auto}
