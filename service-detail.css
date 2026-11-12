@@ -111,3 +111,12 @@ body main>section.sd-main:first-child{padding:0 !important}
   .sd-more{font-size:1.5rem;gap:1.4rem}
   .sd-more-arrow{width:4.2rem}
 }
+/* sub-service pages: smaller fixed social rail on mobile */
+@media (max-width:767px){
+  .hm-social{width:2.6rem;height:16.2rem}
+  .hm-social a{width:2.2rem;left:.2rem}
+  .hm-social-ig{top:0}
+  .hm-social-mail{top:4.7rem}
+  .hm-social-phone{top:9.4rem}
+  .hm-social-in{top:14.1rem}
+}
