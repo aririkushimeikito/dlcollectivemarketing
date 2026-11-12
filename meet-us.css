@@ -139,7 +139,7 @@
   .mu-founders .mu-p3{order:6}
   .mu-founders .mu-p4{order:7}
   .mu-founders .mu-img-b{order:8;width:min(100%,48.5rem);height:auto;aspect-ratio:485/620;margin:3.2rem auto 0}
-  .mu-script-pink{text-align:left;margin:0 0 2rem;line-height:1.1}
+  .mu-script-pink{text-align:right;margin:0 0 2rem;line-height:1.1}
   .mu-p{margin:0 0 1.6rem !important;line-height:2.3rem;max-width:66rem}
   .mu-p2b{display:none}
   .mu-p2::after{content:" cohesive."}
