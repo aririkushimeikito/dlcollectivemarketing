@@ -63,8 +63,8 @@ body.page-contact main>section.cu-rows:first-child{padding:0 !important}
   .cu-map-box iframe{position:absolute;inset:0}
 }
 @media (max-width:640px){
-  .cu-row,.cu-row-rev{flex-direction:column;align-items:flex-start;gap:2rem;margin-bottom:4.8rem}
-  .cu-row .cu-tile{width:min(100%,32.4rem)}
+  .cu-row,.cu-row-rev{flex-direction:column;align-items:flex-start;gap:2.6rem;margin-bottom:6.8rem}
+  .cu-row .cu-tile{width:100%;aspect-ratio:342/244}
   .cu-h{font-size:2.8rem}
-  .cu-row .cu-script{margin-left:2.4rem}
+  .cu-row .cu-script{margin-left:0}
 }
