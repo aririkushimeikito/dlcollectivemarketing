@@ -61,8 +61,10 @@ body.page-what-we-do main>section.sv-intro:first-child{padding:0 !important}
   .sv-h1{font-size:4.4rem;grid-column:1;grid-row:1}
   .sv-sparkles{width:5rem;grid-column:1;grid-row:1;justify-self:start;margin:-1.6rem 0 0 min(30rem,62%)}
   .sv-lead{grid-column:1;grid-row:2;letter-spacing:.04em;line-height:2.2rem;max-width:52rem}
-  .sv-list{grid-column:2;grid-row:1/3;height:auto;padding:.6rem 0 .6rem 2rem;font-size:1.3rem;line-height:1.3rem}
-  .sv-list li{margin:0 0 1.8rem}
+  .sv-list{grid-column:2;grid-row:1/3;height:auto;font-size:1.3rem;line-height:1.3rem}
+  /* higher specificity so the orange rule gets breathing space from the text */
+  .sv-intro .sv-list{padding:.6rem 0 .6rem 2.6rem}
+  .sv-list li{margin:0 0 1rem}
   .sv-list li:last-child{margin:0}
   .sv-grid{height:auto;padding:4rem 0 8rem}
   .sv-grid .hm-stage{display:grid;grid-template-columns:repeat(auto-fit,minmax(22rem,1fr));gap:2.8rem}
