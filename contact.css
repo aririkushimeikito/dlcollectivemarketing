@@ -4,6 +4,7 @@
    ==================================================================== */
 .cu-rows{position:relative;height:177.2rem;background:#FCF3EC}
 body.page-contact main>section.cu-rows:first-child{padding:0 !important}
+.cu-title{position:absolute;left:13.9rem;top:12.3rem;margin:0;font-size:4.6rem;line-height:1;font-weight:500;letter-spacing:0;color:#1A1A18;white-space:nowrap;z-index:2}
 .cu-row{position:static}
 .cu-tile{position:absolute;width:32.4rem;height:25rem;margin:0;overflow:hidden;background:#ddd}
 .cu-tile>img{position:absolute;max-width:none;display:block}
@@ -38,7 +39,8 @@ body.page-contact main>section.cu-rows:first-child{padding:0 !important}
 .cu-map-box iframe{display:block;width:100%;height:100%;border:0}
 
 @media (max-width:1199px){
-  .cu-tile,.cu-cta,.cu-script,.cu-divider,.cu-faq-title,.cu-acc,.cu-map-title,.cu-map-box{position:static;left:auto;top:auto;width:auto;height:auto;white-space:normal}
+  .cu-title,.cu-tile,.cu-cta,.cu-script,.cu-divider,.cu-faq-title,.cu-acc,.cu-map-title,.cu-map-box{position:static;left:auto;top:auto;width:auto;height:auto;white-space:normal}
+  .cu-title{font-size:4rem;line-height:1.05;margin:0 0 3.2rem}
   body.page-contact main>section.cu-rows:first-child{padding:14rem 0 2rem !important}
   .cu-rows{height:auto}
   .cu-row{display:flex;align-items:center;gap:5rem;margin:0 0 6rem}
