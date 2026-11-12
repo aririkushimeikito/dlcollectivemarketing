@@ -165,7 +165,7 @@ body.menu-open .hm-social{display:none}
   .hm-h2-lg{font-size:4.4rem}
   .hm-star-1{width:4.4rem;margin-bottom:.6rem}
   /* star sits at the right edge, below the work cards (moved from the left) */
-  .hm-work .hm-star-2{display:block;width:4.4rem;margin:2.4rem 0 0 auto}
+  .hm-work .hm-star-2{display:block;position:relative;left:auto;top:auto;z-index:3;width:4.4rem;margin:-4rem 0 0 17.5rem}
   .hm-card{margin:4rem 0 0}
   /* these figures need extra specificity to beat the .hm-body figure{margin:0} reset,
      so the image sits a clear gap below its title / CTA */
@@ -174,7 +174,7 @@ body.menu-open .hm-social{display:none}
   .hm-work .hm-card{margin-top:4rem}
   /* envelope card rides up to overlap the image above it (reference look);
      left/top:auto cancels the desktop absolute offsets re-activated by position:relative */
-  .hm-work .hm-card-invite{margin:-2rem auto 0;position:relative;left:auto;top:auto;z-index:2}
+  .hm-work .hm-card-invite{margin:-2rem auto 0 0;position:relative;left:auto;top:auto;z-index:2}
   .hm-card-lemon{width:min(100%,39.4rem);height:auto;aspect-ratio:393.6/250}
   .hm-card-lemon img{position:static;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
   .hm-hero .hero-slide-figma{background-size:cover;background-position:center}
