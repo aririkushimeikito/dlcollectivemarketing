@@ -164,6 +164,11 @@ body.menu-open .hm-social{display:none}
   .hm-star-1{width:4.4rem;margin-bottom:.6rem}
   .hm-star-2{display:none}
   .hm-card{margin:4rem 0 0}
+  /* these figures need extra specificity to beat the .hm-body figure{margin:0} reset,
+     so the image sits a clear gap below its title / CTA */
+  .hm-who .hm-who-img{margin-top:5.6rem}
+  .hm-what .hm-collage{margin-top:5.6rem}
+  .hm-work .hm-card{margin-top:4rem}
   .hm-card-lemon{width:min(100%,39.4rem);height:auto;aspect-ratio:393.6/250}
   .hm-card-lemon img{position:static;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
   .hm-hero .hero-slide-figma{background-size:cover;background-position:center}
@@ -195,7 +200,7 @@ body.menu-open .hm-social{display:none}
 /* phones: the hero fills the whole first screen, like the reference */
 @media (max-width:767px){
   .hm-hero{height:64.4rem}
-  .hm-logo,.hm-logo img{width:6.4rem}
+  .hm-logo,.hm-logo img{width:8rem}
 }
 @media (max-width:600px){
   .hm-h2{font-size:3.2rem}
