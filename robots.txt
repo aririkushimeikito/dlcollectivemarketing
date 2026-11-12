@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aririkushimeikito.github.io/dlcollectivemarketing/sitemap.xml
+Sitemap: https://www.dl-collective.com/sitemap.xml
