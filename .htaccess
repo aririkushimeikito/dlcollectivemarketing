@@ -1,0 +1,36 @@
+# DL Collective — Apache / Bluehost configuration
+
+# --- Correct MIME types -------------------------------------------------
+# Shared hosts often don't map these extensions, which makes SVG icons/arrows,
+# WebP images and videos fail to load. Declaring them here fixes that.
+AddType image/svg+xml .svg
+AddType image/svg+xml .svgz
+AddType image/webp     .webp
+AddType video/mp4      .mp4
+AddType font/woff2     .woff2
+AddType font/woff      .woff
+
+# --- Default document ---------------------------------------------------
+DirectoryIndex index.html
+
+# --- Light caching for static assets (optional, safe) -------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/svg+xml "access plus 7 days"
+  ExpiresByType image/webp    "access plus 7 days"
+  ExpiresByType image/jpeg    "access plus 7 days"
+  ExpiresByType image/png     "access plus 7 days"
+  ExpiresByType video/mp4     "access plus 7 days"
+  ExpiresByType text/css      "access plus 1 day"
+  ExpiresByType application/javascript "access plus 1 day"
+</IfModule>
+
+# --- Force HTTPS + www (enable AFTER your SSL certificate is active) -----
+# Uncomment the block below once https://www.dl-collective.com loads with a
+# valid certificate. Leaving it commented avoids redirect loops before SSL.
+# <IfModule mod_rewrite.c>
+#   RewriteEngine On
+#   RewriteCond %{HTTPS} off [OR]
+#   RewriteCond %{HTTP_HOST} !^www\. [NC]
+#   RewriteRule ^ https://www.dl-collective.com%{REQUEST_URI} [L,R=301]
+# </IfModule>
