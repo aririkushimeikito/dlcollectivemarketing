@@ -59,7 +59,7 @@ body.page-contact main>section.cu-rows:first-child{padding:0 !important}
   .cu-acc{max-width:90rem;margin:0 auto}
   .cu-item>summary{height:auto;padding:1.6rem 0;white-space:normal;gap:2rem}
   .cu-map{height:auto;padding:4rem 0 8rem}
-  .cu-map-title{text-align:left;margin:0 0 3.6rem;font-size:3.2rem;letter-spacing:.02em;white-space:normal}
+  .cu-map .cu-map-title{text-align:left;margin:0 0 5.6rem;font-size:3.2rem;letter-spacing:.02em;white-space:normal}
   .cu-map .hm-stage{display:flex;flex-direction:column}
   .cu-map-box{position:relative;width:100%;height:auto;aspect-ratio:1083/324;min-height:28rem}
   .cu-map-box iframe{position:absolute;inset:0}
