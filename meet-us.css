@@ -144,7 +144,7 @@
   .mu-p2b{display:none}
   .mu-p2::after{content:" cohesive."}
   /* keep wide body text clear of the fixed social icons */
-  .mu-founders .mu-p,.mu-how .mu-how-body,.mu-how .mu-step p,.mu-orlando .mu-orlando-body{padding-right:4rem}
+  .mu-founders .mu-p,.mu-how .mu-how-body,.mu-how .mu-step p{padding-right:4rem}
   .mu-work{height:auto;padding:6.4rem 0 7.2rem}
   .mu-work .hm-stage{display:grid;grid-template-columns:repeat(auto-fit,minmax(22rem,1fr));gap:4rem 2rem}
   .mu-work .mu-h2{grid-column:1/-1;text-align:center}
@@ -169,7 +169,7 @@
   .mu-more{margin-top:1rem}
   .mu-orlando{height:auto;padding:6.4rem 0 7.2rem}
   .mu-orlando .mu-h2{text-align:center;margin-bottom:2rem}
-  .mu-orlando-body{line-height:2.3rem;margin:0 auto 6rem;max-width:72rem;text-align:center}
+  .mu-orlando .mu-orlando-body{line-height:2.3rem;margin:0 auto 7rem;max-width:72rem;text-align:center}
   .mu-orlando .mu-locs{display:flex;flex-wrap:wrap;justify-content:center;gap:4rem 3.2rem}
   .mu-loc-item{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:1.4rem;width:14rem}
   .mu-loc{height:6.9rem;width:auto;max-width:100%}
