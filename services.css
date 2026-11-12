@@ -80,6 +80,4 @@ body.page-what-we-do main>section.sv-intro:first-child{padding:0 !important}
   .sv-list{grid-column:1;grid-row:3}
   .sv-h1{font-size:3.6rem}
   .sv-sparkles{margin-left:min(22rem,70%)}
-  /* keep intro text clear of the fixed social icons */
-  .sv-intro .sv-lead,.sv-intro .sv-list{padding-right:3.6rem}
 }
