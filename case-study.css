@@ -104,8 +104,8 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
 
 /* more projects */
 .gs-more{top:495.1rem;height:3rem}
-.gs-more-link{position:absolute;right:8rem;left:auto;top:.4rem;display:inline-flex;align-items:center;gap:1.4rem;font-size:1.8rem;line-height:1;font-weight:400;letter-spacing:.13em;text-transform:uppercase;color:#E55033;white-space:nowrap;transition:color .2s}
-.gs-more-link img{position:static;left:auto;top:auto;width:4.8rem;height:auto;transition:transform .25s}
+.gs-more-link{position:absolute;right:8rem;left:auto;top:.4rem;display:inline-flex;align-items:center;gap:1.4rem;font-size:1.3rem;line-height:1;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:#E55033;white-space:nowrap;transition:color .2s}
+.gs-more-link img{position:static;left:auto;top:auto;width:4.4rem;height:auto;transition:transform .25s}
 .gs-more-link:hover{color:#E55033}
 .gs-more-link:hover img{transform:translateX(.6rem)}
 
@@ -126,7 +126,7 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
 .page-monstera .gs-main{height:616.4rem}
 .page-monstera .gs-title{left:115.7rem;top:20.5rem}
 .page-monstera .gs-hero-img{top:28.8rem;height:70.2rem;border-radius:2.7rem}
-.page-monstera .gs-more-link img{width:4.9rem;height:auto}
+.page-monstera .gs-more-link img{width:4.4rem;height:auto}
 /* the fixed logo colour is handled by the auto-contrast script (script.js),
    so it switches black/white based on the brightness behind it on every page */
 .gs-brief{top:107.9rem;height:16rem}
@@ -197,8 +197,8 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
   .gs-img-booth{grid-column:1/-1;width:100%;aspect-ratio:698/485}
   .gs-phone-2{width:min(24rem,58%);justify-self:center}
   .gs-more{text-align:right;margin-bottom:0}
-  .gs-more-link{display:inline-flex;align-items:center;gap:1rem;font-size:1.5rem}
-  .gs-more-link img{width:3.4rem;height:auto}
+  .gs-more-link{display:inline-flex;align-items:center;gap:1.4rem;font-size:1.3rem}
+  .gs-more-link img{width:4.4rem;height:auto}
   /* ---- Go Soiree + Mahj & Away: match the supplied mobile reference ---- */
   .page-go-soiree .gs-title,.page-mahj-and-away .gs-title,.page-monstera .gs-title{text-align:right}
   .page-go-soiree .gs-hero-img,.page-mahj-and-away .gs-hero-img{height:auto;aspect-ratio:650/476;border-radius:1.6rem}
