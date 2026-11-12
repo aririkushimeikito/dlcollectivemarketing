@@ -6,6 +6,7 @@
 body.page-careers main>section.cr-main:first-child{padding:0 !important}
 .cr-copy{position:static}
 .cr-h1{position:absolute;left:12.36rem;top:19rem;margin:0;font-size:4.6rem;line-height:1;font-weight:400;letter-spacing:0;color:#1A1A18;white-space:nowrap}
+.cr-brk{display:none}
 .cr-p{position:absolute;left:12.4rem;margin:0;font-size:1.4rem;line-height:1.8rem;font-weight:400;letter-spacing:0;color:#1A1A18;white-space:nowrap}
 .cr-p strong{font-weight:700}
 .cr-p1{top:26.57rem}.cr-p2{top:33.07rem}.cr-p3{top:41.97rem}
@@ -36,4 +37,5 @@ body.page-careers main>section.cr-main:first-child{padding:0 !important}
   .cr-copy{grid-column:1;grid-row:auto}
   .cr-img-1,.cr-img-2{grid-column:1;grid-row:auto;width:min(100%,38.4rem)}
   .cr-copy .cr-h1{font-size:4.6rem;line-height:1.05}
+  .cr-copy .cr-h1 .cr-brk{display:inline}
 }

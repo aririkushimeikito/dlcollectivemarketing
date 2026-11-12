@@ -206,3 +206,13 @@ body.menu-open .hm-social{display:none}
   .hm-logo-forbes{width:9rem !important}
   .hm-wordmark{width:min(72vw,40rem)}
 }
+/* ====================================================================
+   Phones / small tablets: reserve a right lane so the fixed social
+   icons never sit on top of page content. Every page wraps its content
+   in .hm-stage, so one right gutter makes images AND text dodge the
+   icon column site-wide (the full-bleed hero backgrounds are outside
+   .hm-stage, so the icons still sit over the hero as in the reference).
+   ==================================================================== */
+@media (max-width:820px){
+  .hm-stage{padding-right:4.8rem}
+}
