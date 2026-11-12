@@ -133,10 +133,9 @@ body.menu-open .hm-social{display:none}
   .hm-logo{left:2rem;top:1.6rem;width:9.6rem}
   .hm-logo img{width:9.6rem}
   /* social icons stay sticky (fixed) on mobile while scrolling */
-  /* On phones the floating icon rail would either overlap content or force a
-     right-side gap that makes everything look left-heavy, so we drop it here
-     and keep content balanced/full-width (social stays in the menu + footer). */
-  .hm-social{display:none}
+  /* Fixed social rail overlaying content on mobile, no reserved right gutter
+     (content stays full-width; icons sit on top of it). */
+  .hm-social{position:fixed;right:1.2rem;top:50%;transform:translateY(-50%)}
   .hm-hero{height:max(36rem,55.6vw)}
   .hm-wordmark{top:50%;width:min(62vw,52rem);transform:translate(-50%,-50%)}
   .hm-h2,.hm-cta,.hm-who-body,.hm-who-img,.hm-palm,.hm-collage,.hm-what-body,.hm-services,.hm-work-head,.hm-eyebrow,.hm-star,.hm-card,.hm-featured-title,.hm-logos img,.hm-footer-logo,.hm-copy,.hm-fcol{position:static}
