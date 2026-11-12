@@ -123,7 +123,7 @@
   .mu-hero{height:auto;min-height:56rem;padding:22rem 0 6rem;background-size:cover;background-position:center;display:flex;align-items:flex-end}
   .mu-hero .hm-stage{position:relative;left:auto;top:auto;height:auto;transform:none;margin:0 auto}
   .mu-eyebrow{margin:0 0 1rem;font-size:1.35rem}
-  .mu-sub{margin:0 0 3.2rem;font-size:1.45rem}
+  .mu-hero .mu-sub{margin:0 0 3.6rem;font-size:1.45rem}
   .mu-script{font-size:2.7rem;line-height:1.3;text-transform:lowercase}
   /* keep the hero text clear of the fixed social icons on the right */
   /* hero text runs full width (balanced) */
@@ -139,7 +139,7 @@
   .mu-founders .mu-p3{order:6}
   .mu-founders .mu-p4{order:7}
   .mu-founders .mu-img-b{order:8;width:min(100%,48.5rem);height:auto;aspect-ratio:485/620;margin:3.2rem auto 0}
-  .mu-script-pink{text-align:right;margin:0 0 2rem;line-height:1.1}
+  .mu-founders .mu-script-pink{text-align:right;margin:-6rem 0 2rem;line-height:1.05;font-size:3rem;position:relative;z-index:2}
   .mu-p{margin:0 0 1.6rem !important;line-height:2.3rem;max-width:66rem}
   .mu-p2b{display:none}
   .mu-p2::after{content:" cohesive."}

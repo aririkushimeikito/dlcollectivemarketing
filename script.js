@@ -30,9 +30,8 @@
 })();
 
 // Scroll-reveal entrance animations (fade + rise, staggered per section)
-// Disabled: content is shown immediately, with no fade-in on scroll.
+// Content fades/rises in as each section scrolls into view (respects reduced-motion).
 (function () {
-  return;
   if (!('IntersectionObserver' in window)) return;
   try { if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return; } catch (e) {}
   var main = document.querySelector('main');
@@ -275,4 +274,18 @@
     v.addEventListener('volumechange', sync);
     sync();
   });
+})();
+
+// Touch devices: "scroll-hover" — reveal each card's hover state as it passes
+// the vertical centre of the viewport (services tiles + portfolio cards), since
+// there is no pointer to hover with. Pointer devices keep the real :hover.
+(function () {
+  try { if (!window.matchMedia('(hover:none)').matches) return; } catch (e) { return; }
+  if (!('IntersectionObserver' in window)) return;
+  var cards = document.querySelectorAll('.sv-grid .sv-tile, .pw-gallery .pw-card');
+  if (!cards.length) return;
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { e.target.classList.toggle('is-active', e.isIntersecting); });
+  }, { rootMargin: '-42% 0px -42% 0px', threshold: 0 });
+  Array.prototype.forEach.call(cards, function (c) { io.observe(c); });
 })();

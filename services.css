@@ -88,4 +88,11 @@ body.page-what-we-do main>section.sv-intro:first-child{padding:0 !important}
   .sv-tile:hover{border-radius:1.6rem;aspect-ratio:1/1;height:auto;margin-top:0;z-index:auto}
   .sv-tile:hover .sv-ov,.sv-tile:hover .sv-ov::before,.sv-tile:hover .sv-ov-title,.sv-tile:hover .sv-ov-arrow{opacity:0;transform:none}
   .sv-ov:active::before{opacity:.4}
+  /* scroll-hover: the tile centred in the viewport reveals its hover state
+     (morph to circle + title + wavy-arrow), as the page scrolls */
+  .sv-grid .sv-tile.is-active{border-radius:50%}
+  .sv-grid .sv-tile.is-active .sv-ov,
+  .sv-grid .sv-tile.is-active .sv-ov::before{opacity:1}
+  .sv-grid .sv-tile.is-active .sv-ov-title{opacity:1;transform:none}
+  .sv-grid .sv-tile.is-active .sv-ov-arrow{opacity:1;transform:scale(1)}
 }

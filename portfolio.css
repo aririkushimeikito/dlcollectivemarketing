@@ -76,4 +76,10 @@ body.page-our-work main>section.pw-intro:first-child{padding:0 !important}
   .pw-card:hover figcaption{opacity:0}
   .pw-card:has(.pw-card-link):hover>img{transform:none}
   .pw-card:active::after{opacity:.3}
+  /* scroll-hover: the card centred in the viewport reveals its hover state
+     (dark wash + arrow + caption + image zoom), as the page scrolls */
+  .pw-gallery .pw-card.is-active::after{opacity:1}
+  .pw-gallery .pw-card.is-active .pw-card-arrow{opacity:1;transform:scale(1)}
+  .pw-gallery .pw-card.is-active figcaption{opacity:1;transform:translateY(0)}
+  .pw-gallery .pw-card.is-active:has(.pw-card-link)>img{transform:scale(1.04)}
 }
