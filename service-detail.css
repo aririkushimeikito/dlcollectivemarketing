@@ -102,7 +102,7 @@ body main>section.sd-main:first-child{padding:0 !important}
 }
 
 /* ---- "See more examples" link (photography & videography) ---- */
-.sd-more-sec{background:#FCF3EC;padding:0 0 10rem;text-align:center;margin-top:-25.2rem}
+.sd-more-sec{background:#FCF3EC;padding:0 0 10rem;text-align:center;margin-top:-23.2rem}
 .sd-more{display:inline-flex;align-items:center;gap:1.8rem;color:#FF2E2E;font-size:1.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
 .sd-more-arrow{display:block;width:4.8rem;height:1.3rem;background-color:currentColor;transition:transform .25s ease;-webkit-mask:url("media/images/services/arrow-wave.svg") center/contain no-repeat;mask:url("media/images/services/arrow-wave.svg") center/contain no-repeat}
 .sd-more:hover .sd-more-arrow{transform:translateX(.5rem)}
