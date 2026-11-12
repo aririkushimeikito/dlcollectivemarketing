@@ -197,7 +197,7 @@ body.menu-open .hm-social{display:none}
   .hm-footer-social a{display:block;width:2rem;transition:opacity .2s}
   .hm-footer-social a:hover{opacity:.7}
   .hm-footer-social img{width:100%;height:auto}
-  .hm-copy{order:7;width:min(100%,34rem);padding-top:8rem;border-top:1px solid rgba(255,255,255,.18);white-space:normal;line-height:1.9rem}
+  .hm-footer .hm-copy{order:7;width:min(100%,34rem);padding-top:5.6rem;border-top:1px solid rgba(255,255,255,.18);white-space:normal;line-height:1.9rem}
 }
 /* phones: the hero fills the whole first screen, like the reference */
 @media (max-width:767px){
