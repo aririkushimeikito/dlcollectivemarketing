@@ -177,6 +177,8 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
   .gs-phone1{display:flex;align-items:center;justify-content:center;gap:4rem}
   .gs-phone-1{width:min(22rem,40%)}
   .gs-phone-video{position:relative;left:auto;top:auto;height:auto;flex:none}
+  /* smaller corner radius on the phone reels (mobile only) */
+  .gs-phone-framed,.gs-grp .gs-phone-framed video{border-radius:20px}
   .gs-gal3{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;position:relative;padding-top:12rem}
   .gs-gal3 .gs-doodle{position:absolute;right:0;top:0;width:14rem}
   .gs-card{width:100%;aspect-ratio:415/563;border-radius:1.6rem}
