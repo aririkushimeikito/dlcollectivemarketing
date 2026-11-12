@@ -100,3 +100,13 @@ body main>section.sd-main:first-child{padding:0 !important}
   .sd-pager .hm-stage{flex-direction:column;gap:3.6rem}
   .sd-pg-label{font-size:4.4rem;margin:0 0 1.8rem}
 }
+
+/* ---- "See more examples" button (photography & videography) ---- */
+.sd-more-sec{background:#FCF3EC;padding:1rem 0 10rem;text-align:center}
+.sd-more{display:inline-flex;align-items:center;gap:1.4rem;padding:1.7rem 4rem;border-radius:5rem;background:#1A1A18;color:#FAF7F2;font-size:1.4rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:background .25s ease,transform .25s ease}
+.sd-more:hover{background:#FE5E1C;transform:translateY(-.2rem)}
+.sd-more-arrow{display:block;width:4.2rem;height:1.2rem;background-color:currentColor;-webkit-mask:url("media/images/services/arrow-wave.svg") center/contain no-repeat;mask:url("media/images/services/arrow-wave.svg") center/contain no-repeat}
+@media (max-width:1199px){
+  .sd-more-sec{padding:0 0 8rem}
+  .sd-more{font-size:1.3rem;padding:1.5rem 3.4rem}
+}
