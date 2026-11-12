@@ -150,6 +150,8 @@ body.page-case-study main>section.gs-main:first-child{padding:0 !important}
   .gs-oval{position:relative;width:100%;max-width:30.7rem;aspect-ratio:307/181;justify-self:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.2rem;text-align:center}
   .gs-oval-num{font-size:6rem}
   .gs-oval-1 .gs-oval-num,.gs-oval-2 .gs-oval-num{left:auto;top:auto}
+  /* mobile: Mahj numbers render like Go Soiree (drop the desktop scaleX squeeze) */
+  .page-mahj-and-away .gs-oval-1 .gs-oval-num,.page-mahj-and-away .gs-oval-2 .gs-oval-num{transform:none;font-weight:600;letter-spacing:.02em}
   .gs-col{align-self:start}
   .gs-label{margin-bottom:2rem}
   .gs-services{line-height:2.2rem}
