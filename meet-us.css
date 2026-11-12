@@ -122,9 +122,9 @@
   .mu-br::after{content:" "}
   .mu-hero{height:auto;min-height:56rem;padding:22rem 0 6rem;background-size:cover;background-position:center;display:flex;align-items:flex-end}
   .mu-hero .hm-stage{position:relative;left:auto;top:auto;height:auto;transform:none;margin:0 auto}
-  .mu-eyebrow{margin:0 0 1rem}
-  .mu-sub{margin:0 0 1.8rem}
-  .mu-script{font-size:clamp(2.8rem,6vw,4.2rem);line-height:1.1}
+  .mu-eyebrow{margin:0 0 1rem;font-size:1.35rem}
+  .mu-sub{margin:0 0 3.2rem;font-size:1.45rem}
+  .mu-script{font-size:3.6rem;line-height:1.25;text-transform:lowercase}
   .mu-founders{height:auto;padding:6.4rem 0 7.2rem}
   /* order to match the reference: heading, cocktails, script, bios, founders photo */
   .mu-founders .hm-stage{display:flex;flex-direction:column}
