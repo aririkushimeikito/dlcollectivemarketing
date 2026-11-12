@@ -69,7 +69,7 @@ body.page-photo-examples main>section.pv-intro:first-child{padding:0 !important}
   .pv-list li:last-child{margin:0}
   .pv-photo,.pv-video{height:auto;padding:4rem 0 6rem}
   .pv-script{margin:0 0 4rem}
-  .pv-script-photo{width:20rem}.pv-script-video{width:19.5rem}
+  .pv-script-photo{width:20rem;margin-left:auto}.pv-script-video{width:19.5rem}
   .pv-row{display:flex;align-items:center;gap:4rem;margin:0 0 5.6rem}
   .pv-row-rev{flex-direction:row-reverse}
   .pv-row .pv-tile{position:relative;left:auto;top:auto;flex:0 0 auto}
@@ -85,6 +85,8 @@ body.page-photo-examples main>section.pv-intro:first-child{padding:0 !important}
 @media (max-width:760px){
   .pv-intro .hm-stage{grid-template-columns:1fr}
   .pv-list{grid-column:1;grid-row:3}
+  /* reference: each service sits on a single line */
+  .pv-intro .pv-list{font-size:1.15rem;line-height:1.25rem;letter-spacing:.02em}
   .pv-row,.pv-row-rev{flex-direction:column;align-items:flex-start;gap:2rem}
   .pv-row .pv-tile-wide{width:100%}
   .pv-row .pv-tile-tall{width:min(100%,30rem)}
