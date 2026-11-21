@@ -152,11 +152,12 @@
   .mu-how{height:auto}
   .mu-how-photo{position:relative;width:100%;height:46rem;background-size:cover;background-position:center}
   .mu-how-photo::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.3);pointer-events:none}
-  .mu-how .hm-stage{padding-top:6.4rem;padding-bottom:7.2rem}
+  .mu-how .hm-stage{padding-top:6.4rem;padding-bottom:7.2rem;text-align:center}
   .mu-how .mu-h2{margin-bottom:2rem}
-  .mu-how-body{margin:0 0 3.6rem !important;line-height:2.2rem;max-width:62rem}
-  .mu-how .mu-step{position:relative;padding-left:2.4rem;margin:0 0 3rem !important;max-width:62rem}
-  .mu-how .mu-step .mu-dot{position:absolute;left:0;top:.1rem}
+  .mu-how-body{margin:0 auto 3.6rem !important;line-height:2.2rem;max-width:62rem}
+  .mu-how .mu-step{position:relative;padding-left:0;margin:0 auto 3rem !important;max-width:62rem;text-align:center}
+  .mu-how .mu-step .mu-dot{position:static;display:inline-block;vertical-align:middle;margin-right:.9rem}
+  .mu-how .mu-step h3{display:inline-block;vertical-align:middle}
   .mu-how .mu-step p{margin-top:1rem;line-height:2rem}
   .mu-clients{height:auto;padding:6.4rem 0 7.2rem;background-size:cover;background-position:center}
   .mu-clients .hm-stage{display:flex;flex-direction:column;align-items:center;gap:3rem}
