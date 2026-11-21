@@ -66,6 +66,13 @@
 .mu-step p{position:absolute;left:.18rem;top:3.5rem;margin:0;font-size:1.4rem;line-height:1.8rem;font-weight:400;letter-spacing:.07em;color:#DCE8DF;white-space:nowrap}
 .mu-step-2 p{top:3.52rem}.mu-step-3 p{top:3.44rem}.mu-step-4 p{top:3.47rem;left:.2rem;letter-spacing:0}
 .mu-step p strong{color:#B6F11B;font-weight:700}
+/* desktop: centre the 'how we work' content within the right column (palm stays on the left) */
+.mu-how .mu-h2{left:48%;right:0;width:auto;text-align:center}
+.mu-how-body{left:48%;right:0;width:auto;text-align:center}
+.mu-how .mu-step{left:48%;right:0;width:auto;text-align:center}
+.mu-how .mu-step .mu-dot{position:static;display:inline-block;vertical-align:middle;margin-right:.9rem}
+.mu-how .mu-step h3{position:static;display:inline-block;vertical-align:middle;left:auto;top:auto}
+.mu-how .mu-step p{position:static;left:auto;top:auto;margin-top:.8rem}
 
 /* ---- Our clients say it best (1440 × 830) ---- */
 .mu-clients{position:relative;height:83rem;background:#000 url(media/images/meet/clients-glass.jpg) no-repeat;background-size:100% auto;background-position:0 -8.28rem}
