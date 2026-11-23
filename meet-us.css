@@ -55,24 +55,17 @@
 /* ---- How we work (1440 × 760) ---- */
 .mu-how{position:relative;height:68rem;background:#000}
 .mu-how-photo{position:absolute;left:0;top:0;width:48%;height:100%;background:#000 url(media/images/meet/how-palms.jpg) no-repeat;background-size:164.85% auto;background-position:-22.41rem 0}
-.mu-how .mu-h2{left:75.18rem;top:10.19rem}
-.mu-how-body{position:absolute;left:75.18rem;top:16.8rem;font-size:1.5rem;line-height:1.9rem;font-weight:400;letter-spacing:.07em;color:#DCE8DF;white-space:nowrap}
+.mu-how .mu-h2{left:75.18rem;top:6.79rem}
+.mu-how-body{position:absolute;left:75.18rem;top:13.4rem;font-size:1.5rem;line-height:1.9rem;font-weight:400;letter-spacing:.07em;color:#DCE8DF;white-space:nowrap}
 .mu-how-body a{color:#B6F11B;font-weight:700}
 .mu-how-body a:hover{color:#fff}
 .mu-step{position:absolute;left:75rem;width:62rem}
-.mu-step-1{top:25.9rem}.mu-step-2{top:35.8rem}.mu-step-3{top:45.8rem}.mu-step-4{top:55.7rem}
+.mu-step-1{top:22.5rem}.mu-step-2{top:32.4rem}.mu-step-3{top:42.4rem}.mu-step-4{top:52.3rem}
 .mu-dot{position:absolute;left:0;top:0;width:1.3rem;height:1.3rem;border-radius:50%;background:#B6F11B}
 .mu-step h3{position:absolute;left:2.21rem;top:.06rem;margin:0;font-size:1.3rem;line-height:1.3rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#FFFFFF;white-space:nowrap}
 .mu-step p{position:absolute;left:.18rem;top:3.5rem;margin:0;font-size:1.4rem;line-height:1.8rem;font-weight:400;letter-spacing:.07em;color:#DCE8DF;white-space:nowrap}
 .mu-step-2 p{top:3.52rem}.mu-step-3 p{top:3.44rem}.mu-step-4 p{top:3.47rem;left:.2rem;letter-spacing:0}
 .mu-step p strong{color:#B6F11B;font-weight:700}
-/* desktop: centre the 'how we work' content within the right column (palm stays on the left) */
-.mu-how .mu-h2{left:48%;right:0;width:auto;text-align:center}
-.mu-how-body{left:48%;right:0;width:auto;text-align:center}
-.mu-how .mu-step{left:48%;right:0;width:auto;text-align:center}
-.mu-how .mu-step .mu-dot{position:static;display:inline-block;vertical-align:middle;margin-right:.9rem}
-.mu-how .mu-step h3{position:static;display:inline-block;vertical-align:middle;left:auto;top:auto}
-.mu-how .mu-step p{position:static;left:auto;top:auto;margin-top:.8rem}
 
 /* ---- Our clients say it best (1440 × 830) ---- */
 .mu-clients{position:relative;height:83rem;background:#000 url(media/images/meet/clients-glass.jpg) no-repeat;background-size:100% auto;background-position:0 -8.28rem}
@@ -159,12 +152,11 @@
   .mu-how{height:auto}
   .mu-how-photo{position:relative;width:100%;height:46rem;background-size:cover;background-position:center}
   .mu-how-photo::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.3);pointer-events:none}
-  .mu-how .hm-stage{padding-top:6.4rem;padding-bottom:7.2rem;text-align:center}
+  .mu-how .hm-stage{padding-top:7rem;padding-bottom:7rem}
   .mu-how .mu-h2{margin-bottom:2rem}
-  .mu-how-body{margin:0 auto 3.6rem !important;line-height:2.2rem;max-width:62rem}
-  .mu-how .mu-step{position:relative;padding-left:0;margin:0 auto 3rem !important;max-width:62rem;text-align:center}
-  .mu-how .mu-step .mu-dot{position:static;display:inline-block;vertical-align:middle;margin-right:.9rem}
-  .mu-how .mu-step h3{display:inline-block;vertical-align:middle}
+  .mu-how-body{margin:0 0 3.6rem !important;line-height:2.2rem;max-width:62rem}
+  .mu-how .mu-step{position:relative;padding-left:2.4rem;margin:0 0 3rem !important;max-width:62rem}
+  .mu-how .mu-step .mu-dot{position:absolute;left:0;top:.1rem}
   .mu-how .mu-step p{margin-top:1rem;line-height:2rem}
   .mu-clients{height:auto;padding:6.4rem 0 7.2rem;background-size:cover;background-position:center}
   .mu-clients .hm-stage{display:flex;flex-direction:column;align-items:center;gap:3rem}
